@@ -47,4 +47,11 @@ function checkAnswer() {
   }
 
   setTimeout(newQuestion, 1500);
-}
+};
+
+document.getElementById("answer")
+  .addEventListener("keypress", function(e) {
+    if (e.key === "Enter") {
+      checkAnswer();
+    }
+  });
