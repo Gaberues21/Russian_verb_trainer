@@ -59,6 +59,7 @@ document.getElementById("answer")
 function showSection(section) {
   document.getElementById("home").style.display = "none";
   document.getElementById("trainer").style.display = "none";
+  document.getElementById("tableTrainer").style.display = "none";
 
   document.getElementById(section).style.display = "block";
 };
