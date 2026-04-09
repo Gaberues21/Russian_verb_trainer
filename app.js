@@ -47,18 +47,18 @@ function checkAnswer() {
   }
 
   setTimeout(newQuestion, 1500);
-};
+}
 
 document.getElementById("answer")
   .addEventListener("keypress", function(e) {
     if (e.key === "Enter") {
       checkAnswer();
     }
-  });
+  })
 
 function showSection(section) {
   document.getElementById("home").style.display = "none";
   document.getElementById("trainer").style.display = "none";
 
   document.getElementById(section).style.display = "block";
-}
+};
