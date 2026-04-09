@@ -26,7 +26,10 @@ function newQuestion() {
 function checkAnswer() {
   const user = document.getElementById("answer").value.trim().toLowerCase();
 
-  if (user === current.answer) {
+  const normalize = (str) =>
+  str.trim().toLowerCase();
+
+  if (normalize(user) === current.answer) {
     document.getElementById("feedback").innerText = "Correct!";
   } else {
     document.getElementById("feedback").innerText =
