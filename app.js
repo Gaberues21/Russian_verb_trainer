@@ -10,7 +10,8 @@ const tenseLabels = {
 fetch("verbs.json")
   .then(res => res.json())
   .then(json => {
-    data = json;
+    data = json;  
+    populateVerbList();
     newQuestion();
   });
 
