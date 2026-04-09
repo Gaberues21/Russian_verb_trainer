@@ -15,8 +15,9 @@ fetch("verbs.json")
   });
 
 function newQuestion() {
-  const verbObj = data[0];
-  const pronoun = Object.keys(verbObj.forms)[0];
+  const verbObj = data[Math.floor(Math.random() * data.length)];
+  const pronouns = Object.keys(verbObj.forms);
+  const pronoun = pronouns[Math.floor(Math.random() * pronouns.length)];
 
   current = {
     verb: verbObj.verb,
