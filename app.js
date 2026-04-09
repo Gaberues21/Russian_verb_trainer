@@ -28,6 +28,9 @@ function newQuestion() {
 
   document.getElementById("question").innerText =
     `${current.verb} (${current.pronoun}, ${tenseLabels[current.tense]})`;
+
+  document.getElementById("answer").value = "";
+  document.getElementById("feedback").innerText = "";
 }
 
 function checkAnswer() {
@@ -42,4 +45,6 @@ function checkAnswer() {
     document.getElementById("feedback").innerText =
       `Wrong! Correct: ${current.answer}`;
   }
+
+  setTimeout(newQuestion, 1500);
 }
