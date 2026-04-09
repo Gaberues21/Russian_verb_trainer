@@ -2,11 +2,19 @@
 <html>
 <head>
   <title>Verb Trainer</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <h1>Verb Trainer</h1>
-  <p>If you see this, your site works 🎉</p>
 
+  <div id="question"></div>
+
+  <input type="text" id="answer" placeholder="Type your answer">
+  <button onclick="checkAnswer()">Check</button>
+
+  <p id="feedback"></p>
+
+  <script src="app.js"></script>
 </body>
 </html>
