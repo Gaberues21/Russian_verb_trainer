@@ -49,6 +49,18 @@ function checkAnswer() {
   setTimeout(newQuestion, 1500);
 }
 
+function populateVerbList() {
+  const select = document.getElementById("verbSelect");
+  select.innerHTML = "";
+
+  data.forEach((v, index) => {
+    const option = document.createElement("option");
+    option.value = index;
+    option.textContent = v.verb;
+    select.appendChild(option);
+  });
+}
+
 document.getElementById("answer")
   .addEventListener("keypress", function(e) {
     if (e.key === "Enter") {
