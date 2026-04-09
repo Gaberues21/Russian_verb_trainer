@@ -13,6 +13,7 @@
   <nav>
     <button onclick="showSection('home')">Home</button>
     <button onclick="showSection('trainer')">Random Verb Trainer</button>
+    <button onclick="showSection('tableTrainer')">Full Table Trainer</button>
   </nav>
 
   <!-- HOME SECTION -->
@@ -32,6 +33,23 @@
   <button onclick="checkAnswer()">Check</button>
 
   <p id="feedback"></p>
+
+  <!-- FULL TABLE SECTION -->
+  <div id="tableTrainer" style="display:none;">
+  <h1>Full Conjugation Trainer</h1>
+
+  <!-- Verb selector -->
+  <select id="verbSelect"></select>
+
+  <button onclick="loadTable()">Start</button>
+
+  <!-- Table container -->
+  <div id="tableContainer"></div>
+
+  <button onclick="checkTable()">Check Answers</button>
+
+  <p id="tableResult"></p>
+</div>
 
   <script src="app.js"></script>
 </body>
