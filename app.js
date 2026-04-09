@@ -1,6 +1,12 @@
 let data = [];
 let current = {};
 
+const tenseLabels = {
+  present: "настоящее",
+  past: "прошедшее",
+  future: "будущее"
+};
+
 fetch("verbs.json")
   .then(res => res.json())
   .then(json => {
@@ -20,7 +26,7 @@ function newQuestion() {
   };
 
   document.getElementById("question").innerText =
-    `${current.verb} (${current.pronoun}, ${current.tense})`;
+    `${current.verb} (${current.pronoun}, ${tenseLabels[current.tense]})`;
 }
 
 function checkAnswer() {
