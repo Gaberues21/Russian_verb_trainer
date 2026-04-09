@@ -25,31 +25,33 @@
   <!-- TRAINER SECTION -->
   <div id="trainer" style="display:none;">
     
-  <h1>Random Verb Trainer</h1>
+    <h1>Random Verb Trainer</h1>
+  
+    <div id="question"></div>
+  
+    <input type="text" id="answer" placeholder="Type your answer">
+    <button onclick="checkAnswer()">Check</button>
+  
+    <p id="feedback"></p>
 
-  <div id="question"></div>
-
-  <input type="text" id="answer" placeholder="Type your answer">
-  <button onclick="checkAnswer()">Check</button>
-
-  <p id="feedback"></p>
+  </div>
 
   <!-- FULL TABLE SECTION -->
   <div id="tableTrainer" style="display:none;">
-  <h1>Full Conjugation Trainer</h1>
-
-  <!-- Verb selector -->
-  <select id="verbSelect"></select>
-
-  <button onclick="loadTable()">Start</button>
-
-  <!-- Table container -->
-  <div id="tableContainer"></div>
-
-  <button onclick="checkTable()">Check Answers</button>
-
-  <p id="tableResult"></p>
-</div>
+    <h1>Full Conjugation Trainer</h1>
+  
+    <!-- Verb selector -->
+    <select id="verbSelect"></select>
+  
+    <button onclick="loadTable()">Start</button>
+  
+    <!-- Table container -->
+    <div id="tableContainer"></div>
+  
+    <button onclick="checkTable()">Check Answers</button>
+  
+    <p id="tableResult"></p>
+  </div>
 
   <script src="app.js"></script>
 </body>
