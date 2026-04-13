@@ -150,6 +150,39 @@ function loadTable() {
   document.getElementById("tableContainer").innerHTML = html;
 }
 
+function checkTable() {
+
+  const inputs = document.querySelectorAll("#tableContainer input");
+
+  let correct = 0;
+  let total = inputs.length;
+
+  inputs.forEach(input => {
+    const tense = input.dataset.tense;
+    const pronoun = input.dataset.pronoun;
+
+    const user = input.value.trim().toLowerCase();
+    const correctAnswer = currentTable.tenses[tense][pronoun]?.toLowerCase();
+
+    if (!correctAnswer) return;
+
+    if (user == correctAnswer) {
+      input.style.backgroundColor = "#c8f7c5";
+      correct++;
+    } else {
+      input.style.backgroundColor = "#f7c5c5";
+      input.value = `${input.value} (${correctAnswer})`;
+    }
+
+    const percentage = Math.round((correct/total)*100);
+
+    document.getElementById("tableResult").innerText = 
+      `Score: ${percentage}% (${correct}/${total})`;
+      
+  }
+  
+}
+
 document.getElementById("answer")
   .addEventListener("keypress", function(e) {
     if (e.key === "Enter") {
