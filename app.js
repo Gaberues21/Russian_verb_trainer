@@ -173,14 +173,12 @@ function checkTable() {
       input.style.backgroundColor = "#f7c5c5";
       input.value = `${input.value} (${correctAnswer})`;
     }
+  });
 
     const percentage = Math.round((correct/total)*100);
 
     document.getElementById("tableResult").innerText = 
       `Score: ${percentage}% (${correct}/${total})`;
-      
-  }
-  
 }
 
 document.getElementById("answer")
