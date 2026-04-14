@@ -2,7 +2,7 @@
   {
     "verb": "говорить",
     "type": "imperfective",
-    "category": ["top100","top500","all"]
+    "category": ["top100","top500","all"],
     "tenses": {
       "present": {
         "я": "говорю",
