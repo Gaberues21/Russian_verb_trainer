@@ -188,7 +188,10 @@ function checkTable() {
     }
   });
 
-    const percentage = Math.round((correct/total)*100);
+    // const percentage = Math.round((correct/total)*100);
+  const percentage = total > 0
+    ? Math.round((correct/total)*100)
+    : 0;
 
     document.getElementById("tableResult").innerText = 
       `Score: ${percentage}% (${correct}/${total})`;
