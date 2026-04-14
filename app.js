@@ -17,6 +17,8 @@ fetch("verbs.json")
   });
 
 function newQuestion() {
+  if (data.length == 0) return;
+  
   const verbObj = data[Math.floor(Math.random() * data.length)];
 
   const tense = "present";
@@ -189,20 +191,22 @@ function checkTable() {
       `Score: ${percentage}% (${correct}/${total})`;
 }
 
-document.getElementById("answer")
-  .addEventListener("keypress", function(e) {
-    if (e.key === "Enter") {
-      checkAnswer();
-    }
-  })
-
-// function showSection(section) {
-//   document.getElementById("home").style.display = "none";
-//   document.getElementById("trainer").style.display = "none";
-//   document.getElementById("tableTrainer").style.display = "none";
-
-//   document.getElementById(section).style.display = "block";
-// };
+// document.getElementById("answer")
+//   .addEventListener("keypress", function(e) {
+//     if (e.key === "Enter") {
+//       checkAnswer();
+//     }
+//   })
+window.addEventListener("load", () => {
+  const answerInput = document.getElementById("answer");
+  if (answerInput) {
+    answerInput.addEventListener("keypress",function(e) {
+      if (e.key === "Enter") {
+        checkAnswer();
+      }
+    });
+  }
+});
 
 function resetTrainer() {
   document.getElementById("answer").value = "";
