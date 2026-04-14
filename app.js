@@ -181,7 +181,10 @@ function checkTable() {
       correct++;
     } else {
       input.style.backgroundColor = "#f7c5c5";
-      input.value = `${input.value} (${correctAnswer})`;
+      // input.value = `${input.value} (${correctAnswer})`;
+      if (!input.value.includes("(")) {
+        input.value = `${input.value} (${correctAnswer})`;
+      }
     }
   });
 
