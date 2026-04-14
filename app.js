@@ -170,7 +170,7 @@ function checkTable() {
     const pronoun = input.dataset.pronoun;
 
     const user = input.value.trim().toLowerCase();
-    const correctAnswer = currentTable.tenses[tense][pronoun]?.toLowerCase();
+    const correctAnswer = currentTable?.tenses?.[tense]?.[pronoun]?.toLowerCase();
 
     if (!correctAnswer) return;
 
@@ -257,15 +257,15 @@ function showSectionFromHash() {
   document.getElementById(active).style.display = "block";
 
   // Reset
-  if (active == "trainer") {
+  if (active === "trainer") {
     resetTrainer();
   }
 
-  if (active == "tableTrainer") {
+  if (active === "tableTrainer") {
     resetTableTrainer();
   }
 
-  if (active == "home") {
+  if (active === "home") {
     resetHome();
   }
 }
