@@ -206,7 +206,7 @@ document.getElementById("answer")
 
 function resetTrainer() {
   document.getElementById("answer").value = "";
-  document.getElementById("feedback").value = "";
+  document.getElementById("feedback").innerText = "";
 
   if (data.length > 0) {
     newQuestion();
@@ -251,15 +251,15 @@ function showSectionFromHash() {
 
   // Reset
   if (active == "trainer") {
-    resetTrainer():
+    resetTrainer();
   }
 
   if (active == "tableTrainer") {
-    resetTableTrainer():
+    resetTableTrainer();
   }
 
   if (active == "home") {
-    resetHome():
+    resetHome();
   }
 }
 
