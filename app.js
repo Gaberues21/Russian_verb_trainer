@@ -1,5 +1,6 @@
 let data = [];
 let current = {};
+let currentTable = {};
 
 const tenseLabels = {
   present: "настоящее",
@@ -17,14 +18,18 @@ fetch("verbs.json")
 
 function newQuestion() {
   const verbObj = data[Math.floor(Math.random() * data.length)];
-  const pronouns = Object.keys(verbObj.forms);
+
+  const tense = "present";
+  const forms = verbObj.tenses[tense];
+    
+  const pronouns = Object.keys(forms);
   const pronoun = pronouns[Math.floor(Math.random() * pronouns.length)];
 
   current = {
     verb: verbObj.verb,
-    tense: verbObj.tense,
+    tense: tense,
     pronoun: pronoun,
-    answer: verbObj.forms[pronoun]
+    answer: forms[pronoun]
   };
 
   document.getElementById("question").innerText =
@@ -40,7 +45,7 @@ function checkAnswer() {
   const normalize = (str) =>
   str.trim().toLowerCase();
 
-  if (normalize(user) === current.answer) {
+  if (normalize(user) === normalize(current.answer)) {
     document.getElementById("feedback").innerText = "Correct!";
   } else {
     document.getElementById("feedback").innerText =
@@ -155,7 +160,8 @@ function checkTable() {
   const inputs = document.querySelectorAll("#tableContainer input");
 
   let correct = 0;
-  let total = inputs.length;
+  // let total = inputs.length;
+  let total = 0;
 
   inputs.forEach(input => {
     const tense = input.dataset.tense;
@@ -166,7 +172,9 @@ function checkTable() {
 
     if (!correctAnswer) return;
 
-    if (user == correctAnswer) {
+    total++;
+
+    if (user === correctAnswer) {
       input.style.backgroundColor = "#c8f7c5";
       correct++;
     } else {
@@ -202,7 +210,7 @@ function showSectionFromHash() {
   const sections = ["home","trainer","tableTrainer"];
 
   sections.forEach(id => {
-    document.getElementById(id).style.display = "none"
+    document.getElementById(id).style.display = "none";
   });
 
   if (!hash || !sections.includes(hash)) {
