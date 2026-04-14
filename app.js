@@ -204,6 +204,26 @@ document.getElementById("answer")
 //   document.getElementById(section).style.display = "block";
 // };
 
+function resetTrainer() {
+  document.getElementById("answer").value = "";
+  document.getElementById("feedback").value = "";
+
+  if (data.length > 0) {
+    newQuestion();
+  }
+}
+
+function resetTableTrainer(){
+  document.getElementById("tableContainer").innerHTML = "";
+  document.getElementById("tableResult").innerText = "";
+
+  currentTable = {};
+}
+
+function resetHome() {
+  // nothing for now
+}
+
 function showSectionFromHash() {
   const hash = window.location.hash.substring(1);
 
