@@ -229,17 +229,39 @@ function showSectionFromHash() {
 
   const sections = ["home","trainer","tableTrainer"];
 
+  // Hide all
   sections.forEach(id => {
-    document.getElementById(id).style.display = "none";
+    // document.getElementById(id).style.display = "none";
+    const el = document.getElementById(id);
+    if (el) el.style.display = "none";
   });
 
-  if (!hash || !sections.includes(hash)) {
-    document.getElementById("home").style.display = "block";
-    return;
-  };
-
-  document.getElementById(hash).style.display = "block";
+  // if (!hash || !sections.includes(hash)) {
+  //   document.getElementById("home").style.display = "block";
+  //   return;
+  // };
+  // decide which to show
+  let active = "home";
+  if (hash && sections.includes(hash)) {
+    active = hash;
   }
+  
+  // Show selected
+  document.getElementById(active).style.display = "block";
+
+  // Reset
+  if (active == "trainer") {
+    resetTrainer():
+  }
+
+  if (active == "tableTrainer") {
+    resetTableTrainer():
+  }
+
+  if (active == "home") {
+    resetHome():
+  }
+}
 
 // Run on page load
 window.addEventListener("load", showSectionFromHash);
