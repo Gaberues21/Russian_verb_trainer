@@ -188,10 +188,34 @@ document.getElementById("answer")
     }
   })
 
-function showSection(section) {
-  document.getElementById("home").style.display = "none";
-  document.getElementById("trainer").style.display = "none";
-  document.getElementById("tableTrainer").style.display = "none";
+// function showSection(section) {
+//   document.getElementById("home").style.display = "none";
+//   document.getElementById("trainer").style.display = "none";
+//   document.getElementById("tableTrainer").style.display = "none";
 
-  document.getElementById(section).style.display = "block";
-};
+//   document.getElementById(section).style.display = "block";
+// };
+
+function showSectionFromHash() {
+  const hash = window.location.hash.substring(1);
+
+  const sections = ["home","trainer","tableTrainer"];
+
+  sections.forEach(id => {
+    document.getElementById(id).style.display = "none"
+  });
+
+  if (!hash || !sections.includes(hash)) {
+    document.getElementById("home").style.display = "block";
+    return;
+  };
+
+  document.getElementById(hash).style.display = "block";
+  }
+
+// Run on page load
+window.addEventListener("load", showSectionFromHash);
+
+// Run when hash changes
+window.addEventListener("hashchange", showSectionFromHash);
+;
