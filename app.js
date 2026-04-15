@@ -16,6 +16,7 @@ fetch("verbs.json")
     newQuestion();
   });
 
+//========= Function to generate new question in random mode =========
 function newQuestion() {
   if (data.length == 0) return;
   
@@ -41,6 +42,7 @@ function newQuestion() {
   document.getElementById("feedback").innerText = "";
 }
 
+//========= Function to check answer in random mode =========
 function checkAnswer() {
   const user = document.getElementById("answer").value.trim().toLowerCase();
 
@@ -69,6 +71,7 @@ function populateVerbList() {
   });
 }
 
+//========= Function to load table in full mode =========
 function loadTable() {
   const index = document.getElementById("verbSelect").value;
   const verbObj = data[index];
@@ -157,6 +160,7 @@ function loadTable() {
   document.getElementById("tableContainer").innerHTML = html;
 }
 
+//========= Function to check answers in table in full mode =========
 function checkTable() {
 
   const inputs = document.querySelectorAll("#tableContainer input");
@@ -214,6 +218,18 @@ window.addEventListener("load", () => {
   }
 });
 
+
+//========= Function for 3-step flow in table trainer =========
+
+
+//========= Helper function for 3-step mode in table trainer =========
+function getQueryParams() {
+  const query = window.location.hash.split("?")[1];
+  const params = new URLSearchParams(query);
+  return Object.fromEntries(params.entries());
+}
+
+//========= Function to reset random mode when exiting =========
 function resetTrainer() {
   document.getElementById("answer").value = "";
   document.getElementById("feedback").innerText = "";
@@ -223,6 +239,7 @@ function resetTrainer() {
   }
 }
 
+//========= Function to reset table trainer mode when exiting =========
 function resetTableTrainer(){
   document.getElementById("tableContainer").innerHTML = "";
   document.getElementById("tableResult").innerText = "";
@@ -230,18 +247,21 @@ function resetTableTrainer(){
   currentTable = {};
 }
 
+//========= Function to reset home when exiting =========
 function resetHome() {
   // nothing for now
 }
 
+//========= Function to show URL of each section =========
 function showSectionFromHash() {
   const hash = window.location.hash.substring(1);
+  const [section] = hashFull.split("?");
+  const params = getQueryParams();
 
   const sections = ["home","trainer","tableTrainer"];
 
-  // Hide all
+  // Hide all main sections
   sections.forEach(id => {
-    // document.getElementById(id).style.display = "none";
     const el = document.getElementById(id);
     if (el) el.style.display = "none";
   });
@@ -252,24 +272,19 @@ function showSectionFromHash() {
   // };
   // decide which to show
   let active = "home";
-  if (hash && sections.includes(hash)) {
-    active = hash;
+  if (hash && sections.includes(section)) {
+    active = section;
   }
   
   // Show selected
   document.getElementById(active).style.display = "block";
 
   // Reset
-  if (active === "trainer") {
-    resetTrainer();
-  }
+  if (active === "trainer") resetTrainer();
+  if (active === "home") resetHome();
 
   if (active === "tableTrainer") {
-    resetTableTrainer();
-  }
-
-  if (active === "home") {
-    resetHome();
+    handleTableRouting(params);
   }
 }
 
