@@ -291,6 +291,11 @@ function getQueryParams() {
   return Object.fromEntries(params.entries());
 }
 
+//========= Back button for 3-step mode in table trainer =========
+function goToCategories() {
+  window.location.hash = "tableTrainer";
+}
+
 //========= Function to reset random mode when exiting =========
 function resetTrainer() {
   document.getElementById("answer").value = "";
