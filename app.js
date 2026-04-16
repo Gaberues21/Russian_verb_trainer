@@ -291,8 +291,13 @@ function showVerbListFromCategory(category) {
 
 //========= Helper function for 3-step mode in table trainer =========
 function getQueryParams() {
-  const query = window.location.hash.split("?")[1];
-  const params = new URLSearchParams(query);
+  // const query = window.location.hash.split("?")[1];
+  // const params = new URLSearchParams(query);
+  // return Object.fromEntries(params.entries());
+  const parts = window.location.hash.split("?");
+  if (parts.legnth > 2) return {};
+
+  const params = new URLSearchParams(parts[1]);
   return Object.fromEntries(params.entries());
 }
 
