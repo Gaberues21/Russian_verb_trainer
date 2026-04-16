@@ -2,7 +2,7 @@
   {
     "verb": "сказать",
     "type": "perfective",
-    "category": ["top100","top500","all"],
+    "category": ["top100","top500","2nd_conj","stem_change","all"],
     "tenses": {
       "present": {
         "я": "",
@@ -39,7 +39,7 @@
   {
     "verb": "мочь",
     "type": "imperfective",
-    "category": ["top100","top500","all"],
+    "category": ["top100","top500","irregular","all"],
     "tenses": {
       "present": {
         "я": "могу",
@@ -76,7 +76,7 @@
   {
     "verb": "говорить",
     "type": "imperfective",
-    "category": ["top100","top500","all"],
+    "category": ["top100","top500","2nd_conj","all"],
     "tenses": {
       "present": {
         "я": "говорю",
