@@ -72,9 +72,10 @@ function populateVerbList() {
 }
 
 //========= Function to load table in full mode =========
-function loadTable() {
-  const index = document.getElementById("verbSelect").value;
-  const verbObj = data[index];
+function generateTable() {
+  
+  // const index = document.getElementById("verbSelect").value;
+  // const verbObj = data[index];
 
   currentTable = verbObj;
 
@@ -285,7 +286,7 @@ function resetHome() {
 
 //========= Function to show URL of each section =========
 function showSectionFromHash() {
-  const hash = window.location.hash.substring(1);
+  const hashFull = window.location.hash.substring(1);
   const [section] = hashFull.split("?");
   const params = getQueryParams();
 
@@ -303,7 +304,7 @@ function showSectionFromHash() {
   // };
   // decide which to show
   let active = "home";
-  if (hash && sections.includes(section)) {
+  if (section && sections.includes(section)) {
     active = section;
   }
   
