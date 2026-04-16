@@ -11,7 +11,7 @@
 
   <!-- NAVBAR -->
   <nav>
-    <a href="#">Home</a>
+    <a href="#home">Home</a>
     <a href="#trainer">Random Verb Trainer</a>
     <a href="#tableTrainer">Full Table Trainer</a>
     <!-- <button onclick="showSection('home')">Home</button>
@@ -59,13 +59,14 @@
     <div id="verbListView" style="display:none;">
       <h2>Select a verb</h2>
       <div id="verbList"></div>
-      <button onclick="goToCategories">← Back</button>
+      <button onclick="goToCategories()">← Back</button>
     </div>
 
     <!-- STEP 3: Complete table -->
     <div id="tableView" style="display:none;">
-      <button onclick="history.back()">← Back</button>
-      <div id="tabelContainer"></div>
+      <button onclick="window.location.hash='tableTrainer'">← Back</button>
+      <!-- <button onclick="history.back()">← Back</button> -->
+      <div id="tableContainer"></div>
       <button onclick="checkTable()">Check</button>
       <p id="tableResult"></p>
     </div>
