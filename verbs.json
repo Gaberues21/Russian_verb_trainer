@@ -2,7 +2,7 @@
   {
     "verb": "сказать",
     "type": "perfective",
-    "category": ["top100","top500","2nd_conj","stem_change","all"],
+    "category": ["top100","top500","1st_conj","stem_change","all"],
     "tenses": {
       "present": {
         "я": "",
