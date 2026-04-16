@@ -59,8 +59,11 @@ function checkAnswer() {
   setTimeout(newQuestion, 1500);
 }
 
+//========= Function to populate verb list in full mode =========
 function populateVerbList() {
   const select = document.getElementById("verbSelect");
+  if (!select) return;
+  
   select.innerHTML = "";
 
   data.forEach((v, index) => {
@@ -72,7 +75,7 @@ function populateVerbList() {
 }
 
 //========= Function to load table in full mode =========
-function generateTable() {
+function generateTable(verbObj) {
   
   // const index = document.getElementById("verbSelect").value;
   // const verbObj = data[index];
@@ -276,7 +279,7 @@ function showVerbListFromCategory(category) {
     item.style.cursor = "pointer";
     item.style.padding = "5px";
 
-    item.onClick = () => {
+    item.onclick = () => {
       window.location.hash = `tableTrainer?verb=${v.verb}`;
     };
 
@@ -351,7 +354,7 @@ function showSectionFromHash() {
   if (active === "home") resetHome();
 
   if (active === "tableTrainer") {
-    handleTableRouting(params);
+    handleTableRoutine(params);
   }
 }
 
