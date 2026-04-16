@@ -253,6 +253,36 @@ function handleTableRoutine(params) {
   categoryView.style.display = "block";
 }
 
+//========= Function to build verb list from category in full mode =========
+function showVerbListFromCategory(category) {
+  let filtered;
+
+  if (category === "all") {
+    filtered = data;
+  } else if (category === "imperfective") {
+    filtered = data.filter(v => v.type === "imperfective");
+  } else if (category === "perfective") {
+    filtered = data.filter(v => v.type === "perfective");
+  } else {
+    filtered = data.filter(v => v.category?.includes(category));
+  }
+
+  const container = document.getElementById("verbList");
+  container.innerHTML = "";
+
+  filtered.forEach( v => {
+    const item = document.createElement("div");
+    item.textContent = v.verb;
+    item.style.cursor = "pointer";
+    item.style.padding = "5px";
+
+    item.onClick = () => {
+      window.location.hash = `tableTrainer?verb=${v.verb}`;
+    };
+
+    container.appendChild(item);
+  });
+}
 
 //========= Helper function for 3-step mode in table trainer =========
 function getQueryParams() {
