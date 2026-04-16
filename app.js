@@ -232,7 +232,7 @@ function handleTableRoutine(params) {
 
   // Direct verb (highest priority)
   if (params.verb) {
-    const verbObj = data.find(v => v.verb === params.verb):
+    const verbObj = data.find(v => v.verb === params.verb);
 
     if (verbObj) {
       currentTable = verbObj;
