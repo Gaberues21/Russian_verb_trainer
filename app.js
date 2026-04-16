@@ -218,8 +218,39 @@ window.addEventListener("load", () => {
   }
 });
 
-
 //========= Function for 3-step flow in table trainer =========
+function handleTableRoutine(params) {
+  const categoryView = document.getElementById("categoryView");
+  const listView = document.getElementById("verbListView");
+  const tableView = document.getElementById("tableView");
+
+  // Hide all subviews
+  categoryView.style.display = "none";
+  listView.style.display = "none";
+  tableView.style.display = "none";
+
+  // Direct verb (highest priority)
+  if (params.verb) {
+    const verbObj = data.find(v => v.verb === params.verb):
+
+    if (verbObj) {
+      currentTable = verbObj;
+      generateTable(verbObj);
+      tableView.style.display = "block";
+      return;
+    }
+  }
+
+  // Category selected
+  if (params.cat) {
+    showVerbListFromCategory(params.cat);
+    listView.style.display = "block";
+    return;
+  }
+
+  // Default -> categories
+  categoryView.style.display = "block";
+}
 
 
 //========= Helper function for 3-step mode in table trainer =========
