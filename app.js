@@ -18,7 +18,7 @@ fetch("verbs.json")
 
 //========= Function to generate new question in random mode =========
 function newQuestion() {
-  if (data.length == 0) return;
+  if (data.length === 0) return;
   
   const verbObj = data[Math.floor(Math.random() * data.length)];
 
@@ -162,6 +162,7 @@ function generateTable(verbObj) {
   html += "</table>";
 
   document.getElementById("tableContainer").innerHTML = html;
+  document.getElementById("tableResult").innerText = "";
 }
 
 //========= Function to check answers in table in full mode =========
@@ -229,16 +230,17 @@ function handleTableRoutine(params) {
   const tableView = document.getElementById("tableView");
 
   // Hide all subviews
-  categoryView.style.display = "none";
-  listView.style.display = "none";
-  tableView.style.display = "none";
+  if (categoryView) categoryView.style.display = "none";
+  if (listView) listView.style.display = "none";
+  if (tableView) tableView.style.display = "none";
 
   // Direct verb (highest priority)
   if (params.verb) {
-    const verbObj = data.find(v => v.verb === params.verb);
+    const verbParam = decodeURIComponent(params.verb);
+    const verbObj = data.find(v => v.verb === verbParam);
 
     if (verbObj) {
-      currentTable = verbObj;
+      resetTableTrainer();
       generateTable(verbObj);
       tableView.style.display = "block";
       return;
@@ -280,7 +282,7 @@ function showVerbListFromCategory(category) {
     item.style.padding = "5px";
 
     item.onclick = () => {
-      window.location.hash = `tableTrainer?verb=${v.verb}`;
+      window.location.hash = `tableTrainer?verb=${encodeURIComponent(v.verb)}`;
     };
 
     container.appendChild(item);
