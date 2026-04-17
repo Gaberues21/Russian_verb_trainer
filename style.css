@@ -17,9 +17,12 @@ header {
   font-weight: bold;
 }
 
+/* ===== NAVBAR ===== */
 nav {
-  background-color: #333;
-  padding: 10px;
+  background: #34495e;
+  padding: 10px 20px;
+  display: flex;
+  gap: 10px;
 }
 
 nav button {
