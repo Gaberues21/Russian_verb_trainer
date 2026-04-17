@@ -144,9 +144,9 @@ input:focus {
 
 /* ===== VERB LIST ===== */
 #verbList {
-  display: grid;
-  /* flex-wrap: wrap; */
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  /* grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); */
   gap: 10px;
 }
 
