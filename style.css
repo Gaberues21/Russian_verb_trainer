@@ -55,15 +55,17 @@ h2 {
 }
 
 /* ===== BUTTONS ===== */
-nav button {
-  background: none;
-  color: white;
+button {
+  padding: 8px 14px;
   border: none;
-  margin-right: 15px;
-  font-size: 16px;
+  background: #3498db;
+  color: white;
+  border-radius: 6px;
   cursor: pointer;
+  transition: background 0.2s;
 }
 
-nav button:hover {
-  text-decoration: underline;
+button:hover {
+  background: #2980b9;
 }
+
