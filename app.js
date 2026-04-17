@@ -232,7 +232,7 @@ window.addEventListener("load", () => {
 });
 
 //========= Function to enable keyboard navigation in table =========
-funcion enableTableNavigation() {
+function enableTableNavigation() {
   const inputs = document.querySelectorAll("#tableContainer input");
 
   inputs.forEach((input, index) => {
