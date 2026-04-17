@@ -23,7 +23,8 @@ function newQuestion() {
   const verbObj = data[Math.floor(Math.random() * data.length)];
 
   const tense = "present";
-  const forms = verbObj.tenses[tense];
+  const forms = verbObj?.tenses?.[tense];
+  if (!forms) return;
     
   const pronouns = Object.keys(forms);
   const pronoun = pronouns[Math.floor(Math.random() * pronouns.length)];
@@ -235,7 +236,7 @@ function enableTableNavigation() {
   const inputs = document.querySelectorAll("#tableContainer input");
 
   inputs.forEach((input, index) => {
-    inputs.addEventListener("keydown", (e) => {
+    input.addEventListener("keydown", (e) => {
       const cols = 4; // number of columns
 
       if (e.key === "ArrowRight") {
@@ -276,7 +277,7 @@ function handleTableRoutine(params) {
     if (verbObj) {
       resetTableTrainer();
       generateTable(verbObj);
-      tableView.style.display = "block";
+      if (tableView) tableView.style.display = "block";
       return;
     }
   }
@@ -329,7 +330,7 @@ function getQueryParams() {
   // const params = new URLSearchParams(query);
   // return Object.fromEntries(params.entries());
   const parts = window.location.hash.split("?");
-  if (parts.legnth > 2) return {};
+  if (parts.length > 2) return {};
 
   const params = new URLSearchParams(parts[1]);
   return Object.fromEntries(params.entries());
