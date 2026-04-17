@@ -162,6 +162,14 @@ function generateTable(verbObj) {
   html += "</table>";
 
   document.getElementById("tableContainer").innerHTML = html;
+  
+  enableTableNavigation();
+
+  setTimeout(() => {
+    const firstInput = document.querySelector("#tableContainer input");
+    if (firstInput) firstInput.focus();
+  }, 0);
+  
   document.getElementById("tableResult").innerText = "";
 }
 
@@ -222,6 +230,33 @@ window.addEventListener("load", () => {
     });
   }
 });
+
+//========= Function to enable keyboard navigation in table =========
+funcion enableTableNavigation() {
+  const inputs = document.querySelectorAll("#tableContainer input");
+
+  inputs.forEach((input, index) => {
+    inputs.addEventListener("keydown", (e) => {
+      const cols = 4; // number of columns
+
+      if (e.key === "ArrowRight") {
+        inputs[index + 1]?.focus();
+      }
+
+      if (e.key === "ArrowLeft") {
+        inputs[index - 1]?.focus();
+      }
+
+      if (e.key === "ArrowDown") {
+        inputs[index + cols]?.focus();
+      }
+
+      if (e.key === "ArrowUp") {
+        inputs[index - cols]?.focus();
+      }
+    });
+  });
+}
 
 //========= Function for 3-step flow in table trainer =========
 function handleTableRoutine(params) {
