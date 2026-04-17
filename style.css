@@ -101,12 +101,23 @@ input {
   text-align: center;
 }
 
+input:focus {
+  outline: 2px solid #3498db;
+  background: #eef6ff;
+}
+
 /* ===== VERB LIST ===== */
 #verbList div {
+  cursor: pointer;
   padding: 8px;
   border-bottom: 1px solid #ddd;
+  font-size: 1.1rem;
 }
 
 #verbList div:hover {
   background: #ecf0f1;
+}
+
+* {
+  transition: all 0.15s ease;
 }
