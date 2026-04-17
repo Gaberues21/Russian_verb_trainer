@@ -162,6 +162,7 @@ function generateTable(verbObj) {
   html += "</table>";
 
   document.getElementById("tableContainer").innerHTML = html;
+  document.getElementById("tableResult").innerText = "";
   
   enableTableNavigation();
 
@@ -169,8 +170,6 @@ function generateTable(verbObj) {
     const firstInput = document.querySelector("#tableContainer input");
     if (firstInput) firstInput.focus();
   }, 0);
-  
-  document.getElementById("tableResult").innerText = "";
 }
 
 //========= Function to check answers in table in full mode =========
