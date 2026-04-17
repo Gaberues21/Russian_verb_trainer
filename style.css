@@ -143,11 +143,20 @@ input:focus {
 }
 
 /* ===== VERB LIST ===== */
+#verbList {
+  display: grid;
+  /* flex-wrap: wrap; */
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 10px;
+}
+
 #verbList div {
+  display: inline-block;
+  padding: 8px 12px;
+  background: white;
+  border-radius: 6px;
+  border: 1px solid #ddd;
   cursor: pointer;
-  padding: 8px;
-  border-bottom: 1px solid #ddd;
-  font-size: 1.1rem;
 }
 
 #verbList div:hover {
