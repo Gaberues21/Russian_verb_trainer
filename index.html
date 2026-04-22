@@ -47,49 +47,20 @@
   <div id="tableTrainer" style="display:none;">
     <h1>Full Conjugation Trainer</h1>
 
-    <!-- STEP 1: Select category -->
-    <div id="categoryView">
-      <h2>Select a category</h2>
-      <ul>
-        <li><a href="#tableTrainer?cat=all">All</a></li>
-        <li><a href="#tableTrainer?cat=top100">Top 100</a></li>
-        <li><a href="#tableTrainer?cat=1st_conj">1st Conjugation Verbs</a></li>
-        <li><a href="#tableTrainer?cat=2nd_conj">2nd Conjugation Verbs</a></li>
-        <li><a href="#tableTrainer?cat=irregular">Irregular Verbs</a></li>
-        <li><a href="#tableTrainer?cat=stem_change">Verbs with Stem Change</a></li>
-        <li><a href="#tableTrainer?cat=motion">Motion Verbs</a></li>
-        <li><a href="#tableTrainer?cat=imperfective">Imperfective</a></li>
-        <li><a href="#tableTrainer?cat=perfective">Perfective</a></li>
-      </ul>
-    </div>
+    <!-- CATEGORY SELECTOR -->
+    <div id="categoryBar"></div>
 
-    <!-- STEP 2: Select verb -->
-    <div id="verbListView" style="display:none;">
-      <h2>Select a verb</h2>
-      <div id="verbList"></div>
-      <button onclick="goToCategories()">← Back</button>
-    </div>
-
-    <!-- STEP 3: Complete table -->
+    <!-- VERB LIST -->
+    <div id="verbList"></div>
+    
+    <!-- TABLE VIEW -->
     <div id="tableView" style="display:none;">
-      <button onclick="window.location.hash='tableTrainer'">← Back</button>
-      <!-- <button onclick="history.back()">← Back</button> -->
+      <button onClick="goBackToList()">← Back</button>
       <div id="tableContainer"></div>
-      <button onclick="checkTable()">Check</button>
+      <button onClick="checkTable()">Check</button>
       <p id="tableResult"></p>
     </div>
-    
-    <!-- Verb selector -->
-    <!-- <select id="verbSelect"></select>
-  
-    <button onclick="loadTable()">Start</button> -->
-  
-    <!-- Table container -->
-    <!-- <div id="tableContainer"></div>
-  
-    <button onclick="checkTable()">Check Answers← Back</button>
-  
-    <p id="tableResult"></p> -->
+
   </div>
 
   <script src="app.js"></script>
