@@ -319,7 +319,7 @@ function handleTableRoutine(params) {
 }
 
 //========= Function to build verb list from category in full mode =========
-function showVerbListFromCategory(category) {
+function showVerbList(category) {
   let filtered;
 
   if (category === "all") {
