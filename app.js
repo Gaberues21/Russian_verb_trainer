@@ -386,6 +386,15 @@ function showVerbListFromCategory(category) {
 //   });
 // }
 
+//========= Function to open table in table trainer =========
+function openTable(verbObj) {
+  document.getElementById("tableView").style.display = "block";
+  document.getElementById("verbList").style.display = "none";
+  document.getElementById("categoryBar").style.display = "none";
+
+  generateTable(verbObj);
+}
+
 //========= Helper function for 3-step mode in table trainer =========
 function getQueryParams() {
   // const query = window.location.hash.split("?")[1];
