@@ -60,6 +60,31 @@ function checkAnswer() {
   setTimeout(newQuestion, 1500);
 }
 
+//========= Function to render categories in full mode =========
+function renderCategories(selected = "all") {
+  const categories = ["all","top100","motion","imperfective","perfective"];
+
+  const container = document.getElementById("categoryBar");
+  container.innerHTML = "";
+
+  categories.forEach(cat => {
+    const btn = document.createElement("button");
+    btn.textContent = cat;
+    btn.style.marginRight = "8px";
+
+    if (cat === selected) {
+      btn.style.background = "#1abc9c";
+    }
+
+    btn.onclick = () => {
+      renderCategories(cat);
+      showVerbList(cat);
+    };
+
+    container.appendChild(btn);
+  });
+}
+
 //========= Function to populate verb list in full mode =========
 function populateVerbList() {
   const select = document.getElementById("verbSelect");
