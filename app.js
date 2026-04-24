@@ -329,7 +329,8 @@ function showVerbListFromCategory(category) {
   } else if (category === "perfective") {
     filtered = data.filter(v => v.type === "perfective");
   } else {
-    filtered = data.filter(v => v.category?.includes(category));
+    filtered = data.filter(v => 
+      Array.isArray(v.category) && v.category.includes(category));
   }
 
   const container = document.getElementById("verbList");
@@ -337,17 +338,53 @@ function showVerbListFromCategory(category) {
 
   filtered.forEach( v => {
     const item = document.createElement("div");
-    item.textContent = v.verb;
+
+    item.innerHTML = `
+      <div style="font-weight: bold;">${v.verb}</div>
+      <div style="font-size: 0.9rem; color: #666;">${v.translation || ""}</div>
+    `;
+
     item.style.cursor = "pointer";
-    item.style.padding = "5px";
+    item.style.padding = "10px";
+    item.style.borderBottom = "1px solid #ddd";
 
     item.onclick = () => {
-      window.location.hash = `tableTrainer?verb=${encodeURIComponent(v.verb)}`;
+      openTable(v)
     };
 
     container.appendChild(item);
   });
 }
+
+// function showVerbListFromCategory(category) {
+//   let filtered;
+
+//   if (category === "all") {
+//     filtered = data;
+//   } else if (category === "imperfective") {
+//     filtered = data.filter(v => v.type === "imperfective");
+//   } else if (category === "perfective") {
+//     filtered = data.filter(v => v.type === "perfective");
+//   } else {
+//     filtered = data.filter(v => v.category?.includes(category));
+//   }
+
+//   const container = document.getElementById("verbList");
+//   container.innerHTML = "";
+
+//   filtered.forEach( v => {
+//     const item = document.createElement("div");
+//     item.textContent = v.verb;
+//     item.style.cursor = "pointer";
+//     item.style.padding = "5px";
+
+//     item.onclick = () => {
+//       window.location.hash = `tableTrainer?verb=${encodeURIComponent(v.verb)}`;
+//     };
+
+//     container.appendChild(item);
+//   });
+// }
 
 //========= Helper function for 3-step mode in table trainer =========
 function getQueryParams() {
