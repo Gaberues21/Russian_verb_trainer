@@ -48,14 +48,19 @@
     <h1>Full Conjugation Trainer</h1>
 
     <!-- CATEGORY SELECTOR -->
-    <div id="categoryBar"></div>
+    <div id="categoryView">
+      <div id="categoryBar"></div>
+    </div>
 
     <!-- VERB LIST -->
-    <div id="verbList"></div>
+    <div id="verbListView" style="display:none;">
+      <button onclick="goToCategories()">← Back</button>
+      <div id="verbList"></div>
+    </div>
     
     <!-- TABLE VIEW -->
     <div id="tableView" style="display:none;">
-      <button onclick="goBackToList()">← Back</button>
+      <button onclick="goToCategories()">← Back</button>
       <div id="tableContainer"></div>
       <button onclick="checkTable()">Check</button>
       <p id="tableResult"></p>
