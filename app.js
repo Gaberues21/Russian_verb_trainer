@@ -309,7 +309,7 @@ function handleTableRoutine(params) {
 
   // Category selected
   if (params.cat) {
-    showVerbListFromCategory(params.cat);
+    showVerbList(params.cat);
     listView.style.display = "block";
     return;
   }
