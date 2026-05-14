@@ -13,6 +13,7 @@ fetch("verbs.json")
   .then(json => {
     data = json;  
     populateVerbList();
+    renderCategories();
     newQuestion();
     showSectionFromHash();
   });
