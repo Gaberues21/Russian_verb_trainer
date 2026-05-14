@@ -304,20 +304,26 @@ function handleTableRoutine(params) {
     if (verbObj) {
       resetTableTrainer();
       generateTable(verbObj);
-      if (tableView) tableView.style.display = "block";
+      if (tableView) {
+        tableView.style.display = "block";
+      }
       return;
     }
   }
 
   // Category selected
-  if (params.cat) {
-    showVerbList(params.cat);
-    listView.style.display = "block";
-    return;
+  const selectedCategory = params.cat || "all";
+
+  renderCategories(selectedCategory);
+  showVerbList(selectedCategory);
+
+  if (categoryView) {
+    categoryView.style.display = "block";
   }
 
-  // Default -> categories
-  categoryView.style.display = "block";
+  if (listView) {
+    listView.style.display = "block";
+  }
 }
 
 //========= Function to build verb list from category in full mode =========
