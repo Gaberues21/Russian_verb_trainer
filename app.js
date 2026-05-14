@@ -351,7 +351,8 @@ function showVerbList(category) {
     item.style.borderBottom = "1px solid #ddd";
 
     item.onclick = () => {
-      openTable(v)
+      window.location.hash =
+        `tableTrainer?verb=${encodeURIComponent(v.verb)}`;
     };
 
     container.appendChild(item);
