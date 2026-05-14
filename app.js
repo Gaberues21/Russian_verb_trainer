@@ -79,8 +79,9 @@ function renderCategories(selected = "all") {
     }
 
     btn.onclick = () => {
-      renderCategories(cat);
-      showVerbList(cat);
+      // renderCategories(cat);
+      // showVerbList(cat);
+      window.location.hash = `tableTrainer?cat=${cat}`;
     };
 
     container.appendChild(btn);
