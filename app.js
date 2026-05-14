@@ -14,6 +14,7 @@ fetch("verbs.json")
     data = json;  
     populateVerbList();
     newQuestion();
+    showSectionFromHash();
   });
 
 //========= Function to generate new question in random mode =========
@@ -389,8 +390,8 @@ function showVerbList(category) {
 //========= Function to open table in table trainer =========
 function openTable(verbObj) {
   document.getElementById("tableView").style.display = "block";
-  document.getElementById("verbList").style.display = "none";
-  document.getElementById("categoryBar").style.display = "none";
+  document.getElementById("verbListView").style.display = "none";
+  document.getElementById("categoryView").style.display = "none";
 
   generateTable(verbObj);
 }
@@ -472,7 +473,7 @@ function showSectionFromHash() {
 }
 
 // Run on page load
-window.addEventListener("load", showSectionFromHash);
+// window.addEventListener("load", showSectionFromHash);
 
 // Run when hash changes
 window.addEventListener("hashchange", showSectionFromHash);
