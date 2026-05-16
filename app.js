@@ -179,7 +179,7 @@ function generateTable(verbObj) {
       const p = pronouns[i];
       
       html += `
-        <td class=${isPerfective ? "disabled-col" : ""}>
+        <td class="${isPerfective ? "disabled-col" : ""}">
           ${p}<br>
           <input 
             data-tense="present" 
