@@ -339,7 +339,7 @@ function handleTableRoutine(params) {
 }
 
 //========= Function to build verb list from category in full mode =========
-function showVerbList(category) {
+function showVerbList(category, aspect = "any") {
   
   let filtered = data;
 
@@ -358,7 +358,7 @@ function showVerbList(category) {
     );
   }
 
-  const container = document.getElementFromId("verbList");
+  const container = document.getElementById("verbList");
   container.innerHTML = "";
 
   filtered.forEach( v => {
