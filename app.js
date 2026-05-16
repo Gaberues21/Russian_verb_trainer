@@ -64,12 +64,14 @@ function checkAnswer() {
 
 //========= Function to render categories in full mode =========
 function renderCategories(selected = "all") {
-  const categories = ["all","top100","motion","imperfective","perfective"];
+  
+  const categories = ["all","top100","motion"];
 
   const container = document.getElementById("categoryBar");
   container.innerHTML = "";
 
   categories.forEach(cat => {
+    
     const btn = document.createElement("button");
     btn.textContent = cat;
     btn.style.marginRight = "8px";
@@ -81,7 +83,11 @@ function renderCategories(selected = "all") {
     btn.onclick = () => {
       // renderCategories(cat);
       // showVerbList(cat);
-      window.location.hash = `tableTrainer?cat=${cat}`;
+      const aspect =
+        document.getElementById("aspectFilter").value;
+      
+      window.location.hash =
+        `tableTrainer?cat=${cat}&aspect=${aspect}`;
     };
 
     container.appendChild(btn);
