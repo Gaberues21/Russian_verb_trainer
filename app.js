@@ -119,6 +119,14 @@ function renderCategories(selected = "all") {
         `tableTrainer?cat=${cat}&aspect=${aspect}`;
     };
 
+    btn.onclick = () => {
+      const conjugation =
+        document.getElementById("conjugationFilter").value;
+      
+      window.location.hash =
+        `tableTrainer?cat=${cat}&conjugation=${conjugation}`;
+    };
+
     container.appendChild(btn);
   });
 }
