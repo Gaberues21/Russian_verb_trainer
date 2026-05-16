@@ -29,6 +29,15 @@ fetch("verbs.json")
     }); 
   });
 
+//========= Helper function for perfective aspect table =========
+function isDisabledColumn(verbObj, colKey) {
+  if (verbObj.type === "perfective" && colKey === "present") {
+    return true;
+  }
+
+  return false;
+}
+
 //========= Function to generate new question in random mode =========
 function newQuestion() {
   if (data.length === 0) return;
@@ -123,10 +132,9 @@ function populateVerbList() {
 //========= Function to load table in full mode =========
 function generateTable(verbObj) {
   
-  // const index = document.getElementById("verbSelect").value;
-  // const verbObj = data[index];
-
   currentTable = verbObj;
+
+  const isPerfective = verbObj.type === "perfective";
 
   let html = `<h2>${verbObj.verb}</h2>`;
   html += `<table border="1">`;
@@ -134,7 +142,7 @@ function generateTable(verbObj) {
   // Header
   html += `
     <tr>
-      <th>Present</th>
+      <th class="${isPerfective ? "disabled-col" : ""}">Present</th>
       <th>Future</th>
       <th>Past</th>
       <th>Imperative</th>
@@ -150,13 +158,18 @@ function generateTable(verbObj) {
   for (let i = 0; i < maxRows; i++) {
     html += "<tr>";
 
-    // PRESENT
+    // PRESENT (disabled for perfective)
     if (i < pronouns.length) {
       const p = pronouns[i];
+      
       html += `
-        <td>
+        <td class=${isPerfective ? "disabled-col" : ""}>
           ${p}<br>
-          <input data-tense="present" data-pronoun="${p}">
+          <input 
+            data-tense="present" 
+            data-pronoun="${p}"
+            ${isPerfective ? "disabled" : ""}
+          >
         </td>
       `;
     } else {
@@ -166,10 +179,14 @@ function generateTable(verbObj) {
     // FUTURE
     if (i < pronouns.length) {
       const p = pronouns[i];
+      
       html += `
         <td>
           ${p}<br>
-          <input data-tense="future" data-pronoun="${p}">
+          <input 
+            data-tense="future" 
+            data-pronoun="${p}"
+          >
         </td>
       `;
     } else {
@@ -179,10 +196,14 @@ function generateTable(verbObj) {
     // PAST
     if (i < pastForms.length) {
       const form = pastForms[i];
+      
       html += `
         <td>
           ${form}<br>
-          <input data-tense="past" data-pronoun="${form}">
+          <input 
+            data-tense="past"
+            data-pronoun="${form}"
+          >
         </td>
       `;
     } else {
@@ -192,10 +213,14 @@ function generateTable(verbObj) {
     // IMPERATIVE
     if (i < imperativeForms.length) {
       const form = imperativeForms[i];
+      
       html += `
         <td>
           ${form}<br>
-          <input data-tense="imperative" data-pronoun="${form}">
+          <input 
+            data-tense="imperative" 
+            data-pronoun="${form}"
+          >
         </td>
       `;
     } else {
@@ -213,7 +238,7 @@ function generateTable(verbObj) {
   enableTableNavigation();
 
   setTimeout(() => {
-    const firstInput = document.querySelector("#tableContainer input");
+    const firstInput = document.querySelector("#tableContainer input:not([disabled])");
     if (firstInput) firstInput.focus();
   }, 0);
 }
