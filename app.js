@@ -27,7 +27,7 @@ fetch("verbs.json")
       const conjugation = params.conjugation || "any";
 
       window.location.hash =
-      `tableTrainer?cat=${cat}&aspect=${aspect}}&conjugation=${conjugation}`;
+      `tableTrainer?cat=${cat}&aspect=${aspect}&conjugation=${conjugation}`;
     }); 
 
     document.getElementById("conjugationFilter").addEventListener("change", () => {
@@ -40,7 +40,7 @@ fetch("verbs.json")
       const conjugation = document.getElementById("conjugationFilter").value;
 
       window.location.hash =
-      `tableTrainer?cat=${cat}&aspect=${aspect}}&conjugation=${conjugation}`;
+      `tableTrainer?cat=${cat}&aspect=${aspect}&conjugation=${conjugation}`;
     }); 
   });
 
