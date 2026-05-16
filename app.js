@@ -16,6 +16,17 @@ fetch("verbs.json")
     renderCategories();
     newQuestion();
     showSectionFromHash();
+
+    document.getElementById("aspectFilter").addEventListener("change", () => {
+      
+      const params = getQueryParams();
+
+      const cat = params.cat || "all";
+      const aspect = document.getElementById("aspectFilter").value
+
+      window.location.hash =
+      `tableTrainer?cat=${cat}&aspect=${aspect}`;
+    }; 
   });
 
 //========= Function to generate new question in random mode =========
