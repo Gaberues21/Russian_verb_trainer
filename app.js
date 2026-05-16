@@ -325,9 +325,19 @@ function handleTableRoutine(params) {
 
   // Category selected
   const selectedCategory = params.cat || "all";
+  const selectedAspect = params.aspect || "any";
 
   renderCategories(selectedCategory);
-  showVerbList(selectedCategory);
+
+  document.getElementById("aspectFilter").value = 
+    selectedAspect;
+
+  showVerbList(selectedCategory, selectedAspect);
+  
+  // const selectedCategory = params.cat || "all";
+
+  // renderCategories(selectedCategory);
+  // showVerbList(selectedCategory);
 
   if (categoryView) {
     categoryView.style.display = "block";
