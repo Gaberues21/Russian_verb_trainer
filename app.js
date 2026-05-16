@@ -22,10 +22,12 @@ fetch("verbs.json")
       const params = getQueryParams();
 
       const cat = params.cat || "all";
+      
       const aspect = document.getElementById("aspectFilter").value
+      const conjugation = params.conjugation || "any";
 
       window.location.hash =
-      `tableTrainer?cat=${cat}&aspect=${aspect}`;
+      `tableTrainer?cat=${cat}&aspect=${aspect}}&conjugation=${conjugation}`;
     }); 
 
     document.getElementById("conjugationFilter").addEventListener("change", () => {
@@ -33,10 +35,12 @@ fetch("verbs.json")
       const params = getQueryParams();
 
       const cat = params.cat || "all";
+
+      const conjugation = params.aspect || "any";
       const conjugation = document.getElementById("conjugationFilter").value
 
       window.location.hash =
-      `tableTrainer?cat=${cat}&conjugation=${conjugation}`;
+      `tableTrainer?cat=${cat}&aspect=${aspect}}&conjugation=${conjugation}`;
     }); 
   });
 
@@ -114,17 +118,12 @@ function renderCategories(selected = "all") {
     btn.onclick = () => {
       const aspect =
         document.getElementById("aspectFilter").value;
-      
-      window.location.hash =
-        `tableTrainer?cat=${cat}&aspect=${aspect}`;
-    };
 
-    btn.onclick = () => {
       const conjugation =
         document.getElementById("conjugationFilter").value;
       
       window.location.hash =
-        `tableTrainer?cat=${cat}&conjugation=${conjugation}`;
+        `tableTrainer?cat=${cat}&aspect=${aspect}&conjugation=${conjugation}`;
     };
 
     container.appendChild(btn);
@@ -417,7 +416,7 @@ function showVerbList(category, aspect = "any", conjugation = "any") {
   // Conjugation filtering
   if (conjugation !== "any") {
     filtered = filtered.filter(v => 
-      v.type === conjugation 
+      v.conjugation === conjugation 
     );
   }
 
