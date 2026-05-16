@@ -114,7 +114,7 @@ input:focus {
 }
 
 /* ===== CATEGORY LIST ===== */
-#categoryView ul {
+/* #categoryView ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -123,7 +123,7 @@ input:focus {
   gap: 10px;
 }
 
-#categoryView il {
+#categoryView li {
   margin-bottom: 8px;
 }
 
@@ -140,29 +140,70 @@ input:focus {
 
 #categoryView a:hover{
   background: #ecf0f1;
+} */
+
+/* ===== FILTERS ===== */
+#filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+#aspectFilter {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: white;
+  font-size: 1rem;
+}
+
+/* ===== CATEGORY BUTTONS ===== */
+#categoryBar {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* ===== VERB LIST ===== */
 #verbList {
-  display: flex;
-  flex-wrap: wrap;
-  /* grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); */
-  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
 }
 
-#verbList div {
-  display: inline-block;
-  padding: 8px 12px;
+/* ===== VERB CARD ===== */
+.verb-item {
   background: white;
-  border-radius: 6px;
   border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 14px;
   cursor: pointer;
+  transition: transform 0.15s ease,
+              box-shadow 0.15s ease,
+              background 0.15s ease;
 }
 
-#verbList div:hover {
+.verb-item:hoover {
   background: #ecf0f1;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
-* {
-  transition: all 0.15s ease;
+/* ===== RUSSIAN VERB ===== */
+.verb-russian {
+  font-size: 1.15rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+/* ===== ENGLISH TRANSLATION ===== */
+.verb-english {
+  margin-top: 6px;
+  font-size: 0.95rem;
+  color: #666;
 }
