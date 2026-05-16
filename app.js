@@ -27,6 +27,17 @@ fetch("verbs.json")
       window.location.hash =
       `tableTrainer?cat=${cat}&aspect=${aspect}`;
     }); 
+
+    document.getElementById("conjugationFilter").addEventListener("change", () => {
+      
+      const params = getQueryParams();
+
+      const cat = params.cat || "all";
+      const conjugation = document.getElementById("conjugationFilter").value
+
+      window.location.hash =
+      `tableTrainer?cat=${cat}&conjugation=${conjugation}`;
+    }); 
   });
 
 //========= Helper function for perfective aspect table =========
