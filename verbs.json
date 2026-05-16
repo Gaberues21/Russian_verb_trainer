@@ -1,5 +1,6 @@
 [{
     "verb": "быть",
+    "translation": "to be",
     "type": "imperfective",
     "category": ["top100","top500","irregular","all"],
     "tenses": {
@@ -37,6 +38,7 @@
   },
   {
     "verb": "сказать",
+    "translation": "to say",
     "type": "perfective",
     "category": ["top100","top500","1st_conj","stem_change","all"],
     "tenses": {
@@ -74,6 +76,7 @@
   },
   {
     "verb": "мочь",
+    "translation": "to be able to",
     "type": "imperfective",
     "category": ["top100","top500","irregular","all"],
     "tenses": {
@@ -111,6 +114,7 @@
   },
   {
     "verb": "говорить",
+    "translation": "to speak",
     "type": "imperfective",
     "category": ["top100","top500","2nd_conj","all"],
     "tenses": {
@@ -148,6 +152,7 @@
   },
   {
     "verb": "знать",
+    "translation": "to know",
     "type": "imperfective",
     "category": ["top100","top500","1st_conj","all"],
     "tenses": {
@@ -185,6 +190,7 @@
   },
   {
     "verb": "стать",
+    "translation": "to become",
     "type": "perfective",
     "category": ["top100","top500","1st_conj","stem_change","all"],
     "tenses": {
@@ -222,6 +228,7 @@
   },
   {
     "verb": "хотеть",
+    "translation": "to want",
     "type": "imperfective",
     "category": ["top100","top500","irregular","all"],
     "tenses": {
@@ -259,6 +266,7 @@
   },
   {
     "verb": "видеть",
+    "translation": "to see",
     "type": "imperfective",
     "category": ["top100","top500","2nd_conj","stem_change","all"],
     "tenses": {
