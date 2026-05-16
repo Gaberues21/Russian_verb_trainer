@@ -354,7 +354,7 @@ function showVerbList(category, aspect = "any") {
   let filtered = data;
 
   // Category filtering 
-  if (category !== data) {
+  if (category !== "all") {
     filtered = filtered.filter(v => 
       Array.isArray(v.category) && 
       v.category.includes(category)
@@ -362,7 +362,7 @@ function showVerbList(category, aspect = "any") {
   }
 
   // Aspect filtering
-  if (aspect !== any) {
+  if (aspect !== "any") {
     filtered = filtered.filter(v => 
       v.type === aspect 
     );
