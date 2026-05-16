@@ -112,8 +112,6 @@ function renderCategories(selected = "all") {
     }
 
     btn.onclick = () => {
-      // renderCategories(cat);
-      // showVerbList(cat);
       const aspect =
         document.getElementById("aspectFilter").value;
       
@@ -362,13 +360,17 @@ function handleTableRoutine(params) {
   // Category selected
   const selectedCategory = params.cat || "all";
   const selectedAspect = params.aspect || "any";
+  const selectedConjugation = params.conjugation || "any";
 
   renderCategories(selectedCategory);
 
   document.getElementById("aspectFilter").value = 
     selectedAspect;
 
-  showVerbList(selectedCategory, selectedAspect);
+  document.getElementById("conjugationFilter").value = 
+    selectedConjugation;
+
+  showVerbList(selectedCategory, selectedAspect, selectedConjugation);
   
   // const selectedCategory = params.cat || "all";
 
