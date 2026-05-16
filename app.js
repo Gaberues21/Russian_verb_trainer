@@ -259,12 +259,6 @@ function checkTable() {
       `Score: ${percentage}% (${correct}/${total})`;
 }
 
-// document.getElementById("answer")
-//   .addEventListener("keypress", function(e) {
-//     if (e.key === "Enter") {
-//       checkAnswer();
-//     }
-//   })
 window.addEventListener("load", () => {
   const answerInput = document.getElementById("answer");
   if (answerInput) {
@@ -346,46 +340,52 @@ function handleTableRoutine(params) {
 
 //========= Function to build verb list from category in full mode =========
 function showVerbList(category) {
-  let filtered;
+  
+  let filtered = data;
 
-  if (category === "all") {
-    filtered = data;
-  } else if (category === "imperfective") {
-    filtered = data.filter(v => v.type === "imperfective");
-  } else if (category === "perfective") {
-    filtered = data.filter(v => v.type === "perfective");
-  } else {
-    filtered = data.filter(v => 
-      Array.isArray(v.category) && v.category.includes(category));
+  // Category filtering 
+  if (category !== data) {
+    filtered = filtered.filter(v => 
+      Array.isArray(v.category) && 
+      v.category.includes(category)
+    );
   }
 
-  const container = document.getElementById("verbList");
+  // Aspect filtering
+  if (aspect !== any) {
+    filtered = filtered.filter(v => 
+      v.type === aspect 
+    );
+  }
+
+  const container = document.getElementFromId("verbList");
   container.innerHTML = "";
 
   filtered.forEach( v => {
     const item = document.createElement("div");
 
+    item.className = "verb-item";
+
     item.innerHTML = `
-      <div style="font-weight: bold;">${v.verb}</div>
-      <div style="font-size: 0.9rem; color: #666;">${v.translation || ""}</div>
+      <div class="verb-russian">${v.verb}</div>
+      <div class="verb-english">
+        ${v.translation || ""}
+      </div>
     `;
 
-    item.style.cursor = "pointer";
-    item.style.padding = "10px";
-    item.style.borderBottom = "1px solid #ddd";
-
     item.onclick = () => {
-      window.location.hash =
+      window.location.hash = 
         `tableTrainer?verb=${encodeURIComponent(v.verb)}`;
     };
 
     container.appendChild(item);
   });
 }
+// function showVerbList(category) {
+  
+//   let filtered = data;
 
-// function showVerbListFromCategory(category) {
-//   let filtered;
-
+//   // Category filtering 
 //   if (category === "all") {
 //     filtered = data;
 //   } else if (category === "imperfective") {
@@ -393,7 +393,8 @@ function showVerbList(category) {
 //   } else if (category === "perfective") {
 //     filtered = data.filter(v => v.type === "perfective");
 //   } else {
-//     filtered = data.filter(v => v.category?.includes(category));
+//     filtered = data.filter(v => 
+//       Array.isArray(v.category) && v.category.includes(category));
 //   }
 
 //   const container = document.getElementById("verbList");
@@ -401,12 +402,19 @@ function showVerbList(category) {
 
 //   filtered.forEach( v => {
 //     const item = document.createElement("div");
-//     item.textContent = v.verb;
+
+//     item.innerHTML = `
+//       <div style="font-weight: bold;">${v.verb}</div>
+//       <div style="font-size: 0.9rem; color: #666;">${v.translation || ""}</div>
+//     `;
+
 //     item.style.cursor = "pointer";
-//     item.style.padding = "5px";
+//     item.style.padding = "10px";
+//     item.style.borderBottom = "1px solid #ddd";
 
 //     item.onclick = () => {
-//       window.location.hash = `tableTrainer?verb=${encodeURIComponent(v.verb)}`;
+//       window.location.hash =
+//         `tableTrainer?verb=${encodeURIComponent(v.verb)}`;
 //     };
 
 //     container.appendChild(item);
@@ -424,9 +432,6 @@ function openTable(verbObj) {
 
 //========= Helper function for 3-step mode in table trainer =========
 function getQueryParams() {
-  // const query = window.location.hash.split("?")[1];
-  // const params = new URLSearchParams(query);
-  // return Object.fromEntries(params.entries());
   const parts = window.location.hash.split("?");
   if (parts.length > 2) return {};
 
@@ -476,10 +481,6 @@ function showSectionFromHash() {
     if (el) el.style.display = "none";
   });
 
-  // if (!hash || !sections.includes(hash)) {
-  //   document.getElementById("home").style.display = "block";
-  //   return;
-  // };
   // decide which to show
   let active = "home";
   if (section && sections.includes(section)) {
@@ -497,9 +498,6 @@ function showSectionFromHash() {
     handleTableRoutine(params);
   }
 }
-
-// Run on page load
-// window.addEventListener("load", showSectionFromHash);
 
 // Run when hash changes
 window.addEventListener("hashchange", showSectionFromHash);
