@@ -2,7 +2,8 @@
     "verb": "быть",
     "translation": "to be",
     "type": "imperfective",
-    "category": ["top100","top500","irregular","all"],
+    "conjugation": "irregular", 
+    "category": ["top100","top500","all"],
     "tenses": {
       "present": {
         "я": "есть",
@@ -40,7 +41,8 @@
     "verb": "сказать",
     "translation": "to say",
     "type": "perfective",
-    "category": ["top100","top500","1st_conj","stem_change","all"],
+    "conjugation": "1st_conj", 
+    "category": ["top100","top500","stem_change","all"],
     "tenses": {
       "present": {
         "я": "",
@@ -78,7 +80,8 @@
     "verb": "мочь",
     "translation": "to be able to",
     "type": "imperfective",
-    "category": ["top100","top500","irregular","all"],
+    "conjugation": "irregular", 
+    "category": ["top100","top500","all"],
     "tenses": {
       "present": {
         "я": "могу",
@@ -116,7 +119,8 @@
     "verb": "говорить",
     "translation": "to speak",
     "type": "imperfective",
-    "category": ["top100","top500","2nd_conj","all"],
+    "conjugation": "2nd_conj", 
+    "category": ["top100","top500","all"],
     "tenses": {
       "present": {
         "я": "говорю",
@@ -154,7 +158,8 @@
     "verb": "знать",
     "translation": "to know",
     "type": "imperfective",
-    "category": ["top100","top500","1st_conj","all"],
+    "conjugation": "1st_conj", 
+    "category": ["top100","top500","all"],
     "tenses": {
       "present": {
         "я": "знаю",
@@ -192,7 +197,8 @@
     "verb": "стать",
     "translation": "to become",
     "type": "perfective",
-    "category": ["top100","top500","1st_conj","stem_change","all"],
+    "conjugation": "1st_conj", 
+    "category": ["top100","top500","stem_change","all"],
     "tenses": {
       "present": {
         "я": "",
@@ -230,7 +236,8 @@
     "verb": "хотеть",
     "translation": "to want",
     "type": "imperfective",
-    "category": ["top100","top500","irregular","all"],
+    "conjugation": "irregular", 
+    "category": ["top100","top500","all"],
     "tenses": {
       "present": {
         "я": "хочу",
@@ -268,7 +275,8 @@
     "verb": "видеть",
     "translation": "to see",
     "type": "imperfective",
-    "category": ["top100","top500","2nd_conj","stem_change","all"],
+    "conjugation": "2nd_conj", 
+    "category": ["top100","top500","stem_change","all"],
     "tenses": {
       "present": {
         "я": "вижу",
@@ -306,7 +314,8 @@
     "verb": "идти",
     "translation": "to go, to walk",
     "type": "imperfective",
-    "category": ["top100","top500","motion","1s_conj","all"],
+    "conjugation": "1st_conj", 
+    "category": ["top100","top500","motion","all"],
     "tenses": {
       "present": {
         "я": "иду",
