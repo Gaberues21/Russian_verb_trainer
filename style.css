@@ -8,6 +8,14 @@ body {
   /* margin-top: 50px; */
 }
 
+#home,
+#trainer,
+#tableTrainer {
+  padding: 20px 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 /* ===== HEADER ===== */
 header {
   background: #2c3e50;
@@ -73,7 +81,8 @@ button:hover {
 table {
   border-collapse: collapse;
   width: 100%;
-  margin-top: 20px;
+  max-width: 1000px;
+  margin: 20px auto;
   background: white;
   border-radius: 8px;
   overflow: hidden;
