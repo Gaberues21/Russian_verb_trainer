@@ -26,7 +26,7 @@ fetch("verbs.json")
 
       window.location.hash =
       `tableTrainer?cat=${cat}&aspect=${aspect}`;
-    }; 
+    }); 
   });
 
 //========= Function to generate new question in random mode =========
