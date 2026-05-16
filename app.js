@@ -36,7 +36,7 @@ fetch("verbs.json")
 
       const cat = params.cat || "all";
 
-      const conjugation = params.aspect || "any";
+      const aspect = params.aspect || "any";
       const conjugation = document.getElementById("conjugationFilter").value;
 
       window.location.hash =
