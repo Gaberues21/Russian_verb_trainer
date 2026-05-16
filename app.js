@@ -387,7 +387,7 @@ function handleTableRoutine(params) {
 }
 
 //========= Function to build verb list from category in full mode =========
-function showVerbList(category, aspect = "any") {
+function showVerbList(category, aspect = "any", conjugation = "any") {
   
   let filtered = data;
 
@@ -403,6 +403,13 @@ function showVerbList(category, aspect = "any") {
   if (aspect !== "any") {
     filtered = filtered.filter(v => 
       v.type === aspect 
+    );
+  }
+
+  // Conjugation filtering
+  if (conjugation !== "any") {
+    filtered = filtered.filter(v => 
+      v.type === conjugation 
     );
   }
 
@@ -429,45 +436,6 @@ function showVerbList(category, aspect = "any") {
     container.appendChild(item);
   });
 }
-// function showVerbList(category) {
-  
-//   let filtered = data;
-
-//   // Category filtering 
-//   if (category === "all") {
-//     filtered = data;
-//   } else if (category === "imperfective") {
-//     filtered = data.filter(v => v.type === "imperfective");
-//   } else if (category === "perfective") {
-//     filtered = data.filter(v => v.type === "perfective");
-//   } else {
-//     filtered = data.filter(v => 
-//       Array.isArray(v.category) && v.category.includes(category));
-//   }
-
-//   const container = document.getElementById("verbList");
-//   container.innerHTML = "";
-
-//   filtered.forEach( v => {
-//     const item = document.createElement("div");
-
-//     item.innerHTML = `
-//       <div style="font-weight: bold;">${v.verb}</div>
-//       <div style="font-size: 0.9rem; color: #666;">${v.translation || ""}</div>
-//     `;
-
-//     item.style.cursor = "pointer";
-//     item.style.padding = "10px";
-//     item.style.borderBottom = "1px solid #ddd";
-
-//     item.onclick = () => {
-//       window.location.hash =
-//         `tableTrainer?verb=${encodeURIComponent(v.verb)}`;
-//     };
-
-//     container.appendChild(item);
-//   });
-// }
 
 //========= Function to open table in table trainer =========
 function openTable(verbObj) {
