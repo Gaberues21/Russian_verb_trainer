@@ -23,7 +23,7 @@ fetch("verbs.json")
 
       const cat = params.cat || "all";
       
-      const aspect = document.getElementById("aspectFilter").value
+      const aspect = document.getElementById("aspectFilter").value;
       const conjugation = params.conjugation || "any";
 
       window.location.hash =
@@ -37,7 +37,7 @@ fetch("verbs.json")
       const cat = params.cat || "all";
 
       const conjugation = params.aspect || "any";
-      const conjugation = document.getElementById("conjugationFilter").value
+      const conjugation = document.getElementById("conjugationFilter").value;
 
       window.location.hash =
       `tableTrainer?cat=${cat}&aspect=${aspect}}&conjugation=${conjugation}`;
