@@ -12,7 +12,7 @@ fetch("verbs.json")
   .then(res => res.json())
   .then(json => {
     data = json;  
-    populateVerbList();
+    // populateVerbList();
     renderCategories();
     newQuestion();
     showSectionFromHash();
@@ -131,19 +131,19 @@ function renderCategories(selected = "all") {
 }
 
 //========= Function to populate verb list in full mode =========
-function populateVerbList() {
-  const select = document.getElementById("verbSelect");
-  if (!select) return;
+// function populateVerbList() {
+//   const select = document.getElementById("verbSelect");
+//   if (!select) return;
   
-  select.innerHTML = "";
+//   select.innerHTML = "";
 
-  data.forEach((v, index) => {
-    const option = document.createElement("option");
-    option.value = index;
-    option.textContent = v.verb;
-    select.appendChild(option);
-  });
-}
+//   data.forEach((v, index) => {
+//     const option = document.createElement("option");
+//     option.value = index;
+//     option.textContent = v.verb;
+//     select.appendChild(option);
+//   });
+// }
 
 //========= Function to load table in full mode =========
 function generateTable(verbObj) {
