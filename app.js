@@ -507,7 +507,7 @@ function getQueryParams() {
 }
 
 //========= Helper function to update URL filters =========
-function updateHelpers(newParams) {
+function updateFilters(newParams) {
 
   // Current URL params
   const params = getQueryParams();
