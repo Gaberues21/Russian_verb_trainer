@@ -431,7 +431,15 @@ function showVerbList(category, aspect = "any", conjugation = "any", search = ""
       v.conjugation === conjugation 
     );
   }
+  
+  if (search.trim() !== "") {
+    const searchLower = search.toLowerCase();
 
+    filtered = filtered.filter(v => 
+      v.verb.toLowerCase().includes(searchLower) || 
+      (v.translation || "").toLowerCase().includes(searchLower));
+  }
+  
   const container = document.getElementById("verbList");
   container.innerHTML = "";
 
@@ -451,14 +459,6 @@ function showVerbList(category, aspect = "any", conjugation = "any", search = ""
       window.location.hash = 
         `tableTrainer?verb=${encodeURIComponent(v.verb)}`;
     };
-
-    if (search.trim() !== "") {
-      const searchLower = search.toLowerCase();
-
-      filtered = filtered.filter(v => 
-        v.verb.toLowerCase().includes(searchLower) || 
-        (v.translation || "").toLowerCase().includes(searchLower));
-    }
 
     container.appendChild(item);
   });
@@ -491,12 +491,12 @@ function updateFilters(newParams) {
   // Remove empty values
   Object.keys(params).forEach(key => {
     if (params[key] === "" || params[key] === "any") {
-      delete params(key);
+      delete params[key];
     }
   });
 
   // Build query string
-  const query = new URLSearchParams(updated).toString();
+  const query = new URLSearchParams(params).toString();
 
   // Update hash
   window.location.hash = query ? `tableTrainer?${query}` : "tableTrainer";
