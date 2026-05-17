@@ -29,13 +29,12 @@ fetch("verbs.json")
   });
 
 //========= Helper function for perfective aspect table =========
-function isDisabledColumn(verbObj, colKey) {
-  if (verbObj.type === "perfective" && colKey === "present") {
-    return true;
-  }
-
-  return false;
-}
+// function isDisabledColumn(verbObj, colKey) {
+//   if (verbObj.type === "perfective" && colKey === "present") {
+//     return true;
+//   }
+//   return false;
+// }
 
 //========= Function to generate new question in random mode =========
 function newQuestion() {
@@ -370,6 +369,8 @@ function handleTableRoutine(params) {
     if (verbObj) {
       resetTableTrainer();
       generateTable(verbObj);
+      if (categoryView) categoryView.style.display = "none";
+      if (listView) listView.style.display = "none";
       if (tableView) {
         tableView.style.display = "block";
       }
@@ -468,13 +469,13 @@ function showVerbList(category, aspect = "any", conjugation = "any", search = ""
 }
 
 //========= Function to open table in table trainer =========
-function openTable(verbObj) {
-  document.getElementById("tableView").style.display = "block";
-  document.getElementById("verbListView").style.display = "none";
-  document.getElementById("categoryView").style.display = "none";
+// function openTable(verbObj) {
+//   document.getElementById("tableView").style.display = "block";
+//   document.getElementById("verbListView").style.display = "none";
+//   document.getElementById("categoryView").style.display = "none";
 
-  generateTable(verbObj);
-}
+//   generateTable(verbObj);
+// }
 
 //========= Helper function for 3-step mode in table trainer =========
 function getQueryParams() {
