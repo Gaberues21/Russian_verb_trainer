@@ -18,30 +18,37 @@ fetch("verbs.json")
     showSectionFromHash();
 
     document.getElementById("aspectFilter").addEventListener("change", () => {
-      
-      const params = getQueryParams();
-
-      const cat = params.cat || "all";
-      
-      const aspect = document.getElementById("aspectFilter").value;
-      const conjugation = params.conjugation || "any";
-
-      window.location.hash =
-      `tableTrainer?cat=${cat}&aspect=${aspect}&conjugation=${conjugation}`;
-    }); 
-
+      updateFilters({aspect:document.getElementById("aspectFilter").value});
+    });
     document.getElementById("conjugationFilter").addEventListener("change", () => {
+      updateFilters({aspect:document.getElementById("conjugationFilter").value});
+    });
       
-      const params = getQueryParams();
+    // document.getElementById("aspectFilter").addEventListener("change", () => {
+      
+    //   const params = getQueryParams();
 
-      const cat = params.cat || "all";
+    //   const cat = params.cat || "all";
+      
+    //   const aspect = document.getElementById("aspectFilter").value;
+    //   const conjugation = params.conjugation || "any";
 
-      const aspect = params.aspect || "any";
-      const conjugation = document.getElementById("conjugationFilter").value;
+    //   window.location.hash =
+    //   `tableTrainer?cat=${cat}&aspect=${aspect}&conjugation=${conjugation}`;
+    // }); 
 
-      window.location.hash =
-      `tableTrainer?cat=${cat}&aspect=${aspect}&conjugation=${conjugation}`;
-    }); 
+    // document.getElementById("conjugationFilter").addEventListener("change", () => {
+      
+    //   const params = getQueryParams();
+
+    //   const cat = params.cat || "all";
+
+    //   const aspect = params.aspect || "any";
+    //   const conjugation = document.getElementById("conjugationFilter").value;
+
+    //   window.location.hash =
+    //   `tableTrainer?cat=${cat}&aspect=${aspect}&conjugation=${conjugation}`;
+    // }); 
   });
 
 //========= Helper function for perfective aspect table =========
@@ -116,34 +123,23 @@ function renderCategories(selected = "all") {
     }
 
     btn.onclick = () => {
-      const aspect =
-        document.getElementById("aspectFilter").value;
-
-      const conjugation =
-        document.getElementById("conjugationFilter").value;
-      
-      window.location.hash =
-        `tableTrainer?cat=${cat}&aspect=${aspect}&conjugation=${conjugation}`;
+      updateFilters({cat: cat});
     };
+    
+    // btn.onclick = () => {
+    //   const aspect =
+    //     document.getElementById("aspectFilter").value;
+
+    //   const conjugation =
+    //     document.getElementById("conjugationFilter").value;
+      
+    //   window.location.hash =
+    //     `tableTrainer?cat=${cat}&aspect=${aspect}&conjugation=${conjugation}`;
+    // };
 
     container.appendChild(btn);
   });
 }
-
-//========= Function to populate verb list in full mode =========
-// function populateVerbList() {
-//   const select = document.getElementById("verbSelect");
-//   if (!select) return;
-  
-//   select.innerHTML = "";
-
-//   data.forEach((v, index) => {
-//     const option = document.createElement("option");
-//     option.value = index;
-//     option.textContent = v.verb;
-//     select.appendChild(option);
-//   });
-// }
 
 //========= Function to load table in full mode =========
 function generateTable(verbObj) {
@@ -508,6 +504,22 @@ function getQueryParams() {
 
   const params = new URLSearchParams(parts[1]);
   return Object.fromEntries(params.entries());
+}
+
+//========= Helper function to update URL filters =========
+function updateHelpers(newParams) {
+
+  // Current URL params
+  const params = getQueryParams();
+
+  // Merge with new params
+  const updated = {...params, ...newParams};
+
+  // Build query string
+  const query = new URLSearchParams(updated).toString();
+
+  // Update hash
+  window.location.hash = `tableTrainer?${query}`;
 }
 
 //========= Back button for 3-step mode in table trainer =========
