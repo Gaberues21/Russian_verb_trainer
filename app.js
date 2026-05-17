@@ -43,7 +43,10 @@ function newQuestion() {
   
   const verbObj = data[Math.floor(Math.random() * data.length)];
 
-  const tense = "present";
+  const possibleTenses = verbObj.type === "perfective" ? ["future"] : ["present","future"];
+
+  const tense = possibleTenses[Math.floor(Math.random() * possibleTenses.length)];
+  
   const forms = verbObj?.tenses?.[tense];
   if (!forms) return;
     
