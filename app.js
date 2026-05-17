@@ -485,17 +485,21 @@ function getQueryParams() {
 //========= Helper function to update URL filters =========
 function updateFilters(newParams) {
 
-  // Current URL params
-  const params = getQueryParams();
+  // Current and new URL params
+  const params = {...getQueryParams(),...newParams};
 
-  // Merge with new params
-  const updated = {...params, ...newParams};
+  // Remove empty values
+  Object.keys(params).forEach(key => {
+    if (params[key] === "" || params[key] === "any") {
+      delete params(key);
+    }
+  });
 
   // Build query string
   const query = new URLSearchParams(updated).toString();
 
   // Update hash
-  window.location.hash = `tableTrainer?${query}`;
+  window.location.hash = query ? `tableTrainer?${query}` : "tableTrainer";
 }
 
 //========= Back button for 3-step mode in table trainer =========
