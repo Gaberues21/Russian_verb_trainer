@@ -23,32 +23,9 @@ fetch("verbs.json")
     document.getElementById("conjugationFilter").addEventListener("change", () => {
       updateFilters({conjugation:document.getElementById("conjugationFilter").value});
     });
-      
-    // document.getElementById("aspectFilter").addEventListener("change", () => {
-      
-    //   const params = getQueryParams();
-
-    //   const cat = params.cat || "all";
-      
-    //   const aspect = document.getElementById("aspectFilter").value;
-    //   const conjugation = params.conjugation || "any";
-
-    //   window.location.hash =
-    //   `tableTrainer?cat=${cat}&aspect=${aspect}&conjugation=${conjugation}`;
-    // }); 
-
-    // document.getElementById("conjugationFilter").addEventListener("change", () => {
-      
-    //   const params = getQueryParams();
-
-    //   const cat = params.cat || "all";
-
-    //   const aspect = params.aspect || "any";
-    //   const conjugation = document.getElementById("conjugationFilter").value;
-
-    //   window.location.hash =
-    //   `tableTrainer?cat=${cat}&aspect=${aspect}&conjugation=${conjugation}`;
-    // }); 
+    document.getElementById("searchFilter").addEventListener("input", () => {
+      updateFilters({search:document.getElementById("searchFilter").value});
+    });
   });
 
 //========= Helper function for perfective aspect table =========
@@ -126,17 +103,6 @@ function renderCategories(selected = "all") {
       updateFilters({cat: cat});
     };
     
-    // btn.onclick = () => {
-    //   const aspect =
-    //     document.getElementById("aspectFilter").value;
-
-    //   const conjugation =
-    //     document.getElementById("conjugationFilter").value;
-      
-    //   window.location.hash =
-    //     `tableTrainer?cat=${cat}&aspect=${aspect}&conjugation=${conjugation}`;
-    // };
-
     container.appendChild(btn);
   });
 }
@@ -412,16 +378,18 @@ function handleTableRoutine(params) {
   const selectedCategory = params.cat || "all";
   const selectedAspect = params.aspect || "any";
   const selectedConjugation = params.conjugation || "any";
+  const selectedSearch = params.search || "";
 
   renderCategories(selectedCategory);
 
   document.getElementById("aspectFilter").value = 
     selectedAspect;
-
   document.getElementById("conjugationFilter").value = 
     selectedConjugation;
+  document.getElementById("searchFilter").value = 
+    selectedSearch;
 
-  showVerbList(selectedCategory, selectedAspect, selectedConjugation);
+  showVerbList(selectedCategory, selectedAspect, selectedConjugation, selectedSearch);
   
   // const selectedCategory = params.cat || "all";
 
@@ -438,7 +406,7 @@ function handleTableRoutine(params) {
 }
 
 //========= Function to build verb list from category in full mode =========
-function showVerbList(category, aspect = "any", conjugation = "any") {
+function showVerbList(category, aspect = "any", conjugation = "any", search = "") {
   
   let filtered = data;
 
@@ -483,6 +451,14 @@ function showVerbList(category, aspect = "any", conjugation = "any") {
       window.location.hash = 
         `tableTrainer?verb=${encodeURIComponent(v.verb)}`;
     };
+
+    if (search.trim() !== "") {
+      const searchLower = search.toLowerCase();
+
+      filtered = filtered.filter(v => 
+        v.verb.toLowerCase().includes(searchLower) || 
+        (v.translation || "").toLowerCase().includes(searchLower));
+    }
 
     container.appendChild(item);
   });
