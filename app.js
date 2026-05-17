@@ -21,7 +21,7 @@ fetch("verbs.json")
       updateFilters({aspect:document.getElementById("aspectFilter").value});
     });
     document.getElementById("conjugationFilter").addEventListener("change", () => {
-      updateFilters({aspect:document.getElementById("conjugationFilter").value});
+      updateFilters({conjugation:document.getElementById("conjugationFilter").value});
     });
       
     // document.getElementById("aspectFilter").addEventListener("change", () => {
