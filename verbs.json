@@ -41,8 +41,9 @@
     "verb": "сказать",
     "translation": "to say",
     "type": "perfective",
-    "conjugation": "1st_conj", 
-    "category": ["top100","top500","stem_change","all"],
+    "conjugation": "irregular",
+    "stem_pattern": "stem_change",
+    "category": ["top100","top500","all"],
     "tenses": {
       "present": {
         "я": "",
