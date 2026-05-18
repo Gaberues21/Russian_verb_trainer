@@ -377,7 +377,7 @@ function handleTableRoutine(params) {
   const selectedCategory = params.cat || "all";
   const selectedAspect = params.aspect || "any";
   const selectedConjugation = params.conjugation || "any";
-  const selectedConjugation = params.stem || "any";
+  const selectedStem = params.stem || "any";
   const selectedSearch = params.search || "";
 
   renderCategories(selectedCategory);
