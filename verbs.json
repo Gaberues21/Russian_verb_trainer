@@ -82,6 +82,7 @@
     "translation": "to be able to",
     "type": "imperfective",
     "conjugation": "irregular", 
+    "stem_pattern": "irregular",
     "category": ["top100","top500","all"],
     "tenses": {
       "present": {
