@@ -28,14 +28,6 @@ fetch("verbs.json")
     });
   });
 
-//========= Helper function for perfective aspect table =========
-// function isDisabledColumn(verbObj, colKey) {
-//   if (verbObj.type === "perfective" && colKey === "present") {
-//     return true;
-//   }
-//   return false;
-// }
-
 //========= Function to generate new question in random mode =========
 function newQuestion() {
   if (data.length === 0) return;
@@ -86,7 +78,7 @@ function checkAnswer() {
 //========= Function to render categories in full mode =========
 function renderCategories(selected = "all") {
   
-  const categories = ["all","top100","motion"];
+  const categories = ["all","top100","motion","reflexive"];
 
   const container = document.getElementById("categoryBar");
   container.innerHTML = "";
