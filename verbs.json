@@ -1117,5 +1117,45 @@
         "plural": "выйдите"
       }
     }   
+  },
+  {
+    "verb": "дать",
+    "translation": "to give, make, cause, let, allow, permit",
+    "type": "perfective",
+    "conjugation": "mixed",
+    "stem_pattern": "irregular",
+    "category": ["top100","top500","all"],
+    "tenses": {
+      "present": {
+        "я": "",
+        "ты": "",
+        "он": "",
+        "она": "",
+        "оно": "",
+        "мы": "",
+        "вы": "",
+        "они": ""
+      },
+      "future": {
+        "я": "дам",
+        "ты": "дашь",
+        "он": "даст",
+        "она": "даст",
+        "оно": "даст",
+        "мы": "дадим",
+        "вы": "дадите",
+        "они": "дадут"
+      },
+      "past": {
+        "masculine": "дал",
+        "feminine": "дала",
+        "neuter": "дало",
+        "plural": "дали"
+      },
+      "imperative": {
+        "singular": "дай",
+        "plural": "дайте"
+      }
+    }   
   }
 ]
