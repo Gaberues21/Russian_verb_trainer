@@ -159,6 +159,15 @@ input:focus {
   font-size: 1rem;
 }
 
+#stemFilter {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: white;
+  font-size: 1rem;
+}
+
+
 /* ===== CATEGORY BUTTONS ===== */
 #categoryBar {
   display: flex;
