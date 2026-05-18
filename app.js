@@ -23,6 +23,9 @@ fetch("verbs.json")
     document.getElementById("conjugationFilter").addEventListener("change", () => {
       updateFilters({conjugation:document.getElementById("conjugationFilter").value});
     });
+    document.getElementById("stemFilter").addEventListener("change", () => {
+      updateFilters({stem:document.getElementById("stemFilter").value});
+    });
     document.getElementById("searchFilter").addEventListener("input", () => {
       updateFilters({search:document.getElementById("searchFilter").value});
     });
@@ -374,6 +377,7 @@ function handleTableRoutine(params) {
   const selectedCategory = params.cat || "all";
   const selectedAspect = params.aspect || "any";
   const selectedConjugation = params.conjugation || "any";
+  const selectedConjugation = params.stem || "any";
   const selectedSearch = params.search || "";
 
   renderCategories(selectedCategory);
@@ -382,16 +386,13 @@ function handleTableRoutine(params) {
     selectedAspect;
   document.getElementById("conjugationFilter").value = 
     selectedConjugation;
+  document.getElementById("stemFilter").value = 
+    selectedStem;
   document.getElementById("searchFilter").value = 
     selectedSearch;
 
-  showVerbList(selectedCategory, selectedAspect, selectedConjugation, selectedSearch);
+  showVerbList(selectedCategory, selectedAspect, selectedConjugation, selectedStem ,selectedSearch);
   
-  // const selectedCategory = params.cat || "all";
-
-  // renderCategories(selectedCategory);
-  // showVerbList(selectedCategory);
-
   if (categoryView) {
     categoryView.style.display = "block";
   }
@@ -402,7 +403,7 @@ function handleTableRoutine(params) {
 }
 
 //========= Function to build verb list from category in full mode =========
-function showVerbList(category, aspect = "any", conjugation = "any", search = "") {
+function showVerbList(category, aspect = "any", conjugation = "any", stem = "any", search = "") {
   
   let filtered = data;
 
@@ -425,6 +426,13 @@ function showVerbList(category, aspect = "any", conjugation = "any", search = ""
   if (conjugation !== "any") {
     filtered = filtered.filter(v => 
       v.conjugation === conjugation 
+    );
+  }
+
+  // Stem filtering
+  if (stem !== "any") {
+    filtered = filtered.filter(v => 
+      v.stem_pattern === stem 
     );
   }
   
@@ -459,15 +467,6 @@ function showVerbList(category, aspect = "any", conjugation = "any", search = ""
     container.appendChild(item);
   });
 }
-
-//========= Function to open table in table trainer =========
-// function openTable(verbObj) {
-//   document.getElementById("tableView").style.display = "block";
-//   document.getElementById("verbListView").style.display = "none";
-//   document.getElementById("categoryView").style.display = "none";
-
-//   generateTable(verbObj);
-// }
 
 //========= Helper function for 3-step mode in table trainer =========
 function getQueryParams() {
