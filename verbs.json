@@ -42,7 +42,7 @@
     "verb": "сказать",
     "translation": "to say",
     "type": "perfective",
-    "conjugation": "irregular",
+    "conjugation": "mixed",
     "stem_pattern": "stem_change",
     "category": ["top100","top500","all"],
     "tenses": {
@@ -82,8 +82,8 @@
     "verb": "мочь",
     "translation": "to be able to",
     "type": "imperfective",
-    "conjugation": "irregular", 
-    "stem_pattern": "irregular",
+    "conjugation": "mixed", 
+    "stem_pattern": "suppletive",
     "category": ["top100","top500","all"],
     "tenses": {
       "present": {
@@ -202,7 +202,7 @@
     "verb": "стать",
     "translation": "to become, to begin to",
     "type": "perfective",
-    "conjugation": "irregular", 
+    "conjugation": "mixed", 
     "stem_pattern": "stem_change", 
     "category": ["top100","top500","all"],
     "tenses": {
@@ -242,7 +242,7 @@
     "verb": "хотеть",
     "translation": "to want",
     "type": "imperfective",
-    "conjugation": "irregular",
+    "conjugation": "mixed",
     "stem_pattern": "irregular",  
     "category": ["top100","top500","all"],
     "tenses": {
@@ -483,7 +483,7 @@
     "translation": "to live",
     "type": "imperfective",
     "conjugation": "1st_conj",
-    "stem_pattern": "regular", 
+    "stem_pattern": "cons_change", 
     "category": ["top100","top500","all"],
     "tenses": {
       "present": {
@@ -602,7 +602,7 @@
     "verb": "понять",
     "translation": "to understand",
     "type": "perfective",
-    "conjugation": "1st_conj", 
+    "conjugation": "mixed", 
     "stem_pattern": "suppletive", 
     "category": ["top100","top500","all"],
     "tenses": {
@@ -762,7 +762,7 @@
     "verb": "взять",
     "translation": "to take, pick, grab",
     "type": "perfective",
-    "conjugation": "1st_conj",
+    "conjugation": "mixed",
     "stem_pattern": "suppletive",  
     "category": ["top100","top500","stem_change","all"],
     "tenses": {
@@ -882,7 +882,7 @@
     "verb": "начать",
     "translation": "to begin, start, commence",
     "type": "perfective",
-    "conjugation": "irregular", 
+    "conjugation": "mixed", 
     "stem_pattern": "stem_change", 
     "category": ["top100","top500","stem_change","all"],
     "tenses": {
