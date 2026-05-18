@@ -122,6 +122,7 @@
     "translation": "to know",
     "type": "imperfective",
     "conjugation": "1st_conj", 
+    "stem_pattern": "regular",
     "category": ["top100","top500","all"],
     "tenses": {
       "present": {
@@ -161,6 +162,7 @@
     "translation": "to speak",
     "type": "imperfective",
     "conjugation": "2nd_conj", 
+    "stem_pattern": "regular",
     "category": ["top100","top500","all"],
     "tenses": {
       "present": {
@@ -199,7 +201,8 @@
     "verb": "стать",
     "translation": "to become, to begin to",
     "type": "perfective",
-    "conjugation": "1st_conj", 
+    "conjugation": "irregular", 
+    "stem_pattern": "stem_change", 
     "category": ["top100","top500","stem_change","all"],
     "tenses": {
       "present": {
@@ -238,7 +241,8 @@
     "verb": "хотеть",
     "translation": "to want",
     "type": "imperfective",
-    "conjugation": "irregular", 
+    "conjugation": "irregular",
+    "stem_pattern": "irregular",  
     "category": ["top100","top500","all"],
     "tenses": {
       "present": {
@@ -277,7 +281,8 @@
     "verb": "видеть",
     "translation": "to see",
     "type": "imperfective",
-    "conjugation": "2nd_conj", 
+    "conjugation": "2nd_conj",
+    "stem_pattern": "cons_change",  
     "category": ["top100","top500","stem_change","all"],
     "tenses": {
       "present": {
