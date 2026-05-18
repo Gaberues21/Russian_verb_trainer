@@ -666,7 +666,7 @@
     "translation": "to do, to make",
     "type": "imperfective",
     "conjugation": "1st_conj", 
-    "category": ["top100","top500","stem_change","all"],
+    "category": ["top100","top500","all"],
     "tenses": {
       "present": {
         "я": "делаю",
@@ -697,6 +697,45 @@
       "imperative": {
         "singular": "делай",
         "plural": "делайте"
+      }
+    }   
+  },
+  {
+    "verb": "сделать",
+    "translation": "to do, to make",
+    "type": "perfective",
+    "conjugation": "1st_conj", 
+    "category": ["top100","top500","all"],
+    "tenses": {
+      "present": {
+        "я": "",
+        "ты": "",
+        "он": "",
+        "она": "",
+        "оно": "",
+        "мы": "",
+        "вы": "",
+        "они": ""
+      },
+      "future": {
+        "я": "сделаю",
+        "ты": "сделаешь",
+        "он": "сделает",
+        "она": "сделает",
+        "оно": "сделает",
+        "мы": "сделаем",
+        "вы": "сделаете",
+        "они": "сделают"
+      },
+      "past": {
+        "masculine": "сделал",
+        "feminine": "сделала",
+        "neuter": "сделало",
+        "plural": "сделали"
+      },
+      "imperative": {
+        "singular": "сделай",
+        "plural": "сделайте"
       }
     }   
   }
