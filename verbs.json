@@ -997,5 +997,45 @@
         "plural": "давайте"
       }
     }   
+  },
+  {
+    "verb": "пойти",
+    "translation": "to go, to walk",
+    "type": "perfective",
+    "conjugation": "mixed", 
+    "stem_pattern": "suppletive", 
+    "category": ["top100","top500","motion","all"],
+    "tenses": {
+      "present": {
+        "я": "",
+        "ты": "",
+        "он": "",
+        "она": "",
+        "оно": "",
+        "мы": "",
+        "вы": "",
+        "они": ""
+      },
+      "future": {
+        "я": "пойду",
+        "ты": "пойдёшь",
+        "он": "пойдёт",
+        "она": "пойдёт",
+        "оно": "пойдёт",
+        "мы": "пойдём",
+        "вы": "пойдёте",
+        "они": "пойдут"
+      },
+      "past": {
+        "masculine": "пошёл",
+        "feminine": "пошла",
+        "neuter": "пошло",
+        "plural": "пошли"
+      },
+      "imperative": {
+        "singular": "пойди",
+        "plural": "пойдите"
+      }
+    }   
   }
 ]
