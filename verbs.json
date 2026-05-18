@@ -744,7 +744,7 @@
     "translation": "to take, pick, grab",
     "type": "perfective",
     "conjugation": "1st_conj", 
-    "category": ["top100","top500","all"],
+    "category": ["top100","top500","stem_change","all"],
     "tenses": {
       "present": {
         "я": "",
