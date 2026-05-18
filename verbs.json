@@ -200,7 +200,7 @@
   },
   {
     "verb": "стать",
-    "translation": "to become, to begin to",
+    "translation": "to become, begin to, stand, take to",
     "type": "perfective",
     "conjugation": "mixed", 
     "stem_pattern": "stem_change", 
@@ -240,7 +240,7 @@
   },
   {
     "verb": "хотеть",
-    "translation": "to want",
+    "translation": "to want, feel like, mean",
     "type": "imperfective",
     "conjugation": "mixed",
     "stem_pattern": "irregular",  
@@ -600,7 +600,7 @@
   },
   {
     "verb": "понять",
-    "translation": "to understand",
+    "translation": "to understand, clear",
     "type": "perfective",
     "conjugation": "mixed", 
     "stem_pattern": "suppletive", 
