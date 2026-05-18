@@ -203,7 +203,7 @@
     "type": "perfective",
     "conjugation": "irregular", 
     "stem_pattern": "stem_change", 
-    "category": ["top100","top500","stem_change","all"],
+    "category": ["top100","top500","all"],
     "tenses": {
       "present": {
         "я": "",
@@ -283,7 +283,7 @@
     "type": "imperfective",
     "conjugation": "2nd_conj",
     "stem_pattern": "cons_change",  
-    "category": ["top100","top500","stem_change","all"],
+    "category": ["top100","top500","all"],
     "tenses": {
       "present": {
         "я": "вижу",
@@ -321,7 +321,8 @@
     "verb": "идти",
     "translation": "to go, to walk",
     "type": "imperfective",
-    "conjugation": "1st_conj", 
+    "conjugation": "mixed", 
+    "stem_pattern": "suppletive", 
     "category": ["top100","top500","motion","all"],
     "tenses": {
       "present": {
@@ -360,7 +361,8 @@
     "verb": "стоять",
     "translation": "to stand",
     "type": "imperfective",
-    "conjugation": "2nd_conj", 
+    "conjugation": "2nd_conj",
+    "stem_pattern": "regular",  
     "category": ["top100","top500","all"],
     "tenses": {
       "present": {
@@ -400,6 +402,7 @@
     "translation": "to think, to consider",
     "type": "imperfective",
     "conjugation": "1st_conj", 
+    "stem_pattern": "regular", 
     "category": ["top100","top500","all"],
     "tenses": {
       "present": {
@@ -439,7 +442,8 @@
     "translation": "to ask",
     "type": "perfective",
     "conjugation": "2nd_conj", 
-    "category": ["top100","top500","stem_change","all"],
+    "stem_pattern": "cons_change",
+    "category": ["top100","top500","all"],
     "tenses": {
       "present": {
         "я": "",
@@ -477,8 +481,9 @@
     "verb": "жить",
     "translation": "to live",
     "type": "imperfective",
-    "conjugation": "1st_conj", 
-    "category": ["top100","top500","stem_change","all"],
+    "conjugation": "1st_conj",
+    "stem_pattern": "regular", 
+    "category": ["top100","top500","all"],
     "tenses": {
       "present": {
         "я": "живу",
@@ -517,6 +522,7 @@
     "translation": "to look, to watch",
     "type": "imperfective",
     "conjugation": "2nd_conj", 
+    "stem_pattern": "regular", 
     "category": ["top100","top500","stem_change","all"],
     "tenses": {
       "present": {
@@ -556,6 +562,7 @@
     "translation": "to have, keep, hold, possess",
     "type": "imperfective",
     "conjugation": "1st_conj", 
+    "stem_pattern": "regular", 
     "category": ["top100","top500","all"],
     "tenses": {
       "present": {
@@ -595,7 +602,8 @@
     "translation": "to understand",
     "type": "perfective",
     "conjugation": "1st_conj", 
-    "category": ["top100","top500","stem_change","all"],
+    "stem_pattern": "suppletive", 
+    "category": ["top100","top500","all"],
     "tenses": {
       "present": {
         "я": "",
@@ -634,7 +642,8 @@
     "translation": "to sit",
     "type": "imperfective",
     "conjugation": "2nd_conj", 
-    "category": ["top100","top500","stem_change","all"],
+    "stem_pattern": "cons_change", 
+    "category": ["top100","top500","all"],
     "tenses": {
       "present": {
         "я": "сижу",
@@ -673,6 +682,7 @@
     "translation": "to do, to make",
     "type": "imperfective",
     "conjugation": "1st_conj", 
+    "stem_pattern": "regular", 
     "category": ["top100","top500","all"],
     "tenses": {
       "present": {
@@ -712,6 +722,7 @@
     "translation": "to do, to make",
     "type": "perfective",
     "conjugation": "1st_conj", 
+    "stem_pattern": "regular", 
     "category": ["top100","top500","all"],
     "tenses": {
       "present": {
@@ -750,7 +761,8 @@
     "verb": "взять",
     "translation": "to take, pick, grab",
     "type": "perfective",
-    "conjugation": "1st_conj", 
+    "conjugation": "1st_conj",
+    "stem_pattern": "suppletive",  
     "category": ["top100","top500","stem_change","all"],
     "tenses": {
       "present": {
@@ -789,7 +801,8 @@
     "verb": "понимать",
     "translation": "to understand, comprehend, realize",
     "type": "imperfective",
-    "conjugation": "1st_conj", 
+    "conjugation": "1st_conj",
+    "stem_pattern": "regular",  
     "category": ["top100","top500","all"],
     "tenses": {
       "present": {
@@ -829,7 +842,8 @@
     "translation": "to seem, appear",
     "type": "imperfective",
     "conjugation": "1st_conj", 
-    "category": ["top100","top500","reflexive","stem_change","all"],
+    "stem_pattern": "stem_change", 
+    "category": ["top100","top500","reflexive","all"],
     "tenses": {
       "present": {
         "я": "кажусь",
@@ -867,7 +881,8 @@
     "verb": "начать",
     "translation": "to begin, start, commence",
     "type": "perfective",
-    "conjugation": "1st_conj", 
+    "conjugation": "irregular", 
+    "stem_pattern": "stem_change", 
     "category": ["top100","top500","stem_change","all"],
     "tenses": {
       "present": {
@@ -907,7 +922,8 @@
     "translation": "to see",
     "type": "perfective",
     "conjugation": "2nd_conj", 
-    "category": ["top100","top500","stem_change","all"],
+    "stem_pattern": "cons_change", 
+    "category": ["top100","top500","all"],
     "tenses": {
       "present": {
         "я": "",
@@ -945,8 +961,9 @@
     "verb": "давать",
     "translation": "to give, let, make",
     "type": "imperfective",
-    "conjugation": "1st_conj", 
-    "category": ["top100","top500","stem_change","all"],
+    "conjugation": "1st_conj",
+    "stem_pattern": "stem_change",  
+    "category": ["top100","top500","all"],
     "tenses": {
       "present": {
         "я": "даю",
