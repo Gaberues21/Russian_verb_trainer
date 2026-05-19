@@ -1197,5 +1197,45 @@
         "plural": "работайте"
       }
     }   
+  },
+  {
+    "verb": "оказаться",
+    "translation": "to turn out to be, find oneself",
+    "type": "perfective",
+    "conjugation": "1st_conj", 
+    "stem_pattern": "stem_change", 
+    "category": ["top100","top500","reflexive","all"],
+    "tenses": {
+      "present": {
+        "я": "",
+        "ты": "",
+        "он": "",
+        "она": "",
+        "оно": "",
+        "мы": "",
+        "вы": "",
+        "они": ""
+      },
+      "future": {
+        "я": "окажусь",
+        "ты": "окажешься",
+        "он": "окажется",
+        "она": "окажется",
+        "оно": "окажется",
+        "мы": "окажемся",
+        "вы": "окажетесь",
+        "они": "окажутся"
+      },
+      "past": {
+        "masculine": "оказался",
+        "feminine": "оказалась",
+        "neuter": "оказалось",
+        "plural": "оказались"
+      },
+      "imperative": {
+        "singular": "окажись",
+        "plural": "окажитесь"
+      }
+    }   
   }
 ]
