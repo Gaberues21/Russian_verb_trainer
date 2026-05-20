@@ -3,7 +3,8 @@
     "translation": "to be",
     "type": "imperfective",
     "conjugation": "mixed", 
-    "stem_pattern": "irregular", 
+    "stem_pattern": "irregular",
+    "class": "irregular",
     "category": ["top100","top500","all"],
     "tenses": {
       "present": {
@@ -44,6 +45,7 @@
     "type": "perfective",
     "conjugation": "mixed",
     "stem_pattern": "stem_change",
+    "class": "6",
     "category": ["top100","top500","all"],
     "tenses": {
       "present": {
