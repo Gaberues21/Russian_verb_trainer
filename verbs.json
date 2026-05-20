@@ -1557,5 +1557,45 @@
         "plural": "лежите"
       }
     }   
+  },
+  {
+    "verb": "решить",
+    "translation": "to decide, solve",
+    "type": "perfective",
+    "conjugation": "2nd_conj", 
+    "stem_pattern": "regular",
+    "category": ["top100","top500","all"],
+    "tenses": {
+      "present": {
+        "я": "",
+        "ты": "",
+        "он": "",
+        "она": "",
+        "оно": "",
+        "мы": "",
+        "вы": "",
+        "они": ""
+      },
+      "future": {
+        "я": "решу",
+        "ты": "решишь",
+        "он": "решит",
+        "она": "решит",
+        "оно": "решит",
+        "мы": "решим",
+        "вы": "решите",
+        "они": "решат"
+      },
+      "past": {
+        "masculine": "решил",
+        "feminine": "решила",
+        "neuter": "решило",
+        "plural": "решили"
+      },
+      "imperative": {
+        "singular": "реши",
+        "plural": "решите"
+      }
+    }   
   }
 ]
