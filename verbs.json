@@ -483,7 +483,7 @@
     "translation": "to live",
     "type": "imperfective",
     "conjugation": "1st_conj",
-    "stem_pattern": "cons_change", 
+    "stem_pattern": "stem_change", 
     "category": ["top100","top500","all"],
     "tenses": {
       "present": {
@@ -1083,7 +1083,7 @@
     "translation": "to go out, come out, leave, publish, marry",
     "type": "perfective",
     "conjugation": "1st_conj", 
-    "stem_pattern": "stem_change", 
+    "stem_pattern": "suppletive", 
     "category": ["top100","top500","motion","all"],
     "tenses": {
       "present": {
