@@ -1763,6 +1763,48 @@
     }   
   },
   {
+    "verb": "писать",
+    "translation": "to pee, piss",
+    "type": "imperfective",
+    "conjugation": "1st_conj", 
+    "stem_pattern": "regular",
+    "class": "I",
+    "stress": "a",
+    "category": ["top100","top500","all"],
+    "tenses": {
+      "present": {
+        "я": "писаю",
+        "ты": "писаешь",
+        "он": "писает",
+        "она": "писает",
+        "оно": "писает",
+        "мы": "писаем",
+        "вы": "писаете",
+        "они": "писают"
+      },
+      "future": {
+        "я": "буду писать",
+        "ты": "будешь писать",
+        "он": "будет писать",
+        "она": "будет писать",
+        "оно": "будет писать",
+        "мы": "будем писать",
+        "вы": "будете писать",
+        "они": "будут писать"
+      },
+      "past": {
+        "masculine": "писал",
+        "feminine": "писала",
+        "neuter": "писало",
+        "plural": "писали"
+      },
+      "imperative": {
+        "singular": "писай",
+        "plural": "писайте"
+      }
+    }   
+  },
+  {
     "verb": "вернуться",
     "translation": "to return, come back, revert",
     "type": "perfective",
