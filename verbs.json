@@ -5,6 +5,7 @@
     "conjugation": "mixed", 
     "stem_pattern": "irregular",
     "class": "irregular",
+    "stress": "irregular",
     "category": ["top100","top500","all"],
     "tenses": {
       "present": {
@@ -46,6 +47,7 @@
     "conjugation": "mixed",
     "stem_pattern": "stem_change",
     "class": "VI",
+    "stress": "c",
     "category": ["top100","top500","all"],
     "tenses": {
       "present": {
@@ -86,6 +88,8 @@
     "type": "imperfective",
     "conjugation": "mixed", 
     "stem_pattern": "suppletive",
+    "class": "VIII",
+    "stress": "c/b",
     "category": ["top100","top500","all"],
     "tenses": {
       "present": {
