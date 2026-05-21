@@ -508,6 +508,8 @@
     "type": "imperfective",
     "conjugation": "1st_conj",
     "stem_pattern": "stem_change", 
+    "class": "XVI",
+    "stress": "b/c'", 
     "category": ["top100","top500","all"],
     "tenses": {
       "present": {
@@ -674,6 +676,8 @@
     "type": "imperfective",
     "conjugation": "2nd_conj", 
     "stem_pattern": "cons_change", 
+    "class": "V",
+    "stress": "b",   
     "category": ["top100","top500","all"],
     "tenses": {
       "present": {
@@ -714,6 +718,8 @@
     "type": "imperfective",
     "conjugation": "1st_conj", 
     "stem_pattern": "regular", 
+    "class": "I",
+    "stress": "a",  
     "category": ["top100","top500","all"],
     "tenses": {
       "present": {
@@ -753,7 +759,9 @@
     "translation": "to do, to make",
     "type": "perfective",
     "conjugation": "1st_conj", 
-    "stem_pattern": "regular", 
+    "stem_pattern": "regular",  
+    "class": "I",
+    "stress": "a",  
     "category": ["top100","top500","all"],
     "tenses": {
       "present": {
@@ -793,7 +801,9 @@
     "translation": "to take, pick, grab",
     "type": "perfective",
     "conjugation": "mixed",
-    "stem_pattern": "suppletive",  
+    "stem_pattern": "suppletive", 
+    "class": "XIV",
+    "stress": "b/c'",   
     "category": ["top100","top500","stem_change","all"],
     "tenses": {
       "present": {
