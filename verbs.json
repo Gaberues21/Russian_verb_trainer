@@ -1677,5 +1677,47 @@
         "plural": "решите"
       }
     }   
+  },
+  {
+    "verb": "получить",
+    "translation": "to receive, get, obtain, access",
+    "type": "perfective",
+    "conjugation": "2nd_conj", 
+    "stem_pattern": "regular",
+    "class": "IV",
+    "stress": "с",
+    "category": ["top100","top500","all"],
+    "tenses": {
+      "present": {
+        "я": "",
+        "ты": "",
+        "он": "",
+        "она": "",
+        "оно": "",
+        "мы": "",
+        "вы": "",
+        "они": ""
+      },
+      "future": {
+        "я": "получу",
+        "ты": "получишь",
+        "он": "получит",
+        "она": "получит",
+        "оно": "получит",
+        "мы": "получии",
+        "вы": "получите",
+        "они": "получат"
+      },
+      "past": {
+        "masculine": "получил",
+        "feminine": "получила",
+        "neuter": "получило",
+        "plural": "получили"
+      },
+      "imperative": {
+        "singular": "получи",
+        "plural": "получите"
+      }
+    }   
   }
 ]
