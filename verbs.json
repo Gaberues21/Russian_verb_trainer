@@ -214,6 +214,8 @@
     "type": "perfective",
     "conjugation": "mixed", 
     "stem_pattern": "stem_change", 
+    "class": "XV",
+    "stress": "a",
     "category": ["top100","top500","all"],
     "tenses": {
       "present": {
@@ -253,7 +255,9 @@
     "translation": "to want, feel like, mean",
     "type": "imperfective",
     "conjugation": "mixed",
-    "stem_pattern": "irregular",  
+    "stem_pattern": "irregular",
+    "class": "V",
+    "stress": "c",  
     "category": ["top100","top500","all"],
     "tenses": {
       "present": {
