@@ -1929,5 +1929,47 @@
         "plural": "помните"
       }
     }   
+  },
+  {
+    "verb": "узнать",
+    "translation": "to learn, find out, recognize",
+    "type": "perfective",
+    "conjugation": "1st_conj", 
+    "stem_pattern": "regular",
+    "class": "I",
+    "stress": "a",
+    "category": ["top100","top500","all"],
+    "tenses": {
+      "present": {
+        "я": "",
+        "ты": "",
+        "он": "",
+        "она": "",
+        "оно": "",
+        "мы": "",
+        "вы": "",
+        "они": ""
+      },
+      "future": {
+        "я": "узнаю",
+        "ты": "узнаешь",
+        "он": "узнает",
+        "она": "узнает",
+        "оно": "узнает",
+        "мы": "узнаем",
+        "вы": "узнаете",
+        "они": "узнают"
+      },
+      "past": {
+        "masculine": "узнал",
+        "feminine": "узнала",
+        "neuter": "узнало",
+        "plural": "узнали"
+      },
+      "imperative": {
+        "singular": "узнай",
+        "plural": "узнайте"
+      }
+    }   
   }
 ]
