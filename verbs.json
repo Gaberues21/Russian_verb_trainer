@@ -45,7 +45,7 @@
     "type": "perfective",
     "conjugation": "mixed",
     "stem_pattern": "stem_change",
-    "class": "6",
+    "class": "VI",
     "category": ["top100","top500","all"],
     "tenses": {
       "present": {
