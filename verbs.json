@@ -2055,5 +2055,47 @@
         "plural": "ходите"
       }
     }   
+  },
+  {
+    "verb": "заметить",
+    "translation": "to notice, note, observe",
+    "type": "perfective",
+    "conjugation": "2nd_conj", 
+    "stem_pattern": "cons_change",
+    "class": "IV",
+    "stress": "a",
+    "category": ["top100","top500","all"],
+    "tenses": {
+      "present": {
+        "я": "",
+        "ты": "",
+        "он": "",
+        "она": "",
+        "оно": "",
+        "мы": "",
+        "вы": "",
+        "они": ""
+      },
+      "future": {
+        "я": "замечу",
+        "ты": "заметишь",
+        "он": "заметит",
+        "она": "заметит",
+        "оно": "заметит",
+        "мы": "заметим",
+        "вы": "заметите",
+        "они": "заметят"
+      },
+      "past": {
+        "masculine": "заметил",
+        "feminine": "заметила",
+        "neuter": "заметило",
+        "plural": "заметили"
+      },
+      "imperative": {
+        "singular": "заметь",
+        "plural": "заметьте"
+      }
+    }   
   }
 ]
