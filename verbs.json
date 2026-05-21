@@ -130,8 +130,6 @@
     "type": "imperfective",
     "conjugation": "1st_conj", 
     "stem_pattern": "regular",
-    "class": "IV",
-    "stress": "b",
     "class": "I",
     "stress": "a",
     "category": ["top100","top500","all"],
