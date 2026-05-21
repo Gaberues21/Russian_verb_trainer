@@ -26,6 +26,9 @@ fetch("verbs.json")
     document.getElementById("stemFilter").addEventListener("change", () => {
       updateFilters({stem:document.getElementById("stemFilter").value});
     });
+    document.getElementById("classFilter").addEventListener("change", () => {
+      updateFilters({class:document.getElementById("classFilter").value});
+    });
     document.getElementById("searchFilter").addEventListener("input", () => {
       updateFilters({search:document.getElementById("searchFilter").value});
     });
@@ -378,6 +381,7 @@ function handleTableRoutine(params) {
   const selectedAspect = params.aspect || "any";
   const selectedConjugation = params.conjugation || "any";
   const selectedStem = params.stem || "any";
+  const selectedClass = params.class || "any";
   const selectedSearch = params.search || "";
 
   renderCategories(selectedCategory);
@@ -388,10 +392,12 @@ function handleTableRoutine(params) {
     selectedConjugation;
   document.getElementById("stemFilter").value = 
     selectedStem;
+  document.getElementById("classFilter").value = 
+    selectedClass;
   document.getElementById("searchFilter").value = 
     selectedSearch;
 
-  showVerbList(selectedCategory, selectedAspect, selectedConjugation, selectedStem ,selectedSearch);
+  showVerbList(selectedCategory, selectedAspect, selectedConjugation, selectedStem , selectedClass, selectedSearch);
   
   if (categoryView) {
     categoryView.style.display = "block";
@@ -403,7 +409,7 @@ function handleTableRoutine(params) {
 }
 
 //========= Function to build verb list from category in full mode =========
-function showVerbList(category, aspect = "any", conjugation = "any", stem = "any", search = "") {
+function showVerbList(category, aspect = "any", conjugation = "any", stem = "any", v_class = "any", search = "") {
   
   let filtered = data;
 
@@ -433,6 +439,13 @@ function showVerbList(category, aspect = "any", conjugation = "any", stem = "any
   if (stem !== "any") {
     filtered = filtered.filter(v => 
       v.stem_pattern === stem 
+    );
+  }
+  
+  // Class filtering
+  if (v_class !== "any") {
+    filtered = filtered.filter(v => 
+      v.class === v_class 
     );
   }
   
