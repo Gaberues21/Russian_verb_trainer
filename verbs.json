@@ -130,6 +130,10 @@
     "type": "imperfective",
     "conjugation": "1st_conj", 
     "stem_pattern": "regular",
+    "class": "IV",
+    "stress": "b",
+    "class": "I",
+    "stress": "a",
     "category": ["top100","top500","all"],
     "tenses": {
       "present": {
@@ -170,6 +174,8 @@
     "type": "imperfective",
     "conjugation": "2nd_conj", 
     "stem_pattern": "regular",
+    "class": "IV",
+    "stress": "b",
     "category": ["top100","top500","all"],
     "tenses": {
       "present": {
