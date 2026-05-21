@@ -1138,6 +1138,8 @@
     "type": "perfective",
     "conjugation": "1st_conj", 
     "stem_pattern": "suppletive", 
+    "class": "irregular",
+    "stress": "a",
     "category": ["top100","top500","motion","all"],
     "tenses": {
       "present": {
@@ -1178,6 +1180,8 @@
     "type": "perfective",
     "conjugation": "mixed",
     "stem_pattern": "irregular",
+    "class": "irregular",
+    "stress": "b/c'",
     "category": ["top100","top500","all"],
     "tenses": {
       "present": {
@@ -1218,6 +1222,8 @@
     "type": "imperfective",
     "conjugation": "1st_conj", 
     "stem_pattern": "regular", 
+    "class": "I",
+    "stress": "a",
     "category": ["top100","top500","all"],
     "tenses": {
       "present": {
@@ -1258,6 +1264,8 @@
     "type": "perfective",
     "conjugation": "1st_conj", 
     "stem_pattern": "stem_change", 
+    "class": "VI",
+    "stress": "c",
     "category": ["top100","top500","reflexive","all"],
     "tenses": {
       "present": {
@@ -1298,6 +1306,8 @@
     "type": "perfective",
     "conjugation": "2nd_conj", 
     "stem_pattern": "cons_change",
+    "class": "IV",
+    "stress": "a",
     "category": ["top100","top500","all"],
     "tenses": {
       "present": {
@@ -1338,6 +1348,8 @@
     "type": "perfective",
     "conjugation": "1st_conj", 
     "stem_pattern": "regular", 
+    "class": "I",
+    "stress": "a", 
     "category": ["top100","top500","all"],
     "tenses": {
       "present": {
@@ -1377,7 +1389,9 @@
     "translation": "to love",
     "type": "imperfective",
     "conjugation": "2nd_conj", 
-    "stem_pattern": "cons_change",
+    "stem_pattern": "cons_change", 
+    "class": "IV",
+    "stress": "c", 
     "category": ["top100","top500","all"],
     "tenses": {
       "present": {
@@ -1418,6 +1432,8 @@
     "type": "imperfective",
     "conjugation": "2nd_conj", 
     "stem_pattern": "regular",
+    "class": "IV",
+    "stress": "a", 
     "category": ["top100","top500","all"],
     "tenses": {
       "present": {
@@ -1458,6 +1474,8 @@
     "type": "imperfective",
     "conjugation": "1st_conj", 
     "stem_pattern": "stem_change",
+    "class": "VI",
+    "stress": "b/c", 
     "category": ["top100","top500","all"],
     "tenses": {
       "present": {
@@ -1498,6 +1516,8 @@
     "type": "perfective",
     "conjugation": "2nd_conj", 
     "stem_pattern": "regular", 
+    "class": "V",
+    "stress": "c", 
     "category": ["top100","top500","stem_change","all"],
     "tenses": {
       "present": {
@@ -1538,6 +1558,8 @@
     "type": "perfective",
     "conjugation": "mixed", 
     "stem_pattern": "suppletive", 
+    "class": "irregular",
+    "stress": "b", 
     "category": ["top100","top500","motion","all"],
     "tenses": {
       "present": {
@@ -1578,6 +1600,8 @@
     "type": "imperfective",
     "conjugation": "2nd_conj", 
     "stem_pattern": "regular",
+    "class": "V",
+    "stress": "b", 
     "category": ["top100","top500","all"],
     "tenses": {
       "present": {
@@ -1618,6 +1642,8 @@
     "type": "perfective",
     "conjugation": "2nd_conj", 
     "stem_pattern": "regular",
+    "class": "IV",
+    "stress": "b", 
     "category": ["top100","top500","all"],
     "tenses": {
       "present": {
