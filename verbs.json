@@ -1971,5 +1971,47 @@
         "plural": "узнайте"
       }
     }   
+  },
+  {
+    "verb": "прийти",
+    "translation": "to arrive, come",
+    "type": "perfective",
+    "conjugation": "1st_conj", 
+    "stem_pattern": "suppletive", 
+    "class": "irregular",
+    "stress": "b",
+    "category": ["top100","top500","motion","all"],
+    "tenses": {
+      "present": {
+        "я": "",
+        "ты": "",
+        "он": "",
+        "она": "",
+        "оно": "",
+        "мы": "",
+        "вы": "",
+        "они": ""
+      },
+      "future": {
+        "я": "приду",
+        "ты": "придёшь",
+        "он": "придет",
+        "она": "придет",
+        "оно": "придет",
+        "мы": "придем",
+        "вы": "придете",
+        "они": "придут"
+      },
+      "past": {
+        "masculine": "пришёл",
+        "feminine": "пришла",
+        "neuter": "пришло",
+        "plural": "пришли"
+      },
+      "imperative": {
+        "singular": "приди",
+        "plural": "придите"
+      }
+    }   
   }
 ]
