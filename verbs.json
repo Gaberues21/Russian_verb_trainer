@@ -1761,5 +1761,47 @@
         "plural": "пишите"
       }
     }   
+  },
+  {
+    "verb": "вернуться",
+    "translation": "to return, come back, revert",
+    "type": "perfective",
+    "conjugation": "mixed", 
+    "stem_pattern": "stem_change",
+    "class": "III",
+    "stress": "b",
+    "category": ["top100","top500","reflexive","all"],
+    "tenses": {
+      "present": {
+        "я": "",
+        "ты": "",
+        "он": "",
+        "она": "",
+        "оно": "",
+        "мы": "",
+        "вы": "",
+        "они": ""
+      },
+      "future": {
+        "я": "вернусь",
+        "ты": "вернёшься",
+        "он": "вернётся",
+        "она": "вернётся",
+        "оно": "вернётся",
+        "мы": "вернёмся",
+        "вы": "вернётесь",
+        "они": "вернутся"
+      },
+      "past": {
+        "masculine": "вернулся",
+        "feminine": "вернулась",
+        "neuter": "вернулось",
+        "plural": "вернулись"
+      },
+      "imperative": {
+        "singular": "вернись",
+        "plural": "вернитесь"
+      }
+    }   
   }
 ]
