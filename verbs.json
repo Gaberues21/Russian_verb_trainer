@@ -2181,5 +2181,47 @@
         "plural": "слышьте"
       }
     }   
+  },
+  {
+    "verb": "уйти",
+    "translation": "to leave, depart, go away, take",
+    "type": "perfective",
+    "conjugation": "mixed", 
+    "stem_pattern": "suppletive", 
+    "class": "irregular",
+    "stress": "b",
+    "category": ["top100","top500","motion","all"],
+    "tenses": {
+      "present": {
+        "я": "",
+        "ты": "",
+        "он": "",
+        "она": "",
+        "оно": "",
+        "мы": "",
+        "вы": "",
+        "они": ""
+      },
+      "future": {
+        "я": "уйду",
+        "ты": "уйдёшь",
+        "он": "уйдёт",
+        "она": "уйдёт",
+        "оно": "уйдёт",
+        "мы": "уйдём",
+        "вы": "уйдёте",
+        "они": "уйдут"
+      },
+      "past": {
+        "masculine": "ушёл",
+        "feminine": "ушла",
+        "neuter": "ушло",
+        "plural": "ушли"
+      },
+      "imperative": {
+        "singular": "уйди",
+        "plural": "уйдите"
+      }
+    }   
   }
 ]
