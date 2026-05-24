@@ -2,6 +2,17 @@ let data = [];
 let current = {};
 let currentTable = {};
 
+let appState = {
+  section: "home",
+  cat: "all",
+  aspect: "any",
+  conjugation: "any",
+  stem: "any",
+  class: "any",
+  search: "",
+  verb: null
+};
+
 const tenseLabels = {
   present: "настоящее",
   past: "прошедшее",
@@ -12,27 +23,67 @@ fetch("verbs.json")
   .then(res => res.json())
   .then(json => {
     data = json;  
-    // populateVerbList();
-    renderCategories();
-    newQuestion();
-    showSectionFromHash();
 
-    document.getElementById("aspectFilter").addEventListener("change", () => {
-      updateFilters({aspect:document.getElementById("aspectFilter").value});
-    });
-    document.getElementById("conjugationFilter").addEventListener("change", () => {
-      updateFilters({conjugation:document.getElementById("conjugationFilter").value});
-    });
-    document.getElementById("stemFilter").addEventListener("change", () => {
-      updateFilters({stem:document.getElementById("stemFilter").value});
-    });
-    document.getElementById("classFilter").addEventListener("change", () => {
-      updateFilters({class:document.getElementById("classFilter").value});
-    });
-    document.getElementById("searchFilter").addEventListener("input", () => {
-      updateFilters({search:document.getElementById("searchFilter").value});
-    });
+    loadStateFromURL();
+
+    initializeListeners();
+
+    renderApp();
+    // populateVerbList();
+    // renderCategories();
+    // newQuestion();
+    // showSectionFromHash();
+
+    // document.getElementById("aspectFilter").addEventListener("change", () => {
+    //   updateFilters({aspect:document.getElementById("aspectFilter").value});
+    // });
+    // document.getElementById("conjugationFilter").addEventListener("change", () => {
+    //   updateFilters({conjugation:document.getElementById("conjugationFilter").value});
+    // });
+    // document.getElementById("stemFilter").addEventListener("change", () => {
+    //   updateFilters({stem:document.getElementById("stemFilter").value});
+    // });
+    // document.getElementById("classFilter").addEventListener("change", () => {
+    //   updateFilters({class:document.getElementById("classFilter").value});
+    // });
+    // document.getElementById("searchFilter").addEventListener("input", () => {
+    //   updateFilters({search:document.getElementById("searchFilter").value});
+    // });
   });
+
+function initializeListeners() {
+  
+    document.getElementById("aspectFilter").addEventListener("change", e => {
+      appState.aspect = e.target.value;
+      updateURL();
+      renderApp();
+    });  
+  
+    document.getElementById("conjugationFilter").addEventListener("change", e => {
+      appState.conjugation = e.target.value;
+      updateURL();
+      renderApp();
+    });
+  
+    document.getElementById("stemFilter").addEventListener("change", e => {
+      appState.stem = e.target.value;
+      updateURL();
+      renderApp();
+    });
+  
+    document.getElementById("classFilter").addEventListener("change", e => {
+      appState.class = e.target.value;
+      updateURL();
+      renderApp();
+    });
+  
+    document.getElementById("searchFilter").addEventListener("input", e => {
+      appState.search = e.target.value;
+      updateURL();
+      renderApp();
+    });
+
+}
 
 //========= Function to generate new question in random mode =========
 function newQuestion() {
@@ -209,64 +260,64 @@ function enableTableNavigation() {
 }
 
 //========= Function for 3-step flow in table trainer =========
-function handleTableRoutine(params) {
-  const categoryView = document.getElementById("categoryView");
-  const listView = document.getElementById("verbListView");
-  const tableView = document.getElementById("tableView");
+// function handleTableRoutine(params) {
+//   const categoryView = document.getElementById("categoryView");
+//   const listView = document.getElementById("verbListView");
+//   const tableView = document.getElementById("tableView");
 
-  // Hide all subviews
-  if (categoryView) categoryView.style.display = "none";
-  if (listView) listView.style.display = "none";
-  if (tableView) tableView.style.display = "none";
+//   // Hide all subviews
+//   if (categoryView) categoryView.style.display = "none";
+//   if (listView) listView.style.display = "none";
+//   if (tableView) tableView.style.display = "none";
 
-  // Direct verb (highest priority)
-  if (params.verb) {
-    const verbParam = decodeURIComponent(params.verb);
-    const verbObj = data.find(v => v.verb === verbParam);
+//   // Direct verb (highest priority)
+//   if (params.verb) {
+//     const verbParam = decodeURIComponent(params.verb);
+//     const verbObj = data.find(v => v.verb === verbParam);
 
-    if (verbObj) {
-      resetTableTrainer();
-      generateTable(verbObj);
-      if (categoryView) categoryView.style.display = "none";
-      if (listView) listView.style.display = "none";
-      if (tableView) {
-        tableView.style.display = "block";
-      }
-      return;
-    }
-  }
+//     if (verbObj) {
+//       resetTableTrainer();
+//       generateTable(verbObj);
+//       if (categoryView) categoryView.style.display = "none";
+//       if (listView) listView.style.display = "none";
+//       if (tableView) {
+//         tableView.style.display = "block";
+//       }
+//       return;
+//     }
+//   }
 
-  // Category selected
-  const selectedCategory = params.cat || "all";
-  const selectedAspect = params.aspect || "any";
-  const selectedConjugation = params.conjugation || "any";
-  const selectedStem = params.stem || "any";
-  const selectedClass = params.class || "any";
-  const selectedSearch = params.search || "";
+//   // Category selected
+//   const selectedCategory = params.cat || "all";
+//   const selectedAspect = params.aspect || "any";
+//   const selectedConjugation = params.conjugation || "any";
+//   const selectedStem = params.stem || "any";
+//   const selectedClass = params.class || "any";
+//   const selectedSearch = params.search || "";
 
-  renderCategories(selectedCategory);
+//   renderCategories(selectedCategory);
 
-  document.getElementById("aspectFilter").value = 
-    selectedAspect;
-  document.getElementById("conjugationFilter").value = 
-    selectedConjugation;
-  document.getElementById("stemFilter").value = 
-    selectedStem;
-  document.getElementById("classFilter").value = 
-    selectedClass;
-  document.getElementById("searchFilter").value = 
-    selectedSearch;
+//   document.getElementById("aspectFilter").value = 
+//     selectedAspect;
+//   document.getElementById("conjugationFilter").value = 
+//     selectedConjugation;
+//   document.getElementById("stemFilter").value = 
+//     selectedStem;
+//   document.getElementById("classFilter").value = 
+//     selectedClass;
+//   document.getElementById("searchFilter").value = 
+//     selectedSearch;
 
-  showVerbList(selectedCategory, selectedAspect, selectedConjugation, selectedStem , selectedClass, selectedSearch);
+//   showVerbList(selectedCategory, selectedAspect, selectedConjugation, selectedStem , selectedClass, selectedSearch);
   
-  if (categoryView) {
-    categoryView.style.display = "block";
-  }
+//   if (categoryView) {
+//     categoryView.style.display = "block";
+//   }
 
-  if (listView) {
-    listView.style.display = "block";
-  }
-}
+//   if (listView) {
+//     listView.style.display = "block";
+//   }
+// }
 
 //========= Function to build verb list from category in full mode =========
 function showVerbList(category, aspect = "any", conjugation = "any", stem = "any", v_class = "any", search = "") {
@@ -342,33 +393,33 @@ function showVerbList(category, aspect = "any", conjugation = "any", stem = "any
 }
 
 //========= Helper function for 3-step mode in table trainer =========
-function getQueryParams() {
-  const parts = window.location.hash.split("?");
-  if (parts.length > 2) return {};
+// function getQueryParams() {
+//   const parts = window.location.hash.split("?");
+//   if (parts.length > 2) return {};
 
-  const params = new URLSearchParams(parts[1]);
-  return Object.fromEntries(params.entries());
-}
+//   const params = new URLSearchParams(parts[1]);
+//   return Object.fromEntries(params.entries());
+// }
 
 //========= Helper function to update URL filters =========
-function updateFilters(newParams) {
+// function updateFilters(newParams) {
 
-  // Current and new URL params
-  const params = {...getQueryParams(),...newParams};
+//   // Current and new URL params
+//   const params = {...getQueryParams(),...newParams};
 
-  // Remove empty values
-  Object.keys(params).forEach(key => {
-    if (params[key] === "" || params[key] === "any") {
-      delete params[key];
-    }
-  });
+//   // Remove empty values
+//   Object.keys(params).forEach(key => {
+//     if (params[key] === "" || params[key] === "any") {
+//       delete params[key];
+//     }
+//   });
 
-  // Build query string
-  const query = new URLSearchParams(params).toString();
+//   // Build query string
+//   const query = new URLSearchParams(params).toString();
 
-  // Update hash
-  window.location.hash = query ? `tableTrainer?${query}` : "tableTrainer";
-}
+//   // Update hash
+//   window.location.hash = query ? `tableTrainer?${query}` : "tableTrainer";
+// }
 
 //========= Back button for 3-step mode in table trainer =========
 function goToCategories() {
@@ -399,36 +450,36 @@ function resetHome() {
 }
 
 //========= Function to show URL of each section =========
-function showSectionFromHash() {
-  const hashFull = window.location.hash.substring(1);
-  const [section] = hashFull.split("?");
-  const params = getQueryParams();
+// function showSectionFromHash() {
+//   const hashFull = window.location.hash.substring(1);
+//   const [section] = hashFull.split("?");
+//   const params = getQueryParams();
 
-  const sections = ["home","trainer","tableTrainer"];
+//   const sections = ["home","trainer","tableTrainer"];
 
-  // Hide all main sections
-  sections.forEach(id => {
-    const el = document.getElementById(id);
-    if (el) el.style.display = "none";
-  });
+//   // Hide all main sections
+//   sections.forEach(id => {
+//     const el = document.getElementById(id);
+//     if (el) el.style.display = "none";
+//   });
 
-  // decide which to show
-  let active = "home";
-  if (section && sections.includes(section)) {
-    active = section;
-  }
+//   // decide which to show
+//   let active = "home";
+//   if (section && sections.includes(section)) {
+//     active = section;
+//   }
   
-  // Show selected
-  document.getElementById(active).style.display = "block";
+//   // Show selected
+//   document.getElementById(active).style.display = "block";
 
-  // Reset
-  if (active === "trainer") resetTrainer();
-  if (active === "home") resetHome();
+//   // Reset
+//   if (active === "trainer") resetTrainer();
+//   if (active === "home") resetHome();
 
-  if (active === "tableTrainer") {
-    handleTableRoutine(params);
-  }
-}
+//   if (active === "tableTrainer") {
+//     handleTableRoutine(params);
+//   }
+// }
 
 // Run when hash changes
 window.addEventListener("hashchange", showSectionFromHash);
