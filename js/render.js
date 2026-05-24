@@ -137,3 +137,32 @@ function generateTable(verbObj) {
     if (firstInput) firstInput.focus();
   }, 0);
 }
+
+//========= Function to build verb list from category in full mode =========
+function renderVerbList() {
+
+  const filtered = getFilteredVerbs();
+  
+  const container = document.getElementById("verbList");
+  container.innerHTML = "";
+
+  filtered.forEach( v => {
+    const item = document.createElement("div");
+
+    item.className = "verb-item";
+
+    item.innerHTML = `
+      <div class="verb-russian">${v.verb}</div>
+      <div class="verb-english">
+        ${v.translation || ""}
+      </div>
+    `;
+
+    item.onclick = () => {
+      window.location.hash = 
+        `tableTrainer?verb=${encodeURIComponent(v.verb)}`;
+    };
+
+    container.appendChild(item);
+  });
+}
