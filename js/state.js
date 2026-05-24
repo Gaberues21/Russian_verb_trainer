@@ -5,7 +5,7 @@ const appState = {
   aspect: "any",
   conjugation: "any",
   stem: "any",
-  class: "any",
+  v_class: "any",
   search: "",
 
   selectedVerb: null
