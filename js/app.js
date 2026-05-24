@@ -2,16 +2,16 @@ let data = [];
 let current = {};
 let currentTable = {};
 
-let appState = {
-  section: "home",
-  cat: "all",
-  aspect: "any",
-  conjugation: "any",
-  stem: "any",
-  class: "any",
-  search: "",
-  verb: null
-};
+// let appState = {
+//   section: "home",
+//   cat: "all",
+//   aspect: "any",
+//   conjugation: "any",
+//   stem: "any",
+//   class: "any",
+//   search: "",
+//   verb: null
+// };
 
 const tenseLabels = {
   present: "настоящее",
@@ -31,7 +31,7 @@ fetch("verbs.json")
     renderApp();
     // populateVerbList();
     // renderCategories();
-    // newQuestion();
+    newQuestion();
     // showSectionFromHash();
 
     // document.getElementById("aspectFilter").addEventListener("change", () => {
@@ -482,5 +482,5 @@ function resetHome() {
 // }
 
 // Run when hash changes
-window.addEventListener("hashchange", showSectionFromHash);
-;
+// window.addEventListener("hashchange", showSectionFromHash);
+// ;
