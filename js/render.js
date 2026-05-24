@@ -181,10 +181,10 @@ function renderApp() {
     appState.conjugation;
 
   document.getElementById("stemFilter").value =
-    appState.conjugation;
+    appState.stem;
 
   document.getElementById("classFilter").value =
-    appState.conjugation;
+    appState.v_class;
 
   document.getElementById("searchFilter").value =
     appState.search;
