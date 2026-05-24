@@ -18,8 +18,8 @@ function updateURL() {
     params.set("stem", appState.stem);
   }
   
-  if (appState.class !== "any") {
-    params.set("class", appState.class);
+  if (appState.v_class !== "any") {
+    params.set("v_class", appState.v_class);
   }
   
   if (appState.search !== "") {
@@ -44,7 +44,7 @@ function loadStateFromURL() {
 
   const parts = hash.split("?");
 
-  const params = new URLSearchParams(parts[1]);
+  const params = new URLSearchParams(parts[1] || "");
 
   appState.cat =
     params.get("cat") || "all";
@@ -58,12 +58,14 @@ function loadStateFromURL() {
   appState.stem =
     params.get("stem") || "any";
 
-  appState.class =
-    params.get("class") || "any";
+  appState.v_class =
+    params.get("v_class") || "any";
   
   appState.search =
     params.get("search") || "";
 
   appState.selectedVerb =
     params.get("verb");
+
+  renderApp?.();
 }
