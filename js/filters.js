@@ -24,6 +24,20 @@ function getFilteredVerbs() {
     );
   }
 
+  // Stem
+  if (appState.stem !== "any") {
+    filtered = filtered.filter(v =>
+      v.stem === appState.stem
+    );
+  }
+
+  // Class
+  if (appState.class !== "any") {
+    filtered = filtered.filter(v =>
+      v.class === appState.class
+    );
+  }
+
   // Search 
   if (appState.search.trim() !== "") {
 
