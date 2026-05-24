@@ -402,24 +402,24 @@ function showVerbList(category, aspect = "any", conjugation = "any", stem = "any
 // }
 
 //========= Helper function to update URL filters =========
-// function updateFilters(newParams) {
+function updateFilters(newParams) {
 
-//   // Current and new URL params
-//   const params = {...getQueryParams(),...newParams};
+  // Current and new URL params
+  const params = {...getQueryParams(),...newParams};
 
-//   // Remove empty values
-//   Object.keys(params).forEach(key => {
-//     if (params[key] === "" || params[key] === "any") {
-//       delete params[key];
-//     }
-//   });
+  // Remove empty values
+  Object.keys(params).forEach(key => {
+    if (params[key] === "" || params[key] === "any") {
+      delete params[key];
+    }
+  });
 
-//   // Build query string
-//   const query = new URLSearchParams(params).toString();
+  // Build query string
+  const query = new URLSearchParams(params).toString();
 
-//   // Update hash
-//   window.location.hash = query ? `tableTrainer?${query}` : "tableTrainer";
-// }
+  // Update hash
+  window.location.hash = query ? `tableTrainer?${query}` : "tableTrainer";
+}
 
 //========= Back button for 3-step mode in table trainer =========
 function goToCategories() {
