@@ -82,30 +82,30 @@ function checkAnswer() {
 }
 
 //========= Function to render categories in full mode =========
-function renderCategories(selected = "all") {
+// function renderCategories(selected = "all") {
   
-  const categories = ["all","top100","motion","reflexive"];
+//   const categories = ["all","top100","motion","reflexive"];
 
-  const container = document.getElementById("categoryBar");
-  container.innerHTML = "";
+//   const container = document.getElementById("categoryBar");
+//   container.innerHTML = "";
 
-  categories.forEach(cat => {
+//   categories.forEach(cat => {
     
-    const btn = document.createElement("button");
-    btn.textContent = cat;
-    btn.style.marginRight = "8px";
+//     const btn = document.createElement("button");
+//     btn.textContent = cat;
+//     btn.style.marginRight = "8px";
 
-    if (cat === selected) {
-      btn.style.background = "#1abc9c";
-    }
+//     if (cat === selected) {
+//       btn.style.background = "#1abc9c";
+//     }
 
-    btn.onclick = () => {
-      updateFilters({cat: cat});
-    };
+//     btn.onclick = () => {
+//       updateFilters({cat: cat});
+//     };
     
-    container.appendChild(btn);
-  });
-}
+//     container.appendChild(btn);
+//   });
+// }
 
 //========= Function to load table in full mode =========
 function generateTable(verbObj) {
