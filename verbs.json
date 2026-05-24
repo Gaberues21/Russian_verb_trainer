@@ -2349,5 +2349,47 @@
         "plural": "глядите"
       }
     }   
+  },
+  {
+    "verb": "сесть",
+    "translation": "to sit down, sit up",
+    "type": "perfective",
+    "conjugation": "mixed", 
+    "stem_pattern": "stem_change",
+    "class": "VII",
+    "stress": "a",
+    "category": ["top100","top500","all"],
+    "tenses": {
+      "present": {
+        "я": "",
+        "ты": "",
+        "он": "",
+        "она": "",
+        "оно": "",
+        "мы": "",
+        "вы": "",
+        "они": ""
+      },
+      "future": {
+        "я": "сяду",
+        "ты": "сядешь",
+        "он": "сядет",
+        "она": "сядет",
+        "оно": "сядет",
+        "мы": "сядем",
+        "вы": "сядете",
+        "они": "сядут"
+      },
+      "past": {
+        "masculine": "сел",
+        "feminine": "села",
+        "neuter": "село",
+        "plural": "сели"
+      },
+      "imperative": {
+        "singular": "сядь",
+        "plural": "сядьте"
+      }
+    }   
   }
 ]
