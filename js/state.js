@@ -4,6 +4,8 @@ const appState = {
   cat: "all",
   aspect: "any",
   conjugation: "any",
+  stem: "any",
+  class: "any",
   search: "",
 
   selectedVerb: null
