@@ -37,3 +37,33 @@ function updateURL() {
       ? `tableTrainer?${query}`
       : "tableTrainer";
 }
+
+function loadStateFromURL() {
+
+  const hash = window.location.hash;
+
+  const parts = hash.split("?");
+
+  const params = new URLSearchParams(parts[1]);
+
+  appState.cat =
+    params.get("cat") || "all";
+
+  appState.aspect =
+    params.get("aspect") || "any";
+
+  appState.conjugation =
+    params.get("conjugation") || "any";
+
+  appState.stem =
+    params.get("stem") || "any";
+
+  appState.class =
+    params.get("class") || "any";
+  
+  appState.search =
+    params.get("search") || "";
+
+  appState.selectedVerb =
+    params.get("verb");
+}
