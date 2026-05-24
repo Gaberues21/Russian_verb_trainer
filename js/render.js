@@ -166,3 +166,45 @@ function renderVerbList() {
     container.appendChild(item);
   });
 }
+
+//========= Function to render verb list from categories =========
+function renderApp() {
+  
+  renderCategories();
+
+  renderVerbList();
+
+  document.getElementById("aspectFilter").value =
+    appState.aspect;
+
+  document.getElementById("conjugationFilter").value =
+    appState.conjugation;
+
+  document.getElementById("stemFilter").value =
+    appState.conjugation;
+
+  document.getElementById("classFilter").value =
+    appState.conjugation;
+
+  document.getElementById("searchFilter").value =
+    appState.search;
+
+  const tableView =
+    document.getElementById("tableView");
+
+  if (appState.selectedVerb) {
+
+    const verbObj = data.find(v =>
+      v.verb === appState.selectedVerb
+    );
+
+    if (verbObj) {
+      tableView.style.display = "block";
+      generateTable(verbObj);
+    }
+
+  } else {
+
+    tableView.style.display = "none";
+  }
+}
