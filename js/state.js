@@ -8,5 +8,5 @@ const appState = {
   v_class: "any",
   search: "",
 
-  selectedVerb: null
+  verb: null
 };
