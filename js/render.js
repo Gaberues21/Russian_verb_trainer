@@ -179,6 +179,10 @@ function renderVerbList() {
     filtered.slice(start, end);
 
   const container = document.getElementById("verbList");
+
+  // Safety check
+  if (!container) return;
+  
   container.innerHTML = "";
 
   paginated.forEach( v => {
