@@ -27,7 +27,7 @@ function getFilteredVerbs() {
   // Stem
   if (appState.stem !== "any") {
     filtered = filtered.filter(v =>
-      v.stem === appState.stem
+      v.stem_pattern === appState.stem
     );
   }
 
