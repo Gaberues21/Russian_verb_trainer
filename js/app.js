@@ -28,6 +28,7 @@ function initializeListeners() {
     .addEventListener("change", e => {
 
       appState.aspect = e.target.value;
+      appState.page = 1;
 
       updateURL();
       renderApp();
@@ -37,6 +38,7 @@ function initializeListeners() {
     .addEventListener("change", e => {
 
       appState.conjugation = e.target.value;
+      appState.page = 1;
 
       updateURL();
       renderApp();
@@ -46,6 +48,7 @@ function initializeListeners() {
     .addEventListener("change", e => {
 
       appState.stem = e.target.value;
+      appState.page = 1;
 
       updateURL();
       renderApp();
@@ -55,6 +58,7 @@ function initializeListeners() {
     .addEventListener("change", e => {
 
       appState.v_class = e.target.value;
+      appState.page = 1;
 
       updateURL();
       renderApp();
@@ -64,6 +68,7 @@ function initializeListeners() {
     .addEventListener("input", e => {
 
       appState.search = e.target.value;
+      appState.page = 1;
 
       updateURL();
       renderApp();
