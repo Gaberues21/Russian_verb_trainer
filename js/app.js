@@ -8,7 +8,7 @@ const tenseLabels = {
   future: "будущее"
 };
 
-fetch("./verbs.json")
+fetch("/Russian_verb_trainer/verbs.json")
   .then(res => res.json())
   .then(json => {
     data = json;  
