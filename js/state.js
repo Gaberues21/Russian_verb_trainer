@@ -6,5 +6,7 @@ const appState = {
   v_class: "any",
   search: "",
   skipTenses: [],
-  selectedVerb: null
+  selectedVerb: null,
+  page: 1,
+  pageSize: 50,
 };
