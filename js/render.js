@@ -36,6 +36,16 @@ function generateTable(verbObj) {
   
   let html = `<h2>${verbObj.verb}</h2>`;
   html += `<table border="1">`;
+  
+  // Header
+  html += `
+    <tr>
+      <th class="${isPerfective ? "disabled-col" : ""}">Present</th>
+      <th>Future</th>
+      <th>Past</th>
+      <th>Imperative</th>
+    </tr>
+  `;
 
   html += `
   <div class="table-controls">
@@ -58,16 +68,6 @@ function generateTable(verbObj) {
 
   </div>
 `;
-  
-  // Header
-  html += `
-    <tr>
-      <th class="${isPerfective ? "disabled-col" : ""}">Present</th>
-      <th>Future</th>
-      <th>Past</th>
-      <th>Imperative</th>
-    </tr>
-  `;
 
   const pronouns = ["я", "ты", "он", "она", "оно", "мы", "вы", "они"];
   const pastForms = ["masculine", "feminine", "neuter", "plural"];
