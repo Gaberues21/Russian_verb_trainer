@@ -1725,7 +1725,7 @@
     "translation": "to write, text, paint",
     "type": "imperfective",
     "conjugation": "1st_conj", 
-    "stem_pattern": "regular",
+    "stem_pattern": "stem_change",
     "class": "VI",
     "stress": "c",
     "category": ["top100","top500","all"],
@@ -2431,6 +2431,48 @@
       "imperative": {
         "singular": "оставайся",
         "plural": "оставайтесь"
+      }
+    }   
+  },
+  {
+    "verb": "написать",
+    "translation": "to write, text, paint",
+    "type": "perfective",
+    "conjugation": "1st_conj", 
+    "stem_pattern": "stem_change",
+    "class": "VI",
+    "stress": "c",
+    "category": ["top100","top500","all"],
+    "tenses": {
+      "present": {
+        "я": "",
+        "ты": "",
+        "он": "",
+        "она": "",
+        "оно": "",
+        "мы": "",
+        "вы": "",
+        "они": ""
+      },
+      "future": {
+        "я": "напишу",
+        "ты": "напишешь",
+        "он": "напишет",
+        "она": "напишет",
+        "оно": "напишет",
+        "мы": "напишем",
+        "вы": "напишете",
+        "они": "напишут"
+      },
+      "past": {
+        "masculine": "написал",
+        "feminine": "написала",
+        "neuter": "написало",
+        "plural": "написали"
+      },
+      "imperative": {
+        "singular": "напиши",
+        "plural": "напишите"
       }
     }   
   }
