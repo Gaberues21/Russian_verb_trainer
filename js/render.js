@@ -181,7 +181,7 @@ function renderVerbList() {
   const container = document.getElementById("verbList");
 
   // Safety check
-  if (!container) return;
+  if (!container || !pagination) return;
   
   container.innerHTML = "";
 
