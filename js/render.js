@@ -12,7 +12,7 @@ function renderCategories() {
     btn.textContent = cat;
     btn.style.marginRight = "8px";
 
-    if (cat === selected) {
+    if (cat === appState.cat) {
       btn.style.background = "#1abc9c";
     }
 
