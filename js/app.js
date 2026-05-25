@@ -21,6 +21,7 @@ fetch("verbs.json")
     newQuestion();
   });
 
+//========= Function to initialize listeners =========
 function initializeListeners() {
 
   document.getElementById("aspectFilter")
@@ -69,6 +70,15 @@ function initializeListeners() {
     });
 }
 
+//========= Function to normalise Russian characters =========
+function normalizeRussian(str) {
+
+  return str
+    .trim()
+    .toLowerCase()
+    .replace(/ё/g, "е");
+}
+
 //========= Function to check answers in table in full mode =========
 function checkTable() {
 
@@ -82,8 +92,10 @@ function checkTable() {
     const tense = input.dataset.tense;
     const pronoun = input.dataset.pronoun;
 
-    const user = input.value.trim().toLowerCase();
-    const correctAnswer = currentTable?.tenses?.[tense]?.[pronoun]?.toLowerCase();
+    // const user = input.value.trim().toLowerCase();
+    // const correctAnswer = currentTable?.tenses?.[tense]?.[pronoun]?.toLowerCase();
+    const user = normalizeRussian(input.value);
+    const correctAnswer = normalizeRussian(currentTable?.tenses?.[tense]?.[pronoun] || "");
 
     if (!correctAnswer) return;
 
