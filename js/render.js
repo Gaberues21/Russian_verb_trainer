@@ -35,6 +35,29 @@ function generateTable(verbObj) {
   const isPerfective = verbObj.type === "perfective";
   
   let html = `<h2>${verbObj.verb}</h2>`;
+
+  html += `
+  <div class="table-controls">
+
+    <button onclick="toggleTense('present')">
+      Present
+    </button>
+
+    <button onclick="toggleTense('future')">
+      Future
+    </button>
+
+    <button onclick="toggleTense('past')">
+      Past
+    </button>
+
+    <button onclick="toggleTense('imperative')">
+      Imperative
+    </button>
+
+  </div>
+`;
+  
   html += `<table border="1">`;
   
   // Header
