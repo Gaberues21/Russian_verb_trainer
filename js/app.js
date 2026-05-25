@@ -165,37 +165,37 @@ function resetHome() {
 }
 
 //========= Function to show URL of each section =========
-function showSectionFromHash() {
-  const hashFull = window.location.hash.substring(1);
-  const [section] = hashFull.split("?");
-  const params = getQueryParams();
+// function showSectionFromHash() {
+//   const hashFull = window.location.hash.substring(1);
+//   const [section] = hashFull.split("?");
+//   const params = getQueryParams();
 
-  const sections = ["home","trainer","tableTrainer"];
+//   const sections = ["home","trainer","tableTrainer"];
 
-  // Hide all main sections
-  sections.forEach(id => {
-    const el = document.getElementById(id);
-    if (el) el.style.display = "none";
-  });
+//   // Hide all main sections
+//   sections.forEach(id => {
+//     const el = document.getElementById(id);
+//     if (el) el.style.display = "none";
+//   });
 
-  // decide which to show
-  let active = "home";
-  if (section && sections.includes(section)) {
-    active = section;
-  }
+//   // decide which to show
+//   let active = "home";
+//   if (section && sections.includes(section)) {
+//     active = section;
+//   }
   
-  // Show selected
-  document.getElementById(active).style.display = "block";
+//   // Show selected
+//   document.getElementById(active).style.display = "block";
 
-  // Reset
-  if (active === "trainer") resetTrainer();
-  if (active === "home") resetHome();
+//   // Reset
+//   if (active === "trainer") resetTrainer();
+//   if (active === "home") resetHome();
 
-  if (active === "tableTrainer") {
-    handleTableRoutine(params);
-  }
-}
+//   if (active === "tableTrainer") {
+//     handleTableRoutine(params);
+//   }
+// }
 
-// Run when hash changes
-window.addEventListener("hashchange", showSectionFromHash);
-;
+// // Run when hash changes
+// window.addEventListener("hashchange", showSectionFromHash);
+// ;
