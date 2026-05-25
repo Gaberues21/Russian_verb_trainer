@@ -5,5 +5,6 @@ const appState = {
   stem: "any",
   v_class: "any",
   search: "",
+  skipTenses: [],
   selectedVerb: null
 };
