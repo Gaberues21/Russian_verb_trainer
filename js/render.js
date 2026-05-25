@@ -34,6 +34,9 @@ function generateTable(verbObj) {
 
   const isPerfective = verbObj.type === "perfective";
   
+  let html = `<h2>${verbObj.verb}</h2>`;
+  html += `<table border="1">`;
+
   html += `
   <div class="table-controls">
 
@@ -56,9 +59,6 @@ function generateTable(verbObj) {
   </div>
 `;
   
-  let html = `<h2>${verbObj.verb}</h2>`;
-  html += `<table border="1">`;
-
   // Header
   html += `
     <tr>
