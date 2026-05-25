@@ -2601,5 +2601,47 @@
         "plural": "чувствуйте"
       }
     }   
+  },
+  {
+    "verb": "вести",
+    "translation": "to lead, conduct, manage, drive, behave oneself, keep a record, lead a road",
+    "type": "imperfective",
+    "conjugation": "mixed", 
+    "stem_pattern": "irregular",
+    "class": "VII",
+    "stress": "b/b",
+    "category": ["top100","top500","motion","all"],
+    "tenses": {
+      "present": {
+        "я": "веду",
+        "ты": "ведёшь",
+        "он": "ведёт",
+        "она": "ведёт",
+        "оно": "ведёт",
+        "мы": "ведём",
+        "вы": "ведёте",
+        "они": "ведут"
+      },
+      "future": {
+        "я": "буду вести",
+        "ты": "будешь вести",
+        "он": "будет вести",
+        "она": "будет вести",
+        "оно": "будет вести",
+        "мы": "будем вести",
+        "вы": "будете вести",
+        "они": "будут вести"
+      },
+      "past": {
+        "masculine": "вёл",
+        "feminine": "вела",
+        "neuter": "вело",
+        "plural": "вели"
+      },
+      "imperative": {
+        "singular": "веди",
+        "plural": "ведите"
+      }
+    }   
   }
 ]
