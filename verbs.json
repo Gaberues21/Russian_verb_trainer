@@ -2435,6 +2435,48 @@
     }   
   },
   {
+    "verb": "хотеться",
+    "translation": "to like, desire (impersonal)",
+    "type": "imperfective",
+    "conjugation": "mixed", 
+    "stem_pattern": "stem_change", 
+    "class": "V",
+    "stress": "c'",   
+    "category": ["top100","top500","reflexive","all"],
+    "tenses": {
+      "present": {
+        "я": "",
+        "ты": "",
+        "он": "хочется",
+        "она": "хочется",
+        "оно": "хочется",
+        "мы": "",
+        "вы": "",
+        "они": ""
+      },
+      "future": {
+        "я": "буду хотеться",
+        "ты": "будешь хотеться",
+        "он": "будет хотеться",
+        "она": "будет хотеться",
+        "оно": "будет хотеться",
+        "мы": "будем хотеться",
+        "вы": "будете хотеться",
+        "они": "будут хотеться"
+      },
+      "past": {
+        "masculine": "",
+        "feminine": "",
+        "neuter": "хотелось",
+        "plural": ""
+      },
+      "imperative": {
+        "singular": "",
+        "plural": ""
+      }
+    }   
+  },
+  {
     "verb": "написать",
     "translation": "to write, text, paint",
     "type": "perfective",
