@@ -305,7 +305,10 @@ window.addEventListener("load", () => {
 
 //========= Back button for 3-step mode in table trainer =========
 function goToCategories() {
-  window.location.hash = "tableTrainer";
+  // window.location.hash = "tableTrainer";
+  appState.selectedVerb = null;
+  updateURL();
+  renderApp();
 }
 
 //========= Function to reset random mode when exiting =========
