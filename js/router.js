@@ -32,15 +32,20 @@ function updateURL() {
   
   const query = params.toString();
 
-  window.location.hash =
-    query
-      ? `tableTrainer?${query}`
-      : "tableTrainer";
+window.location.hash =
+  query
+    ? `${appState.section}?${query}`
+    : appState.section;
 }
 
 function loadStateFromURL() {
 
   const hash = window.location.hash;
+
+  const [sectionPart] = hash.split("?");
+
+  appState.section =
+    sectionPart.replace("#", "") || "home";
 
   const parts = hash.split("?");
 
