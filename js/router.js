@@ -66,6 +66,4 @@ function loadStateFromURL() {
 
   appState.selectedVerb =
     params.get("verb");
-
-  renderApp?.();
 }
