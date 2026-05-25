@@ -172,8 +172,6 @@ function renderApp() {
   
   renderCategories();
 
-  renderVerbList();
-
   document.getElementById("aspectFilter").value =
     appState.aspect;
 
@@ -189,6 +187,12 @@ function renderApp() {
   document.getElementById("searchFilter").value =
     appState.search;
 
+  const categoryView =
+    document.getElementById("categoryView");
+
+  const listView =
+    document.getElementById("verbListView");
+
   const tableView =
     document.getElementById("tableView");
 
@@ -199,12 +203,22 @@ function renderApp() {
     );
 
     if (verbObj) {
+
+      categoryView.style.display = "none";
+      listView.style.display = "none";
+
       tableView.style.display = "block";
+
       generateTable(verbObj);
     }
 
   } else {
 
+    categoryView.style.display = "block";
+    listView.style.display = "block";
+
     tableView.style.display = "none";
+
+    renderVerbList();
   }
 }
