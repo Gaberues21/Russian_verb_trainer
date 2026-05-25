@@ -196,6 +196,22 @@ function renderVerbList() {
   });
 }
 
+//========= Function to toggle tenses on and off =========
+function toggleTense(tense) {
+
+  if (appState.skipTenses.includes(tense)) {
+
+    appState.skipTenses =
+      appState.skipTenses.filter(t => t !== tense);
+
+  } else {
+
+    appState.skipTenses.push(tense);
+  }
+
+  renderApp();
+}
+
 //========= Function to change page =========
 function changePage(direction) {
   appState.page += direction;
