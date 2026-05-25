@@ -181,6 +181,19 @@ function changePage(direction) {
 
 //========= Function to render verb list from categories =========
 function renderApp() {
+
+  const sections = ["home", "trainer", "tableTrainer"];
+
+  sections.forEach(id => {
+    const el = document.getElementById(id);
+  
+    if (el) {
+      el.style.display =
+        id === appState.section
+          ? "block"
+          : "none";
+    }
+  });
   
   renderCategories();
 
