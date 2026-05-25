@@ -169,10 +169,19 @@ function renderVerbList() {
 
   const filtered = getFilteredVerbs();
 
+  const start =
+    (appState.page - 1) * appState.pageSize;
+  
+  const end =
+    start + appState.pageSize;
+  
+  const paginated =
+    filtered.slice(start, end);
+
   const container = document.getElementById("verbList");
   container.innerHTML = "";
 
-  filtered.forEach( v => {
+  paginated.forEach( v => {
     const item = document.createElement("div");
 
     item.className = "verb-item";
@@ -194,6 +203,32 @@ function renderVerbList() {
 
     container.appendChild(item);
   });
+
+  const totalPages =
+    Math.ceil(filtered.length / appState.pageSize);
+  
+  const pagination =
+    document.getElementById("pagination");
+  
+  pagination.innerHTML = `
+    <button
+      ${appState.page === 1 ? "disabled" : ""}
+      onclick="changePage(-1)"
+    >
+      ← Prev
+    </button>
+  
+    <span>
+      Page ${appState.page} of ${totalPages}
+    </span>
+  
+    <button
+      ${appState.page === totalPages ? "disabled" : ""}
+      onclick="changePage(1)"
+    >
+      Next →
+    </button>
+  `;
 }
 
 //========= Function to toggle tenses on and off =========
