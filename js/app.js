@@ -164,6 +164,11 @@ function resetHome() {
   // nothing for now
 }
 
+window.addEventListener("hashchange", () => {
+  loadStateFromURL();
+  renderApp();
+});
+
 //========= Function to show URL of each section =========
 // function showSectionFromHash() {
 //   const hashFull = window.location.hash.substring(1);
