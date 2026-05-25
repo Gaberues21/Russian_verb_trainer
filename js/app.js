@@ -169,6 +169,14 @@ window.addEventListener("hashchange", () => {
   renderApp();
 });
 
+function goToSection(section) {
+
+  appState.section = section;
+
+  updateURL();
+  renderApp();
+}
+
 //========= Function to show URL of each section =========
 // function showSectionFromHash() {
 //   const hashFull = window.location.hash.substring(1);
