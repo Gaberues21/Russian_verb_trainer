@@ -32,9 +32,9 @@ function getFilteredVerbs() {
   }
 
   // Class
-  if (appState.class !== "any") {
+  if (appState.v_class !== "any") {
     filtered = filtered.filter(v =>
-      v.class === appState.class
+      v.class === appState.v_class
     );
   }
 
