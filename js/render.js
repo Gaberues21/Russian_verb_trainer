@@ -1,5 +1,5 @@
 //========= Function to render categories in full mode =========
-function renderCategories(selected = "all") {
+function renderCategories() {
   
   const categories = ["all","top100","motion","reflexive"];
 
