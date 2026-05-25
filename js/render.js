@@ -17,7 +17,10 @@ function renderCategories(selected = "all") {
     }
 
     btn.onclick = () => {
-      updateFilters({cat: cat});
+      // updateFilters({cat: cat});
+      appState.cat = cat;
+      updateURL();
+      renderApp();
     };
     
     container.appendChild(btn);
@@ -159,8 +162,11 @@ function renderVerbList() {
     `;
 
     item.onclick = () => {
-      window.location.hash = 
-        `tableTrainer?verb=${encodeURIComponent(v.verb)}`;
+      // window.location.hash = 
+      //   `tableTrainer?verb=${encodeURIComponent(v.verb)}`;
+      appState.selectedVerb = v.verb;
+      updateURL();
+      renderApp();
     };
 
     container.appendChild(item);
