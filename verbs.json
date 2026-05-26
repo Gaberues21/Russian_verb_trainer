@@ -2853,5 +2853,47 @@
         "plural": "начинайте"
       }
     }   
+  },
+  {
+    "verb": "появиться",
+    "translation": "to appear, show up",
+    "type": "perfective",
+    "conjugation": "2nd_conj", 
+    "stem_pattern": "cons_change", 
+    "class": "IV",
+    "stress": "c",
+    "category": ["top100","top500","reflexive","all"],
+    "tenses": {
+      "present": {
+        "я": "",
+        "ты": "",
+        "он": "",
+        "она": "",
+        "оно": "",
+        "мы": "",
+        "вы": "",
+        "они": ""
+      },
+      "future": {
+        "я": "появлюсь",
+        "ты": "появишься",
+        "он": "появится",
+        "она": "появится",
+        "оно": "появится",
+        "мы": "появимся",
+        "вы": "появитесь",
+        "они": "появятся"
+      },
+      "past": {
+        "masculine": "появился",
+        "feminine": "появилась",
+        "neuter": "появилось",
+        "plural": "появились"
+      },
+      "imperative": {
+        "singular": "появись",
+        "plural": "появитесь"
+      }
+    }   
   }
 ]
