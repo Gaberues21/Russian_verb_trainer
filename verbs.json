@@ -2685,5 +2685,47 @@
         "plural": "продолжайте"
       }
     }   
+  },
+  {
+    "verb": "успеть",
+    "translation": "to have time, manage to do, arrive in time",
+    "type": "perfective",
+    "conjugation": "1st_conj", 
+    "stem_pattern": "regular",
+    "class": "I",
+    "stress": "a",
+    "category": ["top100","top500","all"],
+    "tenses": {
+      "present": {
+        "я": "",
+        "ты": "",
+        "он": "",
+        "она": "",
+        "оно": "",
+        "мы": "",
+        "вы": "",
+        "они": ""
+      },
+      "future": {
+        "я": "успею",
+        "ты": "успеешь",
+        "он": "успеет",
+        "она": "успеет",
+        "оно": "успеет",
+        "мы": "успеем",
+        "вы": "успеете",
+        "они": "успеют"
+      },
+      "past": {
+        "masculine": "успел",
+        "feminine": "успела",
+        "neuter": "успело",
+        "plural": "успели"
+      },
+      "imperative": {
+        "singular": "успей",
+        "plural": "успейте"
+      }
+    }   
   }
 ]
