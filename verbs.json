@@ -3066,7 +3066,7 @@
   },
   {
     "verb": "держать",
-    "translation": "to be situated, be located",
+    "translation": "to hold, take",
     "type": "imperfective",
     "conjugation": "2nd_conj", 
     "stem_pattern": "regular", 
@@ -3103,6 +3103,48 @@
       "imperative": {
         "singular": "держи",
         "plural": "держите"
+      }
+    }   
+  },
+  {
+    "verb": "просить",
+    "translation": "to request, ask for, beg, pray",
+    "type": "imperfective",
+    "conjugation": "2nd_conj", 
+    "stem_pattern": "cons_change",
+    "class": "IV",
+    "stress": "c",
+    "category": ["top100","top500","all"],
+    "tenses": {
+      "present": {
+        "я": "прошу",
+        "ты": "просишь",
+        "он": "просит",
+        "она": "просит",
+        "оно": "просит",
+        "мы": "просим",
+        "вы": "просите",
+        "они": "просят"
+      },
+      "future": {
+        "я": "буду просить",
+        "ты": "будешь просить",
+        "он": "будет просить",
+        "она": "будет просить",
+        "оно": "будет просить",
+        "мы": "будем просить",
+        "вы": "будете просить",
+        "они": "будут просить"
+      },
+      "past": {
+        "masculine": "просил",
+        "feminine": "просила",
+        "neuter": "просило",
+        "plural": "просили"
+      },
+      "imperative": {
+        "singular": "проси",
+        "plural": "просите"
       }
     }   
   }
