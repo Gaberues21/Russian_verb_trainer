@@ -2769,5 +2769,47 @@
         "plural": "берите"
       }
     }   
+  },
+  {
+    "verb": "пройти",
+    "translation": "to pass by, go through, take place, pass, elapse, cover a topic, pass a test",
+    "type": "imperfective",
+    "conjugation": "mixed", 
+    "stem_pattern": "suppletive", 
+    "class": "irregular",
+    "stress": "b", 
+    "category": ["top100","top500","motion","all"],
+    "tenses": {
+      "present": {
+        "я": "пройду",
+        "ты": "пройдёшь",
+        "он": "пройдёт",
+        "она": "пройдёт",
+        "оно": "пройдёт",
+        "мы": "пройдём",
+        "вы": "пройдёте",
+        "они": "пройдут"
+      },
+      "future": {
+        "я": "буду пройти",
+        "ты": "будешь пройти",
+        "он": "будет пройти",
+        "она": "будет пройти",
+        "оно": "будет пройти",
+        "мы": "будем пройти",
+        "вы": "будете пройти",
+        "они": "будут пройти"
+      },
+      "past": {
+        "masculine": "прошёл",
+        "feminine": "прошла",
+        "neuter": "прошло",
+        "plural": "прошли"
+      },
+      "imperative": {
+        "singular": "пройди",
+        "plural": "пройдите"
+      }
+    }   
   }
 ]
