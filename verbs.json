@@ -2895,5 +2895,47 @@
         "plural": "появитесь"
       }
     }   
+  },
+  {
+    "verb": "забыть",
+    "translation": "to forget",
+    "type": "perfective",
+    "conjugation": "irregular",
+    "stem_pattern": "stem_change",
+    "class": "irregular",
+    "stress": "a",
+    "category": ["top100","top500","all"],
+    "tenses": {
+      "present": {
+        "я": "",
+        "ты": "",
+        "он": "",
+        "она": "",
+        "оно": "",
+        "мы": "",
+        "вы": "",
+        "они": ""
+      },
+      "future": {
+        "я": "забуду",
+        "ты": "забудешь",
+        "он": "забудет",
+        "она": "забудет",
+        "оно": "забудет",
+        "мы": "забудем",
+        "вы": "забудете",
+        "они": "забудут"
+      },
+      "past": {
+        "masculine": "забыл",
+        "feminine": "забыла",
+        "neuter": "забыло",
+        "plural": "забыли"
+      },
+      "imperative": {
+        "singular": "забудь",
+        "plural": "забудьте"
+      }
+    }   
   }
 ]
