@@ -26,6 +26,10 @@ function updateURL() {
     params.set("search", appState.search);
   }
 
+  if (appState.page !== 1) {
+    params.set("page", appState.page);
+  }
+  
   if (appState.selectedVerb) {
     params.set("verb", appState.selectedVerb);
   }
@@ -68,6 +72,9 @@ function loadStateFromURL() {
   
   appState.search =
     params.get("search") || "";
+
+  appState.page =
+    parseInt(params.get("page")) || 1;
 
   appState.selectedVerb =
     params.get("verb");
