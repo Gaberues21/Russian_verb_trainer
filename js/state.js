@@ -8,7 +8,7 @@ const appState = {
   stem: "any",
   v_class: "any",
   search: "",
-  skipTenses: [],
+  hiddenTenses: [],
   selectedVerb: null,
   
   page: 1,
