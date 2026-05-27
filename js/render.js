@@ -238,17 +238,21 @@ function renderVerbList() {
 //========= Function to toggle tenses on and off =========
 function toggleTense(tense) {
 
-  if (appState.skipTenses.includes(tense)) {
+  const index =
+    appState.hiddenTenses.indexOf(tense);
 
-    appState.skipTenses =
-      appState.skipTenses.filter(t => t !== tense);
+  if (index === -1) {
+
+    appState.hiddenTenses.push(tense);
 
   } else {
 
-    appState.skipTenses.push(tense);
+    appState.hiddenTenses.splice(index, 1);
   }
 
-  renderApp();
+  if (currentTable) {
+    generateTable(currentTable);
+  }
 }
 
 //========= Function to change page =========
