@@ -77,5 +77,8 @@ function loadStateFromURL() {
     parseInt(params.get("page")) || 1;
 
   appState.selectedVerb =
-    params.get("verb");
+    params.get("id");
+  
+  // appState.selectedVerb =
+  //   params.get("verb");
 }
