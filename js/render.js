@@ -198,8 +198,6 @@ function renderVerbList() {
     `;
 
     item.onclick = () => {
-      // window.location.hash = 
-      //   `tableTrainer?verb=${encodeURIComponent(v.verb)}`;
       appState.selectedVerb = v.verb;
       updateURL();
       renderApp();
