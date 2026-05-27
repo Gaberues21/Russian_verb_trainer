@@ -1,5 +1,6 @@
 [{
     "verb": "быть",
+    "id": "1",
     "translation": "to be",
     "type": "imperfective",
     "conjugation": "mixed", 
@@ -42,6 +43,7 @@
   },
   {
     "verb": "сказать",
+    "id": "2",
     "translation": "to say",
     "type": "perfective",
     "conjugation": "mixed",
@@ -84,6 +86,7 @@
   },
   {
     "verb": "мочь",
+    "id": "3",
     "translation": "to be able to",
     "type": "imperfective",
     "conjugation": "mixed", 
@@ -126,6 +129,7 @@
   },
   {
     "verb": "знать",
+    "id": "4",
     "translation": "to know",
     "type": "imperfective",
     "conjugation": "1st_conj", 
@@ -168,6 +172,7 @@
   },
   {
     "verb": "говорить",
+    "id": "5",
     "translation": "to speak",
     "type": "imperfective",
     "conjugation": "2nd_conj", 
@@ -210,6 +215,7 @@
   },
   {
     "verb": "стать",
+    "id": "6",
     "translation": "to become, begin to, stand, take to",
     "type": "perfective",
     "conjugation": "mixed", 
@@ -252,6 +258,7 @@
   },
   {
     "verb": "хотеть",
+    "id": "7",
     "translation": "to want, feel like, mean",
     "type": "imperfective",
     "conjugation": "mixed",
@@ -294,6 +301,7 @@
   },
   {
     "verb": "видеть",
+    "id": "8",
     "translation": "to see",
     "type": "imperfective",
     "conjugation": "2nd_conj",
@@ -336,6 +344,7 @@
   },
   {
     "verb": "идти",
+    "id": "9",
     "translation": "to go, to walk",
     "type": "imperfective",
     "conjugation": "mixed", 
@@ -378,6 +387,7 @@
   },
   {
     "verb": "стоять",
+    "id": "10",
     "translation": "to stand",
     "type": "imperfective",
     "conjugation": "2nd_conj",
@@ -420,7 +430,8 @@
   },
   {
     "verb": "думать",
-    "translation": "to think, to consider",
+    "id": "11",
+    "translation": "to think, consider",
     "type": "imperfective",
     "conjugation": "1st_conj", 
     "stem_pattern": "regular", 
@@ -462,6 +473,7 @@
   },
   {
     "verb": "спросить",
+    "id": "12",
     "translation": "to ask",
     "type": "perfective",
     "conjugation": "2nd_conj", 
@@ -504,6 +516,7 @@
   },
   {
     "verb": "жить",
+    "id": "13",
     "translation": "to live",
     "type": "imperfective",
     "conjugation": "1st_conj",
@@ -546,6 +559,7 @@
   },
   {
     "verb": "смотреть",
+    "id": "14",
     "translation": "to look, to watch",
     "type": "imperfective",
     "conjugation": "2nd_conj", 
@@ -588,6 +602,7 @@
   },
   {
     "verb": "иметь",
+    "id": "15",
     "translation": "to have, keep, hold, possess",
     "type": "imperfective",
     "conjugation": "1st_conj", 
@@ -630,6 +645,7 @@
   },
   {
     "verb": "понять",
+    "id": "16",
     "translation": "to understand, clear",
     "type": "perfective",
     "conjugation": "mixed", 
@@ -672,6 +688,7 @@
   },
   {
     "verb": "сидеть",
+    "id": "17",
     "translation": "to sit",
     "type": "imperfective",
     "conjugation": "2nd_conj", 
@@ -714,6 +731,7 @@
   },
   {
     "verb": "делать",
+    "id": "18",
     "translation": "to do, to make",
     "type": "imperfective",
     "conjugation": "1st_conj", 
@@ -756,6 +774,7 @@
   },
   {
     "verb": "сделать",
+    "id": "19",
     "translation": "to do, to make",
     "type": "perfective",
     "conjugation": "1st_conj", 
@@ -798,6 +817,7 @@
   },
   {
     "verb": "взять",
+    "id": "20",
     "translation": "to take, pick, grab",
     "type": "perfective",
     "conjugation": "mixed",
@@ -840,6 +860,7 @@
   },
   {
     "verb": "понимать",
+    "id": "21",
     "translation": "to understand, comprehend, realize",
     "type": "imperfective",
     "conjugation": "1st_conj",
@@ -882,6 +903,7 @@
   },
   {
     "verb": "казаться",
+    "id": "22",
     "translation": "to seem, appear",
     "type": "imperfective",
     "conjugation": "1st_conj", 
@@ -924,6 +946,7 @@
   },
   {
     "verb": "начать",
+    "id": "23",
     "translation": "to begin, start, commence",
     "type": "perfective",
     "conjugation": "mixed", 
@@ -966,6 +989,7 @@
   },
   {
     "verb": "увидеть",
+    "id": "24",
     "translation": "to see",
     "type": "perfective",
     "conjugation": "2nd_conj", 
@@ -1008,6 +1032,7 @@
   },
   {
     "verb": "давать",
+    "id": "25",
     "translation": "to give, let, make",
     "type": "imperfective",
     "conjugation": "1st_conj",
@@ -1050,6 +1075,7 @@
   },
   {
     "verb": "пойти",
+    "id": "26",
     "translation": "to go, to walk",
     "type": "perfective",
     "conjugation": "mixed", 
@@ -1092,6 +1118,7 @@
   },
   {
     "verb": "остаться",
+    "id": "27",
     "translation": "to remain, stay",
     "type": "perfective",
     "conjugation": "1st_conj", 
@@ -1134,6 +1161,7 @@
   },
   {
     "verb": "выйти",
+    "id": "28",
     "translation": "to go out, come out, leave, publish, marry",
     "type": "perfective",
     "conjugation": "1st_conj", 
@@ -1176,6 +1204,7 @@
   },
   {
     "verb": "дать",
+    "id": "29",
     "translation": "to give, make, cause, let, allow, permit",
     "type": "perfective",
     "conjugation": "mixed",
@@ -1218,6 +1247,7 @@
   },
   {
     "verb": "работать",
+    "id": "30",
     "translation": "to work, operate, function",
     "type": "imperfective",
     "conjugation": "1st_conj", 
@@ -1260,6 +1290,7 @@
   },
   {
     "verb": "оказаться",
+    "id": "31",
     "translation": "to turn out to be, find oneself",
     "type": "perfective",
     "conjugation": "1st_conj", 
@@ -1302,6 +1333,7 @@
   },
   {
     "verb": "ответить",
+    "id": "32",
     "translation": "to answer",
     "type": "perfective",
     "conjugation": "2nd_conj", 
@@ -1344,6 +1376,7 @@
   },
   {
     "verb": "подумать",
+    "id": "33",
     "translation": "to think a little, consider, reflect, ponder",
     "type": "perfective",
     "conjugation": "1st_conj", 
@@ -1386,6 +1419,7 @@
   },
   {
     "verb": "любить",
+    "id": "34",
     "translation": "to love",
     "type": "imperfective",
     "conjugation": "2nd_conj", 
@@ -1428,6 +1462,7 @@
   },
   {
     "verb": "значить",
+    "id": "35",
     "translation": "to mean, signify",
     "type": "imperfective",
     "conjugation": "2nd_conj", 
@@ -1470,6 +1505,7 @@
   },
   {
     "verb": "ждать",
+    "id": "36",
     "translation": "to wait, expect",
     "type": "imperfective",
     "conjugation": "1st_conj", 
@@ -1512,6 +1548,7 @@
   },
   {
     "verb": "посмотреть",
+    "id": "37",
     "translation": "to look, watch",
     "type": "perfective",
     "conjugation": "2nd_conj", 
@@ -1554,6 +1591,7 @@
   },
   {
     "verb": "найти",
+    "id": "38",
     "translation": "to find",
     "type": "perfective",
     "conjugation": "mixed", 
@@ -1596,6 +1634,7 @@
   },
   {
     "verb": "лежать",
+    "id": "39",
     "translation": "to be lying down, be situated, rest",
     "type": "imperfective",
     "conjugation": "2nd_conj", 
@@ -1638,6 +1677,7 @@
   },
   {
     "verb": "решить",
+    "id": "40",
     "translation": "to decide, solve",
     "type": "perfective",
     "conjugation": "2nd_conj", 
@@ -1680,6 +1720,7 @@
   },
   {
     "verb": "получить",
+    "id": "41",
     "translation": "to receive, get, obtain, access",
     "type": "perfective",
     "conjugation": "2nd_conj", 
@@ -1722,6 +1763,7 @@
   },
   {
     "verb": "писать",
+    "id": "42",
     "translation": "to write, text, paint",
     "type": "imperfective",
     "conjugation": "1st_conj", 
@@ -1764,6 +1806,7 @@
   },
   {
     "verb": "писать",
+    "id": "43",
     "translation": "to pee, piss",
     "type": "imperfective",
     "conjugation": "1st_conj", 
@@ -1806,6 +1849,7 @@
   },
   {
     "verb": "вернуться",
+    "id": "44",
     "translation": "to return, come back, revert",
     "type": "perfective",
     "conjugation": "mixed", 
@@ -1848,6 +1892,7 @@
   },
   {
     "verb": "считать",
+    "id": "45",
     "translation": "to consider, think, count",
     "type": "imperfective",
     "conjugation": "1st_conj", 
@@ -1890,6 +1935,7 @@
   },
   {
     "verb": "помнить",
+    "id": "46",
     "translation": "to remember",
     "type": "imperfective",
     "conjugation": "2nd_conj", 
@@ -1932,6 +1978,7 @@
   },
   {
     "verb": "узнать",
+    "id": "47",
     "translation": "to learn, find out, recognize",
     "type": "perfective",
     "conjugation": "1st_conj", 
@@ -1974,6 +2021,7 @@
   },
   {
     "verb": "прийти",
+    "id": "48",
     "translation": "to arrive, come",
     "type": "perfective",
     "conjugation": "1st_conj", 
@@ -2016,6 +2064,7 @@
   },
   {
     "verb": "ходить",
+    "id": "49",
     "translation": "to go, walk, move, pass (multidirectional)",
     "type": "imperfective",
     "conjugation": "2nd_conj", 
@@ -2058,6 +2107,7 @@
   },
   {
     "verb": "заметить",
+    "id": "50",
     "translation": "to notice, note, observe",
     "type": "perfective",
     "conjugation": "2nd_conj", 
@@ -2100,6 +2150,7 @@
   },
   {
     "verb": "бывать",
+    "id": "51",
     "translation": "to be at, happen, be inclined to be, visit",
     "type": "imperfective",
     "conjugation": "1st_conj", 
@@ -2142,6 +2193,7 @@
   },
   {
     "verb": "слышать",
+    "id": "52",
     "translation": "to hear",
     "type": "imperfective",
     "conjugation": "2nd_conj", 
@@ -2184,6 +2236,7 @@
   },
   {
     "verb": "уйти",
+    "id": "53",
     "translation": "to leave, depart, go away, take",
     "type": "perfective",
     "conjugation": "mixed", 
@@ -2226,6 +2279,7 @@
   },
   {
     "verb": "бояться",
+    "id": "54",
     "translation": "to be afraid, dread, fear",
     "type": "imperfective",
     "conjugation": "1st_conj", 
@@ -2268,6 +2322,7 @@
   },
   {
     "verb": "слушать",
+    "id": "55",
     "translation": "to listen",
     "type": "imperfective",
     "conjugation": "1st_conj", 
@@ -2310,6 +2365,7 @@
   },
   {
     "verb": "глядеть",
+    "id": "56",
     "translation": "to look, appear, face, search for",
     "type": "imperfective",
     "conjugation": "2nd_conj", 
@@ -2352,6 +2408,7 @@
   },
   {
     "verb": "сесть",
+    "id": "57",
     "translation": "to sit down, sit up",
     "type": "perfective",
     "conjugation": "mixed", 
@@ -2394,6 +2451,7 @@
   },
   {
     "verb": "оставаться",
+    "id": "58",
     "translation": "to stay, remain",
     "type": "imperfective",
     "conjugation": "mixed", 
@@ -2436,6 +2494,7 @@
   },
   {
     "verb": "хотеться",
+    "id": "59",
     "translation": "to like, desire (impersonal)",
     "type": "imperfective",
     "conjugation": "mixed", 
@@ -2478,6 +2537,7 @@
   },
   {
     "verb": "написать",
+    "id": "60",
     "translation": "to write, text, paint",
     "type": "perfective",
     "conjugation": "1st_conj", 
@@ -2520,6 +2580,7 @@
   },
   {
     "verb": "читать",
+    "id": "61",
     "translation": "to read",
     "type": "imperfective",
     "conjugation": "1st_conj", 
@@ -2562,6 +2623,7 @@
   },
   {
     "verb": "чувствовать",
+    "id": "62",
     "translation": "to feel, have a sensation, sense, taste",
     "type": "imperfective",
     "conjugation": "1st_conj", 
@@ -2604,6 +2666,7 @@
   },
   {
     "verb": "вести",
+    "id": "63",
     "translation": "to lead, conduct, manage, drive, behave oneself, keep a record, lead a road",
     "type": "imperfective",
     "conjugation": "mixed", 
@@ -2646,6 +2709,7 @@
   },
   {
     "verb": "продолжать",
+    "id": "64",
     "translation": "to continue, keep on",
     "type": "imperfective",
     "conjugation": "1st_conj", 
@@ -2688,6 +2752,7 @@
   },
   {
     "verb": "успеть",
+    "id": "65",
     "translation": "to have time, manage to do, arrive in time",
     "type": "perfective",
     "conjugation": "1st_conj", 
@@ -2730,6 +2795,7 @@
   },
   {
     "verb": "брать",
+    "id": "66",
     "translation": "to take, get, pick, borrow, grab, hire",
     "type": "imperfective",
     "conjugation": "mixed", 
@@ -2772,6 +2838,7 @@
   },
   {
     "verb": "пройти",
+    "id": "67",
     "translation": "to pass by, go through, take place, pass, elapse, cover a topic, pass a test",
     "type": "imperfective",
     "conjugation": "mixed", 
@@ -2814,6 +2881,7 @@
   },
   {
     "verb": "начинать",
+    "id": "68",
     "translation": "to begin, start, commence",
     "type": "imperfective",
     "conjugation": "1st_conj", 
@@ -2856,6 +2924,7 @@
   },
   {
     "verb": "появиться",
+    "id": "69",
     "translation": "to appear, show up",
     "type": "perfective",
     "conjugation": "2nd_conj", 
@@ -2898,6 +2967,7 @@
   },
   {
     "verb": "забыть",
+    "id": "70",
     "translation": "to forget",
     "type": "perfective",
     "conjugation": "irregular",
@@ -2940,6 +3010,7 @@
   },
   {
     "verb": "вспомнить",
+    "id": "71",
     "translation": "to remember",
     "type": "perfective",
     "conjugation": "2nd_conj", 
@@ -2982,6 +3053,7 @@
   },
   {
     "verb": "пытаться",
+    "id": "72",
     "translation": "to attempt, try, endevour",
     "type": "imperfective",
     "conjugation": "1st_conj", 
@@ -3024,6 +3096,7 @@
   },
   {
     "verb": "находиться",
+    "id": "73",
     "translation": "to be situated, be located",
     "type": "imperfective",
     "conjugation": "2nd_conj", 
@@ -3066,6 +3139,7 @@
   },
   {
     "verb": "держать",
+    "id": "74",
     "translation": "to hold, take",
     "type": "imperfective",
     "conjugation": "2nd_conj", 
@@ -3108,6 +3182,7 @@
   },
   {
     "verb": "просить",
+    "id": "75",
     "translation": "to request, ask for, beg, pray",
     "type": "imperfective",
     "conjugation": "2nd_conj", 
@@ -3150,6 +3225,7 @@
   },
   {
     "verb": "показать",
+    "id": "76",
     "translation": "to show, display, reveal, point",
     "type": "perfective",
     "conjugation": "mixed",
