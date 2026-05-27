@@ -166,6 +166,8 @@ function resetTableTrainer(){
   document.getElementById("tableContainer").innerHTML = "";
   document.getElementById("tableResult").innerText = "";
 
+  appState.hiddenTenses = [];
+
   currentTable = {};
 }
 
