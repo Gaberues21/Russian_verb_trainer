@@ -31,7 +31,7 @@ function updateURL() {
   }
   
   if (appState.selectedVerb) {
-    params.set("verb", appState.selectedVerb);
+    params.set("id", appState.selectedVerb);
   }
   
   const query = params.toString();
