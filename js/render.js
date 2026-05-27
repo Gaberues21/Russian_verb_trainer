@@ -253,8 +253,14 @@ function toggleTense(tense) {
 
 //========= Function to change page =========
 function changePage(direction) {
+  
   appState.page += direction;
-  renderApp();
+
+  if (appState.page < 1) {
+    appState.page = 1;
+  }
+
+  updateURL();
 }
 
 //========= Function to render verb list from categories =========
