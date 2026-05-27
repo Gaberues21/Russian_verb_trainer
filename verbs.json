@@ -3147,5 +3147,47 @@
         "plural": "просите"
       }
     }   
+  },
+  {
+    "verb": "показать",
+    "translation": "to show, display, reveal, point",
+    "type": "perfective",
+    "conjugation": "mixed",
+    "stem_pattern": "stem_change",
+    "class": "VI",
+    "stress": "c",
+    "category": ["top100","top500","all"],
+    "tenses": {
+      "present": {
+        "я": "",
+        "ты": "",
+        "он": "",
+        "она": "",
+        "оно": "",
+        "мы": "",
+        "вы": "",
+        "они": ""
+      },
+      "future": {
+        "я": "покажу",
+        "ты": "покажешь",
+        "он": "покажет",
+        "она": "покажет",
+        "оно": "покажет",
+        "мы": "покажем",
+        "вы": "покажете",
+        "они": "покажут"
+      },
+      "past": {
+        "masculine": "показал",
+        "feminine": "показала",
+        "neuter": "показало",
+        "plural": "показали"
+      },
+      "imperative": {
+        "singular": "покажи",
+        "plural": "покажите"
+      }
+    }   
   }
 ]
