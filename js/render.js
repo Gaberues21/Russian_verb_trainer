@@ -198,7 +198,8 @@ function renderVerbList() {
     `;
 
     item.onclick = () => {
-      appState.selectedVerb = v.verb;
+      // appState.selectedVerb = v.verb;
+      appState.selectedVerb = v.id;
       updateURL();
       renderApp();
     };
@@ -310,7 +311,8 @@ function renderApp() {
   if (appState.selectedVerb) {
 
     const verbObj = data.find(v =>
-      v.verb === appState.selectedVerb
+      // v.verb === appState.selectedVerb
+      String(v.id) === String(appState.selectedVerb)
     );
 
     if (verbObj) {
