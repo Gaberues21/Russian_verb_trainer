@@ -3440,5 +3440,48 @@
         "plural": "пошлите"
       }
     }   
+  },
+  {
+    "verb": "подойти",
+    "id": "81",
+    "translation": "to approach, come to, walk to, suit, fit, match",
+    "type": "perfective",
+    "conjugation": "mixed", 
+    "stem_pattern": "suppletive", 
+    "class": "irregular",
+    "stress": "b", 
+    "category": ["top100","top500","motion","all"],
+    "tenses": {
+      "present": {
+        "я": "",
+        "ты": "",
+        "он": "",
+        "она": "",
+        "оно": "",
+        "мы": "",
+        "вы": "",
+        "они": ""
+      },
+      "future": {
+        "я": "подойду",
+        "ты": "подойдёшь",
+        "он": "подойдёт",
+        "она": "подойдёт",
+        "оно": "подойдёт",
+        "мы": "подойдём",
+        "вы": "подойдёте",
+        "они": "подойдут"
+      },
+      "past": {
+        "masculine": "подошёл",
+        "feminine": "подошла",
+        "neuter": "подошло",
+        "plural": "подошли"
+      },
+      "imperative": {
+        "singular": "подойди",
+        "plural": "подойдите"
+      }
+    }   
   }
 ]
