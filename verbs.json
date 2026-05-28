@@ -3526,5 +3526,48 @@
         "plural": "расскажите"
       }
     }   
+  },
+  {
+    "verb": "встать",
+    "id": "83",
+    "translation": "to get up, stand, rise, arise, come up, stop",
+    "type": "perfective",
+    "conjugation": "mixed", 
+    "stem_pattern": "stem_change", 
+    "class": "XV",
+    "stress": "a",
+    "category": ["top100","top500","all"],
+    "tenses": {
+      "present": {
+        "я": "",
+        "ты": "",
+        "он": "",
+        "она": "",
+        "оно": "",
+        "мы": "",
+        "вы": "",
+        "они": ""
+      },
+      "future": {
+        "я": "встану",
+        "ты": "встанешь",
+        "он": "встанет",
+        "она": "встанет",
+        "оно": "встанет",
+        "мы": "встанем",
+        "вы": "встанете",
+        "они": "встанут"
+      },
+      "past": {
+        "masculine": "встал",
+        "feminine": "встала",
+        "neuter": "встало",
+        "plural": "встали"
+      },
+      "imperative": {
+        "singular": "встань",
+        "plural": "встаньте"
+      }
+    }   
   }
 ]
