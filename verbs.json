@@ -3309,5 +3309,49 @@
         "plural": "выходите"
       }
     }   
+  },
+  {
+    "verb": "поднять",
+    "id": "78",
+    "search_form": "поднять",
+    "translation": "to lift, raise, heave, pick up, increase",
+    "type": "perfective",
+    "conjugation": "mixed", 
+    "stem_pattern": "suppletive",
+    "class": "XIV",
+    "stress": "c/c",
+    "category": ["top100","top500","all"],
+    "tenses": {
+      "present": {
+        "я": "",
+        "ты": "",
+        "он": "",
+        "она": "",
+        "оно": "",
+        "мы": "",
+        "вы": "",
+        "они": ""
+      },
+      "future": {
+        "я": "подниму",
+        "ты": "поднимешь",
+        "он": "поднимет",
+        "она": "поднимет",
+        "оно": "поднимет",
+        "мы": "поднимем",
+        "вы": "поднимете",
+        "они": "поднимут"
+      },
+      "past": {
+        "masculine": "поднял",
+        "feminine": "подняла",
+        "neuter": "подняла",
+        "plural": "подняли"
+      },
+      "imperative": {
+        "singular": "подними",
+        "plural": "поднимите"
+      }
+    }   
   }
 ]
