@@ -3397,5 +3397,48 @@
         "plural": "называйте"
       }
     }   
+  },
+  {
+    "verb": "послать",
+    "id": "80",
+    "translation": "to send, dispatch, swear at",
+    "type": "perfective",
+    "conjugation": "mixed",
+    "stem_pattern": "stem_change",
+    "class": "VI",
+    "stress": "b",
+    "category": ["top100","top500","all"],
+    "tenses": {
+      "present": {
+        "я": "",
+        "ты": "",
+        "он": "",
+        "она": "",
+        "оно": "",
+        "мы": "",
+        "вы": "",
+        "они": ""
+      },
+      "future": {
+        "я": "пошлю",
+        "ты": "пошлёшь",
+        "он": "пошлёт",
+        "она": "пошлёт",
+        "оно": "пошлёт",
+        "мы": "пошлём",
+        "вы": "пошлёте",
+        "они": "пошлют"
+      },
+      "past": {
+        "masculine": "послал",
+        "feminine": "послала",
+        "neuter": "послало",
+        "plural": "послали"
+      },
+      "imperative": {
+        "singular": "пошли",
+        "plural": "пошлите"
+      }
+    }   
   }
 ]
