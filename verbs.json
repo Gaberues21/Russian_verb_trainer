@@ -4052,7 +4052,7 @@
     "stem_pattern": "regular",
     "class": "I",
     "stress": "a",
-    "category": ["top100","top500","all"],
+    "category": ["top100","top500","reflexive","all"],
     "tenses": {
       "present": {
         "я": "являюсь",
@@ -4083,6 +4083,49 @@
       "imperative": {
         "singular": "являйся",
         "plural": "являйтесь"
+      }
+    }   
+  },
+  {
+    "verb": "искать",
+    "id": "96",
+    "translation": "to look for, search, seek, sue",
+    "type": "imperfective",
+    "conjugation": "1st_conj", 
+    "stem_pattern": "stem_change",
+    "class": "VI",
+    "stress": "c",
+    "category": ["top100","top500","all"],
+    "tenses": {
+      "present": {
+        "я": "ищу",
+        "ты": "ищешь",
+        "он": "ищет",
+        "она": "ищет",
+        "оно": "ищет",
+        "мы": "ищем",
+        "вы": "ищете",
+        "они": "ищут"
+      },
+      "future": {
+        "я": "буду искать",
+        "ты": "будешь искать",
+        "он": "будет искать",
+        "она": "будет искать",
+        "оно": "будет искать",
+        "мы": "будем искать",
+        "вы": "будете искать",
+        "они": "будут искать"
+      },
+      "past": {
+        "masculine": "искал",
+        "feminine": "искала",
+        "neuter": "искало",
+        "plural": "искали"
+      },
+      "imperative": {
+        "singular": "ищи",
+        "plural": "ищите"
       }
     }   
   }
