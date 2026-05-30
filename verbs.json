@@ -3741,5 +3741,48 @@
         "plural": "бросьте"
       }
     }   
+  },
+  {
+    "verb": "оставить",
+    "id": "88",
+    "translation": "to leave, abandon, give up, drop, stop, keep, reserve",
+    "type": "perfective",
+    "conjugation": "2nd_conj", 
+    "stem_pattern": "cons_change", 
+    "class": "IV",
+    "stress": "a", 
+    "category": ["top100","top500","all"],
+    "tenses": {
+      "present": {
+        "я": "",
+        "ты": "",
+        "он": "",
+        "она": "",
+        "оно": "",
+        "мы": "",
+        "вы": "",
+        "они": ""
+      },
+      "future": {
+        "я": "оставлю",
+        "ты": "оставишь",
+        "он": "оставит",
+        "она": "оставит",
+        "оно": "оставит",
+        "мы": "оставим",
+        "вы": "оставите",
+        "они": "оставят"
+      },
+      "past": {
+        "masculine": "оставил",
+        "feminine": "оставила",
+        "neuter": "оставило",
+        "plural": "оставили"
+      },
+      "imperative": {
+        "singular": "оставь",
+        "plural": "оставьте"
+      }
+    }   
   }
 ]
