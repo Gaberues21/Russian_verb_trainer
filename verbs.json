@@ -3870,5 +3870,48 @@
         "plural": "уходите"
       }
     }   
+  },
+  {
+    "verb": "войти",
+    "id": "91",
+    "translation": "to enter, come in, include",
+    "type": "perfective",
+    "conjugation": "1st_conj", 
+    "stem_pattern": "suppletive", 
+    "class": "irregular",
+    "stress": "b",
+    "category": ["top100","top500","motion","all"],
+    "tenses": {
+      "present": {
+        "я": "",
+        "ты": "",
+        "он": "",
+        "она": "",
+        "оно": "",
+        "мы": "",
+        "вы": "",
+        "они": ""
+      },
+      "future": {
+        "я": "войду",
+        "ты": "войдёшь",
+        "он": "войдёт",
+        "она": "войдёт",
+        "оно": "войдёт",
+        "мы": "войдём",
+        "вы": "войдёте",
+        "они": "войдут"
+      },
+      "past": {
+        "masculine": "вошёл",
+        "feminine": "вошла",
+        "neuter": "вошло",
+        "plural": "вошли"
+      },
+      "imperative": {
+        "singular": "войди",
+        "plural": "войдите"
+      }
+    }   
   }
 ]
