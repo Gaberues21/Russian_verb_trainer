@@ -3916,7 +3916,7 @@
   },
   {
     "verb": "рассказывать",
-    "id": "91",
+    "id": "92",
     "translation": "to tell, narrate, relate, account",
     "type": "imperfective",
     "conjugation": "1st_conj", 
@@ -3954,6 +3954,49 @@
       "imperative": {
         "singular": "рассказывай",
         "plural": "рассказывайте"
+      }
+    }   
+  },
+  {
+    "verb": "молчать",
+    "id": "93",
+    "translation": "to be silent",
+    "type": "imperfective",
+    "conjugation": "2nd_conj", 
+    "stem_pattern": "regular",
+    "class": "V",
+    "stress": "b",
+    "category": ["top100","top500","all"],
+    "tenses": {
+      "present": {
+        "я": "молчу",
+        "ты": "молчишь",
+        "он": "молчит",
+        "она": "молчит",
+        "оно": "молчит",
+        "мы": "молчим",
+        "вы": "молчите",
+        "они": "молчат"
+      },
+      "future": {
+        "я": "буду молчать",
+        "ты": "будешь молчать",
+        "он": "будет молчать",
+        "она": "будет молчать",
+        "оно": "будет молчать",
+        "мы": "будем молчать",
+        "вы": "будете молчать",
+        "они": "будут молчать"
+      },
+      "past": {
+        "masculine": "молчал",
+        "feminine": "молчала",
+        "neuter": "молчало",
+        "plural": "молчали"
+      },
+      "imperative": {
+        "singular": "молчи",
+        "plural": "молчите"
       }
     }   
   }
