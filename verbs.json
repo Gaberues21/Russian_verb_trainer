@@ -3698,5 +3698,48 @@
         "plural": "поставьте"
       }
     }   
+  },
+  {
+    "verb": "бросить",
+    "id": "87",
+    "translation": "to throw, send urgently, give up, abandon",
+    "type": "perfective",
+    "conjugation": "2nd_conj", 
+    "stem_pattern": "cons_change",
+    "class": "IV",
+    "stress": "a", 
+    "category": ["top100","top500","all"],
+    "tenses": {
+      "present": {
+        "я": "",
+        "ты": "",
+        "он": "",
+        "она": "",
+        "оно": "",
+        "мы": "",
+        "вы": "",
+        "они": ""
+      },
+      "future": {
+        "я": "брошу",
+        "ты": "бросишь",
+        "он": "бросит",
+        "она": "бросит",
+        "оно": "бросит",
+        "мы": "бросим",
+        "вы": "бросите",
+        "они": "бросят"
+      },
+      "past": {
+        "masculine": "бросил",
+        "feminine": "бросила",
+        "neuter": "бросило",
+        "plural": "бросили"
+      },
+      "imperative": {
+        "singular": "брось",
+        "plural": "бросьте"
+      }
+    }   
   }
 ]
