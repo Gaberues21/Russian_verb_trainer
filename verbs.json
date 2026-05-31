@@ -49,6 +49,7 @@
     "type": "perfective",
     "conjugation": "mixed",
     "stem_pattern": "stem_change",
+    "imperative": "2nd_type",
     "class": "VI",
     "stress": "c",
     "category": ["top100","top500","all"],
