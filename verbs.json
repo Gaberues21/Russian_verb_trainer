@@ -4350,5 +4350,49 @@
         "plural": "становитесь"
       }
     }   
+  },
+  {
+    "verb": "смочь",
+    "id": "101",
+    "translation": "to be able, can",
+    "type": "perfective",
+    "conjugation": "mixed", 
+    "stem_pattern": "suppletive",
+    "imperative": "2nd_type",
+    "class": "VIII",
+    "stress": "c/b",
+    "category": ["top500","all"],
+    "tenses": {
+      "present": {
+        "я": "",
+        "ты": "",
+        "он": "",
+        "она": "",
+        "оно": "",
+        "мы": "",
+        "вы": "",
+        "они": ""
+      },
+      "future": {
+        "я": "смогу",
+        "ты": "сможешь",
+        "он": "сможет",
+        "она": "сможет",
+        "оно": "сможет",
+        "мы": "сможем",
+        "вы": "сможете",
+        "они": "смогут"
+      },
+      "past": {
+        "masculine": "смог",
+        "feminine": "смогла",
+        "neuter": "смогло",
+        "plural": "смогли"
+      },
+      "imperative": {
+        "singular": "смоги",
+        "plural": "смогите"
+      }
+    }   
   }
 ]
