@@ -6,6 +6,7 @@ const appState = {
   aspect: "any",
   conjugation: "any",
   stem: "any",
+  imperative: "any",
   v_class: "any",
   search: "",
   hiddenTenses: [],
