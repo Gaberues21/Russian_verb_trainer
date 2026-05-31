@@ -5,6 +5,7 @@
     "type": "imperfective",
     "conjugation": "mixed", 
     "stem_pattern": "irregular",
+    "imperative": "soft_sign",
     "class": "irregular",
     "stress": "irregular",
     "category": ["top100","top500","all"],
