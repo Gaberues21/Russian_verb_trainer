@@ -31,6 +31,13 @@ function getFilteredVerbs() {
     );
   }
 
+  // Imperative
+  if (appState.imperative !== "any") {
+    filtered = filtered.filter(v =>
+      v.imperative === appState.imperative
+    );
+  }
+
   // Class
   if (appState.v_class !== "any") {
     filtered = filtered.filter(v =>
