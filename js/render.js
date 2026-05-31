@@ -293,6 +293,9 @@ function renderApp() {
   document.getElementById("stemFilter").value =
     appState.stem;
 
+  document.getElementById("imperativeFilter").value =
+    appState.imperative;
+
   document.getElementById("classFilter").value =
     appState.v_class;
 
