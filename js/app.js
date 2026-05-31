@@ -59,6 +59,16 @@ function initializeListeners() {
       renderApp();
     });
 
+  document.getElementById("imperativeFilter")
+    .addEventListener("change", e => {
+
+      appState.imperative = e.target.value;
+      appState.page = 1;
+
+      updateURL();
+      renderApp();
+    });
+
   document.getElementById("classFilter")
     .addEventListener("change", e => {
 
@@ -188,39 +198,3 @@ function goToSection(section) {
   updateURL();
   renderApp();
 }
-
-//========= Function to show URL of each section =========
-// function showSectionFromHash() {
-//   const hashFull = window.location.hash.substring(1);
-//   const [section] = hashFull.split("?");
-//   const params = getQueryParams();
-
-//   const sections = ["home","trainer","tableTrainer"];
-
-//   // Hide all main sections
-//   sections.forEach(id => {
-//     const el = document.getElementById(id);
-//     if (el) el.style.display = "none";
-//   });
-
-//   // decide which to show
-//   let active = "home";
-//   if (section && sections.includes(section)) {
-//     active = section;
-//   }
-  
-//   // Show selected
-//   document.getElementById(active).style.display = "block";
-
-//   // Reset
-//   if (active === "trainer") resetTrainer();
-//   if (active === "home") resetHome();
-
-//   if (active === "tableTrainer") {
-//     handleTableRoutine(params);
-//   }
-// }
-
-// // Run when hash changes
-// window.addEventListener("hashchange", showSectionFromHash);
-// ;
