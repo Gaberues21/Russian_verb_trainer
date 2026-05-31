@@ -18,6 +18,10 @@ function updateURL() {
     params.set("stem", appState.stem);
   }
   
+  if (appState.imperative !== "any") {
+    params.set("imperative", appState.imperative);
+  }
+  
   if (appState.v_class !== "any") {
     params.set("v_class", appState.v_class);
   }
@@ -66,6 +70,9 @@ function loadStateFromURL() {
 
   appState.stem =
     params.get("stem") || "any";
+  
+  appState.imperative =
+    params.get("imperative") || "any";
 
   appState.v_class =
     params.get("v_class") || "any";
