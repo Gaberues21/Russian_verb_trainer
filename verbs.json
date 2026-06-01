@@ -4796,5 +4796,49 @@
         "plural": "покажитесь"
       }
     }   
+  },
+  {
+    "verb": "попасть",
+    "id": "110",
+    "translation": "to find oneself in, end up in, hit, reach",
+    "type": "perfective",
+    "conjugation": "mixed", 
+    "stem_pattern": "stem_change", 
+    "imperative": "2nd_type",
+    "class": "VII",
+    "stress": "b", 
+    "category": ["top500","all"],
+    "tenses": {
+      "present": {
+        "я": "",
+        "ты": "",
+        "он": "",
+        "она": "",
+        "оно": "",
+        "мы": "",
+        "вы": "",
+        "они": ""
+      },
+      "future": {
+        "я": "попаду",
+        "ты": "попадёшь",
+        "он": "попадёт",
+        "она": "попадёт",
+        "оно": "попадёт",
+        "мы": "попадём",
+        "вы": "попадёте",
+        "они": "попадут"
+      },
+      "past": {
+        "masculine": "попал",
+        "feminine": "попала",
+        "neuter": "попало",
+        "plural": "попали"
+      },
+      "imperative": {
+        "singular": "попади",
+        "plural": "попадите"
+      }
+    }   
   }
 ]
