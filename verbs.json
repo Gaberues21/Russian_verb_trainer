@@ -4719,7 +4719,7 @@
     "imperative": "1st_type",
     "class": "I",
     "stress": "a", 
-    "category": ["top500","all"],
+    "category": ["top500","reflexive","all"],
     "tenses": {
       "present": {
         "я": "собираюсь",
@@ -4750,6 +4750,50 @@
       "imperative": {
         "singular": "собирайся",
         "plural": "собирайтесь"
+      }
+    }   
+  },
+  {
+    "verb": "показаться",
+    "id": "109",
+    "translation": "to appear, come in sight, show up, turn up, seem",
+    "type": "perfective",
+    "conjugation": "mixed", 
+    "stem_pattern": "stem_change", 
+    "imperative": "2nd_type",
+    "class": "VI",
+    "stress": "c", 
+    "category": ["top500","reflexive","all"],
+    "tenses": {
+      "present": {
+        "я": "",
+        "ты": "",
+        "он": "",
+        "она": "",
+        "оно": "",
+        "мы": "",
+        "вы": "",
+        "они": ""
+      },
+      "future": {
+        "я": "покажусь",
+        "ты": "покажешься",
+        "он": "покажется",
+        "она": "покажется",
+        "оно": "покажется",
+        "мы": "покажемся",
+        "вы": "покажетесь",
+        "они": "покажутся"
+      },
+      "past": {
+        "masculine": "показался",
+        "feminine": "показалась",
+        "neuter": "показалось",
+        "plural": "показались"
+      },
+      "imperative": {
+        "singular": "покажись",
+        "plural": "покажитесь"
       }
     }   
   }
