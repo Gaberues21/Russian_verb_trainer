@@ -4580,7 +4580,7 @@
   {
     "verb": "открыть",
     "id": "105",
-    "translation": "to open",
+    "translation": "to open, turn on, discover, reveal, unveil, inaugurate",
     "type": "perfective",
     "conjugation": "mixed", 
     "stem_pattern": "stem_change", 
@@ -4618,6 +4618,50 @@
       "imperative": {
         "singular": "открой",
         "plural": "откройте"
+      }
+    }   
+  },
+  {
+    "verb": "происходить",
+    "id": "106",
+    "translation": "to happen, occur, take place, derive, descend, originate, arise, result",
+    "type": "imperfective",
+    "conjugation": "2nd_conj", 
+    "stem_pattern": "cons_change",
+    "imperative": "2nd_type", 
+    "class": "IV",
+    "stress": "c",
+    "category": ["top500","all"],
+    "tenses": {
+      "present": {
+        "я": "происхожу",
+        "ты": "происходишь",
+        "он": "происходит",
+        "она": "происходит",
+        "оно": "происходит",
+        "мы": "происходим",
+        "вы": "происходите",
+        "они": "происходят"
+      },
+      "future": {
+        "я": "буду происходить",
+        "ты": "будешь происходить",
+        "он": "будет происходить",
+        "она": "будет происходить",
+        "оно": "будет происходить",
+        "мы": "будем происходить",
+        "вы": "будете происходить",
+        "они": "будут происходить"
+      },
+      "past": {
+        "masculine": "происходил",
+        "feminine": "происходила",
+        "neuter": "происходило",
+        "plural": "происходили"
+      },
+      "imperative": {
+        "singular": "происходи",
+        "plural": "происходите"
       }
     }   
   }
