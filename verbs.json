@@ -4664,5 +4664,49 @@
         "plural": "происходите"
       }
     }   
+  },
+  {
+    "verb": "ехать",
+    "id": "107",
+    "translation": "to go, travel by vehicle (unidirectional)",
+    "type": "imperfective",
+    "conjugation": "mixed", 
+    "stem_pattern": "suppletive", 
+    "imperative": "1st_type",
+    "class": "irregular",
+    "stress": "a", 
+    "category": ["top500","motion","all"],
+    "tenses": {
+      "present": {
+        "я": "еду",
+        "ты": "едешь",
+        "он": "едет",
+        "она": "едет",
+        "оно": "едет",
+        "мы": "едем",
+        "вы": "едете",
+        "они": "едут"
+      },
+      "future": {
+        "я": "буду ехать",
+        "ты": "будешь ехать",
+        "он": "будет ехать",
+        "она": "будет ехать",
+        "оно": "будет ехать",
+        "мы": "будем ехать",
+        "вы": "будете ехать",
+        "они": "будут ехать"
+      },
+      "past": {
+        "masculine": "ехал",
+        "feminine": "ехала",
+        "neuter": "ехало",
+        "plural": "ехали"
+      },
+      "imperative": {
+        "singular": "езжай",
+        "plural": "езжайте"
+      }
+    }   
   }
 ]
