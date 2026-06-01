@@ -4538,7 +4538,7 @@
     "id": "104",
     "translation": "to take, accept, receive, take part",
     "type": "perfective",
-    "conjugation": "2nd_conj", 
+    "conjugation": "mixed", 
     "stem_pattern": "stem_change", 
     "imperative": "2nd_type",
     "class": "XIV",
@@ -4574,6 +4574,50 @@
       "imperative": {
         "singular": "прими",
         "plural": "примите"
+      }
+    }   
+  },
+  {
+    "verb": "открыть",
+    "id": "105",
+    "translation": "to open",
+    "type": "perfective",
+    "conjugation": "mixed", 
+    "stem_pattern": "stem_change", 
+    "imperative": "1st_type",
+    "class": "XII",
+    "stress": "a", 
+    "category": ["top500","all"],
+    "tenses": {
+      "present": {
+        "я": "",
+        "ты": "",
+        "он": "",
+        "она": "",
+        "оно": "",
+        "мы": "",
+        "вы": "",
+        "они": ""
+      },
+      "future": {
+        "я": "открою",
+        "ты": "откроешь",
+        "он": "откроет",
+        "она": "откроет",
+        "оно": "откроет",
+        "мы": "откроем",
+        "вы": "откроете",
+        "они": "откроют"
+      },
+      "past": {
+        "masculine": "открыл",
+        "feminine": "открыла",
+        "neuter": "открыло",
+        "plural": "открыли"
+      },
+      "imperative": {
+        "singular": "открой",
+        "plural": "откройте"
       }
     }   
   }
