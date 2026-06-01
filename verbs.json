@@ -4499,7 +4499,7 @@
     "imperative": "1st_type",
     "class": "irregular",
     "stress": "a", 
-    "category": ["top100","top500","motion","all"],
+    "category": ["top500","motion","all"],
     "tenses": {
       "present": {
         "я": "приеду",
@@ -4530,6 +4530,50 @@
       "imperative": {
         "singular": "приезжай",
         "plural": "приезжайте"
+      }
+    }   
+  },
+  {
+    "verb": "принять",
+    "id": "104",
+    "translation": "to take, accept, receive, take part",
+    "type": "perfective",
+    "conjugation": "2nd_conj", 
+    "stem_pattern": "stem_change", 
+    "imperative": "2nd_type",
+    "class": "XIV",
+    "stress": "c/c", 
+    "category": ["top500","all"],
+    "tenses": {
+      "present": {
+        "я": "",
+        "ты": "",
+        "он": "",
+        "она": "",
+        "оно": "",
+        "мы": "",
+        "вы": "",
+        "они": ""
+      },
+      "future": {
+        "я": "приму",
+        "ты": "примешь",
+        "он": "примет",
+        "она": "примет",
+        "оно": "примет",
+        "мы": "примем",
+        "вы": "примете",
+        "они": "примут"
+      },
+      "past": {
+        "masculine": "принял",
+        "feminine": "приняла",
+        "neuter": "приняло",
+        "plural": "приняли"
+      },
+      "imperative": {
+        "singular": "прими",
+        "plural": "примите"
       }
     }   
   }
