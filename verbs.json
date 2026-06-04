@@ -4840,5 +4840,49 @@
         "plural": "попадите"
       }
     }   
+  },
+  {
+    "verb": "услышать",
+    "id": "111",
+    "translation": "to hear",
+    "type": "perfective",
+    "conjugation": "2nd_conj", 
+    "stem_pattern": "regular",
+    "imperative": "soft_sign", 
+    "class": "V",
+    "stress": "a", 
+    "category": ["top500","all"],
+    "tenses": {
+      "present": {
+        "я": "",
+        "ты": "",
+        "он": "",
+        "она": "",
+        "оно": "",
+        "мы": "",
+        "вы": "",
+        "они": ""
+      },
+      "future": {
+        "я": "услышу",
+        "ты": "услышишь",
+        "он": "услышит",
+        "она": "услышит",
+        "оно": "услышит",
+        "мы": "услышим",
+        "вы": "услышите",
+        "они": "услышат"
+      },
+      "past": {
+        "masculine": "услышал",
+        "feminine": "услышала",
+        "neuter": "услышало",
+        "plural": "услышали"
+      },
+      "imperative": {
+        "singular": "услышь",
+        "plural": "услышьте"
+      }
+    }   
   }
 ]
