@@ -4972,5 +4972,49 @@
         "plural": "кричите"
       }
     }   
+  },
+  {
+    "verb": "произойти",
+    "id": "114",
+    "translation": "to happen, occur, take place, derive, descend, originate, arise, result",
+    "type": "perfective",
+    "conjugation": "mixed", 
+    "stem_pattern": "suppletive",
+    "imperative": "2nd_type", 
+    "class": "irregular",
+    "stress": "b/b",
+    "category": ["top500","all"],
+    "tenses": {
+      "present": {
+        "я": "",
+        "ты": "",
+        "он": "",
+        "она": "",
+        "оно": "",
+        "мы": "",
+        "вы": "",
+        "они": ""
+      },
+      "future": {
+        "я": "произойду",
+        "ты": "произойдёшь",
+        "он": "произойдёт",
+        "она": "произойдёт",
+        "оно": "произойдёт",
+        "мы": "произойдём",
+        "вы": "произойдёте",
+        "они": "произойдут"
+      },
+      "past": {
+        "masculine": "произошёл",
+        "feminine": "произошла",
+        "neuter": "произошло",
+        "plural": "произошли"
+      },
+      "imperative": {
+        "singular": "произойди",
+        "plural": "произойдите"
+      }
+    }   
   }
 ]
