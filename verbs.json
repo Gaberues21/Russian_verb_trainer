@@ -5016,5 +5016,49 @@
         "plural": "произойдите"
       }
     }   
+  },
+  {
+    "verb": "подняться",
+    "id": "115",
+    "translation": "to climb, come up, go up, get up",
+    "type": "perfective",
+    "conjugation": "mixed", 
+    "stem_pattern": "suppletive",
+    "imperative": "2nd_type",  
+    "class": "XIV",
+    "stress": "c/c''",
+    "category": ["top500","reflexive","all"],
+    "tenses": {
+      "present": {
+        "я": "",
+        "ты": "",
+        "он": "",
+        "она": "",
+        "оно": "",
+        "мы": "",
+        "вы": "",
+        "они": ""
+      },
+      "future": {
+        "я": "поднимусь",
+        "ты": "поднимешься",
+        "он": "поднимется",
+        "она": "поднимется",
+        "оно": "поднимется",
+        "мы": "поднимемся",
+        "вы": "подниметесь",
+        "они": "поднимутся"
+      },
+      "past": {
+        "masculine": "поднялся",
+        "feminine": "поднялась",
+        "neuter": "поднялось",
+        "plural": "поднялись"
+      },
+      "imperative": {
+        "singular": "поднимись",
+        "plural": "поднимитесь"
+      }
+    }   
   }
 ]
