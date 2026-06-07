@@ -5060,5 +5060,49 @@
         "plural": "поднимитесь"
       }
     }   
+  },
+  {
+    "verb": "случиться",
+    "id": "116",
+    "translation": "to happen, occur, come about",
+    "type": "perfective",
+    "conjugation": "2nd_conj", 
+    "stem_pattern": "regular",
+    "imperative": "2nd_type",  
+    "class": "IV",
+    "stress": "b",
+    "category": ["top500","reflexive","all"],
+    "tenses": {
+      "present": {
+        "я": "",
+        "ты": "",
+        "он": "",
+        "она": "",
+        "оно": "",
+        "мы": "",
+        "вы": "",
+        "они": ""
+      },
+      "future": {
+        "я": "случусь",
+        "ты": "случишься",
+        "он": "случится",
+        "она": "случится",
+        "оно": "случится",
+        "мы": "случимся",
+        "вы": "случитесь",
+        "они": "случатся"
+      },
+      "past": {
+        "masculine": "случился",
+        "feminine": "случилась",
+        "neuter": "случилось",
+        "plural": "случились"
+      },
+      "imperative": {
+        "singular": "случись",
+        "plural": "случитесь"
+      }
+    }   
   }
 ]
