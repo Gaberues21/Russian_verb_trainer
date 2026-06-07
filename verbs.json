@@ -5192,5 +5192,49 @@
         "plural": "поезжайте"
       }
     }   
+  },
+  {
+    "verb": "уметь",
+    "id": "119",
+    "translation": "to know how to do something, be able to",
+    "type": "imperfective",
+    "conjugation": "1st_conj", 
+    "stem_pattern": "regular",
+    "imperative": "1st_type",
+    "class": "I",
+    "stress": "a",   
+    "category": ["top500","all"],
+    "tenses": {
+      "present": {
+        "я": "умею",
+        "ты": "умеешь",
+        "он": "умеет",
+        "она": "умеет",
+        "оно": "умеет",
+        "мы": "умеем",
+        "вы": "умеете",
+        "они": "умеют"
+      },
+      "future": {
+        "я": "буду уметь",
+        "ты": "будешь уметь",
+        "он": "будет уметь",
+        "она": "будет уметь",
+        "оно": "будет уметь",
+        "мы": "будем уметь",
+        "вы": "будете уметь",
+        "они": "будут уметь"
+      },
+      "past": {
+        "masculine": "умел",
+        "feminine": "умела",
+        "neuter": "умело",
+        "plural": "умели"
+      },
+      "imperative": {
+        "singular": "умей",
+        "plural": "умейте"
+      }
+    }   
   }
 ]
