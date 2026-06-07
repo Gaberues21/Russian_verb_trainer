@@ -5148,5 +5148,49 @@
         "plural": "старайтесь"
       }
     }   
+  },
+  {
+    "verb": "поехать",
+    "id": "118",
+    "translation": "to go, travel by vehicle (unidirectional)",
+    "type": "perfective",
+    "conjugation": "mixed", 
+    "stem_pattern": "suppletive", 
+    "imperative": "1st_type",
+    "class": "irregular",
+    "stress": "a", 
+    "category": ["top500","motion","all"],
+    "tenses": {
+      "present": {
+        "я": "",
+        "ты": "",
+        "он": "",
+        "она": "",
+        "оно": "",
+        "мы": "",
+        "вы": "",
+        "они": ""
+      },
+      "future": {
+        "я": "поеду",
+        "ты": "поедешь",
+        "он": "поедет",
+        "она": "поедет",
+        "оно": "поедет",
+        "мы": "поедем",
+        "вы": "поедете",
+        "они": "поедут"
+      },
+      "past": {
+        "masculine": "поехал",
+        "feminine": "поехала",
+        "neuter": "поехало",
+        "plural": "поехали"
+      },
+      "imperative": {
+        "singular": "поезжай",
+        "plural": "поезжайте"
+      }
+    }   
   }
 ]
