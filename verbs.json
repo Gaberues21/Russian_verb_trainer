@@ -5324,5 +5324,49 @@
         "plural": "положите"
       }
     }   
+  },
+  {
+    "verb": "начаться",
+    "id": "122",
+    "translation": "to begin, start",
+    "type": "perfective",
+    "conjugation": "mixed", 
+    "stem_pattern": "stem_change",
+    "imperative": "2nd_type", 
+    "class": "XIV",
+    "stress": "b/b*",   
+    "category": ["top500","reflexive","all"],
+    "tenses": {
+      "present": {
+        "я": "",
+        "ты": "",
+        "он": "",
+        "она": "",
+        "оно": "",
+        "мы": "",
+        "вы": "",
+        "они": ""
+      },
+      "future": {
+        "я": "начнусь",
+        "ты": "начнёшься",
+        "он": "начнётся",
+        "она": "начнётся",
+        "оно": "начнётся",
+        "мы": "начнёмся",
+        "вы": "начнётесь",
+        "они": "начнутся"
+      },
+      "past": {
+        "masculine": "начался",
+        "feminine": "началась",
+        "neuter": "началось",
+        "plural": "начались"
+      },
+      "imperative": {
+        "singular": "начнись",
+        "plural": "начнитесь"
+      }
+    }   
   }
 ]
