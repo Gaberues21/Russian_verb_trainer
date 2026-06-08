@@ -5412,5 +5412,49 @@
         "plural": "зовите"
       }
     }   
+  },
+  {
+    "verb": "проходить",
+    "id": "124",
+    "translation": "to pass by, walk past, go through, take place, occur, pass, elapse, go by, cover a topic, take a test",
+    "type": "imperfective",
+    "conjugation": "2nd_conj", 
+    "stem_pattern": "cons_change",
+    "imperative": "2nd_type", 
+    "class": "IV",
+    "stress": "c",
+    "category": ["top500","motion","all"],
+    "tenses": {
+      "present": {
+        "я": "прохожу",
+        "ты": "проходишь",
+        "он": "проходит",
+        "она": "проходит",
+        "оно": "проходит",
+        "мы": "проходим",
+        "вы": "проходите",
+        "они": "проходят"
+      },
+      "future": {
+        "я": "буду проходить",
+        "ты": "будешь проходить",
+        "он": "будет проходить",
+        "она": "будет проходить",
+        "оно": "будет проходить",
+        "мы": "будем проходить",
+        "вы": "будете проходить",
+        "они": "будут проходить"
+      },
+      "past": {
+        "masculine": "проходил",
+        "feminine": "проходила",
+        "neuter": "проходило",
+        "plural": "проходили"
+      },
+      "imperative": {
+        "singular": "проходи",
+        "plural": "проходите"
+      }
+    }   
   }
 ]
