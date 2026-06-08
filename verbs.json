@@ -5456,5 +5456,49 @@
         "plural": "проходите"
       }
     }   
+  },
+  {
+    "verb": "удаться",
+    "id": "125",
+    "translation": "to succeed, turn out well, manage to do",
+    "type": "perfective",
+    "conjugation": "mixed",
+    "stem_pattern": "irregular",
+    "imperative": "1st_type", 
+    "class": "irregular",
+    "stress": "b/c'",
+    "category": ["top500","reflexive","all"],
+    "tenses": {
+      "present": {
+        "я": "",
+        "ты": "",
+        "он": "",
+        "она": "",
+        "оно": "",
+        "мы": "",
+        "вы": "",
+        "они": ""
+      },
+      "future": {
+        "я": "удамся",
+        "ты": "удашься",
+        "он": "удастся",
+        "она": "удастся",
+        "оно": "удастся",
+        "мы": "удадимся",
+        "вы": "удадитесь",
+        "они": "удадутся"
+      },
+      "past": {
+        "masculine": "удался",
+        "feminine": "удалась",
+        "neuter": "удалось",
+        "plural": "удались"
+      },
+      "imperative": {
+        "singular": "удайся",
+        "plural": "удайтесь"
+      }
+    }   
   }
 ]
