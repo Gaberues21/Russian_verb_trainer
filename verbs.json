@@ -5368,5 +5368,49 @@
         "plural": "начнитесь"
       }
     }   
+  },
+  {
+    "verb": "звать",
+    "id": "123",
+    "translation": "to call (someone a name), call (for someone or something), invite",
+    "type": "imperfective",
+    "conjugation": "1st_conj", 
+    "stem_pattern": "stem_change",
+    "imperative": "2nd_type",
+    "class": "VI",
+    "stress": "°b/c",   
+    "category": ["top500","all"],
+    "tenses": {
+      "present": {
+        "я": "зову",
+        "ты": "зовёшь",
+        "он": "зовёт",
+        "она": "зовёт",
+        "оно": "зовёт",
+        "мы": "зовём",
+        "вы": "зовёте",
+        "они": "зовут"
+      },
+      "future": {
+        "я": "буду звать",
+        "ты": "будешь звать",
+        "он": "будет звать",
+        "она": "будет звать",
+        "оно": "будет звать",
+        "мы": "будем звать",
+        "вы": "будете звать",
+        "они": "будут звать"
+      },
+      "past": {
+        "masculine": "звал",
+        "feminine": "звала",
+        "neuter": "звало",
+        "plural": "звали"
+      },
+      "imperative": {
+        "singular": "зови",
+        "plural": "зовите"
+      }
+    }   
   }
 ]
