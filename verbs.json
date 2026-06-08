@@ -5280,5 +5280,49 @@
         "plural": "занимайтесь"
       }
     }   
+  },
+  {
+    "verb": "положить",
+    "id": "121",
+    "translation": "to put, lay, place",
+    "type": "perfective",
+    "conjugation": "2nd_conj", 
+    "stem_pattern": "regular",
+    "imperative": "2nd_type",
+    "class": "IV",
+    "stress": "c",   
+    "category": ["top500","all"],
+    "tenses": {
+      "present": {
+        "я": "",
+        "ты": "",
+        "он": "",
+        "она": "",
+        "оно": "",
+        "мы": "",
+        "вы": "",
+        "они": ""
+      },
+      "future": {
+        "я": "положу",
+        "ты": "положишь",
+        "он": "положит",
+        "она": "положит",
+        "оно": "положит",
+        "мы": "положим",
+        "вы": "положите",
+        "они": "положат"
+      },
+      "past": {
+        "masculine": "положил",
+        "feminine": "положила",
+        "neuter": "положило",
+        "plural": "положили"
+      },
+      "imperative": {
+        "singular": "положи",
+        "plural": "положите"
+      }
+    }   
   }
 ]
