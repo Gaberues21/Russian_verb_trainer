@@ -5588,5 +5588,49 @@
         "plural": "снимите"
       }
     }   
+  },
+  {
+    "verb": "представить",
+    "id": "128",
+    "translation": "to introduce, present, show, imagine, picture, represent, stand for",
+    "type": "perfective",
+    "conjugation": "2nd_conj", 
+    "stem_pattern": "cons_change", 
+    "imperative": "soft_sign",
+    "class": "IV",
+    "stress": "a'",   
+    "category": ["top500","all"],
+    "tenses": {
+      "present": {
+        "я": "",
+        "ты": "",
+        "он": "",
+        "она": "",
+        "оно": "",
+        "мы": "",
+        "вы": "",
+        "они": ""
+      },
+      "future": {
+        "я": "представлю",
+        "ты": "представишь",
+        "он": "представит",
+        "она": "представит",
+        "оно": "представит",
+        "мы": "представим",
+        "вы": "представите",
+        "они": "представят"
+      },
+      "past": {
+        "masculine": "представил",
+        "feminine": "представила",
+        "neuter": "представило",
+        "plural": "представили"
+      },
+      "imperative": {
+        "singular": "представь",
+        "plural": "представьте"
+      }
+    }   
   }
 ]
