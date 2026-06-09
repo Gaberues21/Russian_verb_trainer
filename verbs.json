@@ -5544,5 +5544,49 @@
         "plural": "придитесь"
       }
     }   
+  },
+  {
+    "verb": "снять",
+    "id": "127",
+    "translation": "to take off (clothes), take a photograph, make a video, shoot, take (pictures, video), rent",
+    "type": "perfective",
+    "conjugation": "mixed", 
+    "stem_pattern": "suppletive", 
+    "imperative": "2nd_type",
+    "class": "XIV",
+    "stress": "с/c'",   
+    "category": ["top500","all"],
+    "tenses": {
+      "present": {
+        "я": "",
+        "ты": "",
+        "он": "",
+        "она": "",
+        "оно": "",
+        "мы": "",
+        "вы": "",
+        "они": ""
+      },
+      "future": {
+        "я": "сниму",
+        "ты": "снимешь",
+        "он": "снимет",
+        "она": "снимет",
+        "оно": "снимет",
+        "мы": "снимем",
+        "вы": "снимете",
+        "они": "снимут"
+      },
+      "past": {
+        "masculine": "снял",
+        "feminine": "сняла",
+        "neuter": "сняло",
+        "plural": "сняли"
+      },
+      "imperative": {
+        "singular": "сними",
+        "plural": "снимите"
+      }
+    }   
   }
 ]
