@@ -5500,5 +5500,49 @@
         "plural": "удайтесь"
       }
     }   
+  },
+  {
+    "verb": "прийтись",
+    "id": "126",
+    "translation": "to have to, forced to, fall on, correspond to, be necessary, come from, fit",
+    "type": "perfective",
+    "conjugation": "mixed", 
+    "stem_pattern": "irregular",
+    "imperative": "soft_sign", 
+    "class": "irregular",
+    "stress": "b/b",
+    "category": ["top500","all"],
+    "tenses": {
+      "present": {
+        "я": "",
+        "ты": "",
+        "он": "",
+        "она": "",
+        "оно": "",
+        "мы": "",
+        "вы": "",
+        "они": ""
+      },
+      "future": {
+        "я": "придусь",
+        "ты": "придёшься",
+        "он": "придётся",
+        "она": "придётся",
+        "оно": "придётся",
+        "мы": "придёмся",
+        "вы": "придётесь",
+        "они": "придутся"
+      },
+      "past": {
+        "masculine": "пришёлся",
+        "feminine": "пришлась",
+        "neuter": "пришлось",
+        "plural": "пришлись"
+      },
+      "imperative": {
+        "singular": "придись",
+        "plural": "придитесь"
+      }
+    }   
   }
 ]
