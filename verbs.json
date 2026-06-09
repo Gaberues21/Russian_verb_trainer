@@ -5676,5 +5676,49 @@
         "plural": "произнесите"
       }
     }   
+  },
+  {
+    "verb": "объяснить",
+    "id": "130",
+    "translation": "to explain, account",
+    "type": "perfective",
+    "conjugation": "2nd_conj", 
+    "stem_pattern": "regular",
+    "imperative": "2nd_type", 
+    "class": "IV",
+    "stress": "b",
+    "category": ["top500","all"],
+    "tenses": {
+      "present": {
+        "я": "",
+        "ты": "",
+        "он": "",
+        "она": "",
+        "оно": "",
+        "мы": "",
+        "вы": "",
+        "они": ""
+      },
+      "future": {
+        "я": "объясню",
+        "ты": "объяснишь",
+        "он": "объяснит",
+        "она": "объяснит",
+        "оно": "объяснит",
+        "мы": "объясним",
+        "вы": "объясните",
+        "они": "объяснят"
+      },
+      "past": {
+        "masculine": "объяснил",
+        "feminine": "объяснила",
+        "neuter": "объяснило",
+        "plural": "объяснили"
+      },
+      "imperative": {
+        "singular": "объясни",
+        "plural": "объясните"
+      }
+    }   
   }
 ]
