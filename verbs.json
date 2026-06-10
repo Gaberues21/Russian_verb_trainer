@@ -5764,5 +5764,49 @@
         "plural": "представляйте"
       }
     }   
+  },
+  {
+    "verb": "купить",
+    "id": "132",
+    "translation": "to buy, purchase",
+    "type": "perfective",
+    "conjugation": "2nd_conj", 
+    "stem_pattern": "cons_change",
+    "imperative": "2nd_type",
+    "class": "IV",
+    "stress": "c", 
+    "category": ["top500","all"],
+    "tenses": {
+      "present": {
+        "я": "",
+        "ты": "",
+        "он": "",
+        "она": "",
+        "оно": "",
+        "мы": "",
+        "вы": "",
+        "они": ""
+      },
+      "future": {
+        "я": "куплю",
+        "ты": "купишь",
+        "он": "купит",
+        "она": "купит",
+        "оно": "купит",
+        "мы": "купим",
+        "вы": "купите",
+        "они": "купят"
+      },
+      "past": {
+        "masculine": "купил",
+        "feminine": "купила",
+        "neuter": "купило",
+        "plural": "купили"
+      },
+      "imperative": {
+        "singular": "купи",
+        "plural": "купите"
+      }
+    }   
   }
 ]
