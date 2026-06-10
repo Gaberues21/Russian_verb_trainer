@@ -5852,5 +5852,49 @@
         "plural": "существуйте"
       }
     }   
+  },
+  {
+    "verb": "умереть",
+    "id": "134",
+    "translation": "to die, pass away",
+    "type": "perfective",
+    "conjugation": "mixed", 
+    "stem_pattern": "irregular",
+    "imperative": "2nd_type", 
+    "class": "IX",
+    "stress": "b/c",
+    "category": ["top500","all"],
+    "tenses": {
+      "present": {
+        "я": "",
+        "ты": "",
+        "он": "",
+        "она": "",
+        "оно": "",
+        "мы": "",
+        "вы": "",
+        "они": ""
+      },
+      "future": {
+        "я": "умру",
+        "ты": "умрёшь",
+        "он": "умрёт",
+        "она": "умрёт",
+        "оно": "умрёт",
+        "мы": "умрём",
+        "вы": "умрёте",
+        "они": "умрут"
+      },
+      "past": {
+        "masculine": "умер",
+        "feminine": "умерла",
+        "neuter": "умерло",
+        "plural": "умерли"
+      },
+      "imperative": {
+        "singular": "умри",
+        "plural": "умрите"
+      }
+    }   
   }
 ]
