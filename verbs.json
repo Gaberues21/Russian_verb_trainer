@@ -5859,7 +5859,7 @@
     "translation": "to die, pass away",
     "type": "perfective",
     "conjugation": "mixed", 
-    "stem_pattern": "irregular",
+    "stem_pattern": "suppletive",
     "imperative": "2nd_type", 
     "class": "IX",
     "stress": "b/c",
@@ -5894,6 +5894,50 @@
       "imperative": {
         "singular": "умри",
         "plural": "умрите"
+      }
+    }   
+  },
+  {
+    "verb": "пить",
+    "id": "135",
+    "translation": "to drink",
+    "type": "imperfective",
+    "conjugation": "mixed", 
+    "stem_pattern": "suppletive",
+    "imperative": "1st_type",
+    "class": "XI",
+    "stress": "b/c",
+    "category": ["top500","all"],
+    "tenses": {
+      "present": {
+        "я": "пью",
+        "ты": "пьёшь",
+        "он": "пьёт",
+        "она": "пьёт",
+        "оно": "пьёт",
+        "мы": "пьём",
+        "вы": "пьёте",
+        "они": "пьют"
+      },
+      "future": {
+        "я": "буду пить",
+        "ты": "будешь пить",
+        "он": "будет пить",
+        "она": "будет пить",
+        "оно": "будет пить",
+        "мы": "будем пить",
+        "вы": "будете пить",
+        "они": "будут пить"
+      },
+      "past": {
+        "masculine": "пил",
+        "feminine": "пила",
+        "neuter": "пило",
+        "plural": "пили"
+      },
+      "imperative": {
+        "singular": "пей",
+        "plural": "пейте"
       }
     }   
   }
