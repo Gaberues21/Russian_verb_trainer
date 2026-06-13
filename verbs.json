@@ -6072,5 +6072,49 @@
         "plural": "убейте"
       }
     }   
+  },
+  {
+    "verb": "согласиться",
+    "id": "139",
+    "translation": "to agree, consent, assent",
+    "type": "perfective",
+    "conjugation": "2nd_conj", 
+    "stem_pattern": "regular",
+    "imperative": "2nd_type",
+    "class": "IV",
+    "stress": "b",
+    "category": ["top500","reflexive","all"],
+    "tenses": {
+      "present": {
+        "я": "",
+        "ты": "",
+        "он": "",
+        "она": "",
+        "оно": "",
+        "мы": "",
+        "вы": "",
+        "они": ""
+      },
+      "future": {
+        "я": "соглашусь",
+        "ты": "согласишься",
+        "он": "согласится",
+        "она": "согласится",
+        "оно": "согласится",
+        "мы": "согласимся",
+        "вы": "согласитесь",
+        "они": "согласятся"
+      },
+      "past": {
+        "masculine": "согласился",
+        "feminine": "согласилась",
+        "neuter": "согласилось",
+        "plural": "согласились"
+      },
+      "imperative": {
+        "singular": "согласись",
+        "plural": "согласитесь"
+      }
+    }   
   }
 ]
