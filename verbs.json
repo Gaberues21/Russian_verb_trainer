@@ -5374,8 +5374,8 @@
     "id": "123",
     "translation": "to call (someone a name), call (for someone or something), invite",
     "type": "imperfective",
-    "conjugation": "1st_conj", 
-    "stem_pattern": "stem_change",
+    "conjugation": "mixed", 
+    "stem_pattern": "suppletive",
     "imperative": "2nd_type",
     "class": "VI",
     "stress": "°b/c",   
@@ -5982,6 +5982,50 @@
       "imperative": {
         "singular": "сообщи",
         "plural": "сообщите"
+      }
+    }   
+  },
+  {
+    "verb": "назвать",
+    "id": "137",
+    "translation": "to call, name, convene, invite",
+    "type": "perfective",
+    "conjugation": "mixed", 
+    "stem_pattern": "suppletive",
+    "imperative": "2nd_type",
+    "class": "VI",
+    "stress": "°b/c",   
+    "category": ["top500","all"],
+    "tenses": {
+      "present": {
+        "я": "",
+        "ты": "",
+        "он": "",
+        "она": "",
+        "оно": "",
+        "мы": "",
+        "вы": "",
+        "они": ""
+      },
+      "future": {
+        "я": "назову",
+        "ты": "назовёшь",
+        "он": "назовёт",
+        "она": "назовёт",
+        "оно": "назовёт",
+        "мы": "назовём",
+        "вы": "назовёте",
+        "они": "назовут"
+      },
+      "past": {
+        "masculine": "назвал",
+        "feminine": "назвала",
+        "neuter": "назвало",
+        "plural": "назвали"
+      },
+      "imperative": {
+        "singular": "назови",
+        "plural": "назовите"
       }
     }   
   }
