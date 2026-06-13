@@ -5940,5 +5940,49 @@
         "plural": "пейте"
       }
     }   
+  },
+  {
+    "verb": "сообщить",
+    "id": "136",
+    "translation": "to report, let know, communicate, impart, inform",
+    "type": "perfective",
+    "conjugation": "2nd_conj", 
+    "stem_pattern": "regular",
+    "imperative": "2nd_type",
+    "class": "IV",
+    "stress": "b",
+    "category": ["top500","all"],
+    "tenses": {
+      "present": {
+        "я": "",
+        "ты": "",
+        "он": "",
+        "она": "",
+        "оно": "",
+        "мы": "",
+        "вы": "",
+        "они": ""
+      },
+      "future": {
+        "я": "сообщу",
+        "ты": "сообщишь",
+        "он": "сообщит",
+        "она": "сообщит",
+        "оно": "сообщит",
+        "мы": "сообщим",
+        "вы": "сообщите",
+        "они": "сообщат"
+      },
+      "past": {
+        "masculine": "сообщил",
+        "feminine": "сообщила",
+        "neuter": "сообщило",
+        "plural": "сообщили"
+      },
+      "imperative": {
+        "singular": "сообщи",
+        "plural": "сообщите"
+      }
+    }   
   }
 ]
