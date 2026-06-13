@@ -6028,5 +6028,49 @@
         "plural": "назовите"
       }
     }   
+  },
+  {
+    "verb": "убить",
+    "id": "138",
+    "translation": "to kill, murder, assassinate, slay",
+    "type": "perfective",
+    "conjugation": "mixed", 
+    "stem_pattern": "suppletive",
+    "imperative": "1st_type",
+    "class": "XI",
+    "stress": "b",
+    "category": ["top500","all"],
+    "tenses": {
+      "present": {
+        "я": "",
+        "ты": "",
+        "он": "",
+        "она": "",
+        "оно": "",
+        "мы": "",
+        "вы": "",
+        "они": ""
+      },
+      "future": {
+        "я": "убью",
+        "ты": "убьёшь",
+        "он": "убьёт",
+        "она": "убьёт",
+        "оно": "убьёт",
+        "мы": "убьём",
+        "вы": "убьёте",
+        "они": "убьют"
+      },
+      "past": {
+        "masculine": "убил",
+        "feminine": "убила",
+        "neuter": "убило",
+        "plural": "убили"
+      },
+      "imperative": {
+        "singular": "убей",
+        "plural": "убейте"
+      }
+    }   
   }
 ]
