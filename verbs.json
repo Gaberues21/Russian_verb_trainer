@@ -138,7 +138,7 @@
     "conjugation": "1st_conj", 
     "stem_pattern": "regular",
     "imperative": "1st_type",
-    "class": "I",
+    "class": ,
     "stress": "a",
     "category": ["top100","top500","all"],
     "tenses": {
@@ -446,7 +446,7 @@
     "conjugation": "1st_conj", 
     "stem_pattern": "regular", 
     "imperative": "1st_type",
-    "class": "I",
+    "class": ,
     "stress": "a", 
     "category": ["top100","top500","all"],
     "tenses": {
@@ -622,7 +622,7 @@
     "conjugation": "1st_conj", 
     "stem_pattern": "regular",
     "imperative": "1st_type",
-    "class": "I",
+    "class": ,
     "stress": "a",   
     "category": ["top100","top500","all"],
     "tenses": {
@@ -754,7 +754,7 @@
     "conjugation": "1st_conj", 
     "stem_pattern": "regular", 
     "imperative": "1st_type",
-    "class": "I",
+    "class": ,
     "stress": "a",  
     "category": ["top100","top500","all"],
     "tenses": {
@@ -798,7 +798,7 @@
     "conjugation": "1st_conj", 
     "stem_pattern": "regular",
     "imperative": "1st_type", 
-    "class": "I",
+    "class": ,
     "stress": "a",  
     "category": ["top100","top500","all"],
     "tenses": {
@@ -886,7 +886,7 @@
     "conjugation": "1st_conj",
     "stem_pattern": "regular",
     "imperative": "1st_type", 
-    "class": "I",
+    "class": ,
     "stress": "a",   
     "category": ["top100","top500","all"],
     "tenses": {
@@ -1282,7 +1282,7 @@
     "conjugation": "1st_conj", 
     "stem_pattern": "regular", 
     "imperative": "1st_type", 
-    "class": "I",
+    "class": ,
     "stress": "a",
     "category": ["top100","top500","all"],
     "tenses": {
@@ -1414,7 +1414,7 @@
     "conjugation": "1st_conj", 
     "stem_pattern": "regular", 
     "imperative": "1st_type", 
-    "class": "I",
+    "class": ,
     "stress": "a", 
     "category": ["top100","top500","all"],
     "tenses": {
@@ -1854,7 +1854,7 @@
     "conjugation": "1st_conj", 
     "stem_pattern": "regular",
     "imperative": "1st_type", 
-    "class": "I",
+    "class": ,
     "stress": "a",
     "category": ["top100","top500","all"],
     "tenses": {
@@ -1942,7 +1942,7 @@
     "conjugation": "1st_conj", 
     "stem_pattern": "regular",
     "imperative": "1st_type", 
-    "class": "I",
+    "class": ,
     "stress": "a",
     "category": ["top100","top500","all"],
     "tenses": {
@@ -2030,7 +2030,7 @@
     "conjugation": "1st_conj", 
     "stem_pattern": "regular",
     "imperative": "1st_type", 
-    "class": "I",
+    "class": ,
     "stress": "a",
     "category": ["top100","top500","all"],
     "tenses": {
@@ -2206,7 +2206,7 @@
     "conjugation": "1st_conj", 
     "stem_pattern": "regular",
     "imperative": "1st_type", 
-    "class": "I",
+    "class": ,
     "stress": "a",
     "category": ["top100","top500","all"],
     "tenses": {
@@ -2382,7 +2382,7 @@
     "conjugation": "1st_conj", 
     "stem_pattern": "regular",
     "imperative": "1st_type", 
-    "class": "I",
+    "class": ,
     "stress": "a",
     "category": ["top100","top500","all"],
     "tenses": {
@@ -2646,7 +2646,7 @@
     "conjugation": "1st_conj", 
     "stem_pattern": "regular",
     "imperative": "1st_type", 
-    "class": "I",
+    "class": ,
     "stress": "a",
     "category": ["top100","top500","all"],
     "tenses": {
@@ -2778,7 +2778,7 @@
     "conjugation": "1st_conj", 
     "stem_pattern": "regular",
     "imperative": "1st_type", 
-    "class": "I",
+    "class": ,
     "stress": "a",
     "category": ["top100","top500","all"],
     "tenses": {
@@ -2822,7 +2822,7 @@
     "conjugation": "1st_conj", 
     "stem_pattern": "regular",
     "imperative": "1st_type", 
-    "class": "I",
+    "class": ,
     "stress": "a",
     "category": ["top100","top500","all"],
     "tenses": {
@@ -2954,7 +2954,7 @@
     "conjugation": "1st_conj", 
     "stem_pattern": "regular",
     "imperative": "1st_type", 
-    "class": "I",
+    "class": ,
     "stress": "a",
     "category": ["top100","top500","all"],
     "tenses": {
@@ -3130,7 +3130,7 @@
     "conjugation": "1st_conj", 
     "stem_pattern": "regular",
     "imperative": "1st_type",  
-    "class": "I",
+    "class": ,
     "stress": "a",   
     "category": ["top100","top500","reflexive","all"],
     "tenses": {
@@ -6158,6 +6158,50 @@
       "imperative": {
         "singular": "улыбнись",
         "plural": "улыбнитесь"
+      }
+    }   
+  },
+  {
+    "verb": "улыбаться",
+    "id": "141",
+    "translation": "to smile",
+    "type": "imperfective",
+    "conjugation": "1st_conj", 
+    "stem_pattern": "regular",
+    "imperative": "1st_type",  
+    "class": "I",
+    "stress": "a",   
+    "category": ["top500","reflexive","all"],
+    "tenses": {
+      "present": {
+        "я": "улыбаюсь",
+        "ты": "улыбаешься",
+        "он": "улыбается",
+        "она": "улыбается",
+        "оно": "улыбается",
+        "мы": "улыбаемся",
+        "вы": "улыбаетесь",
+        "они": "улыбаются"
+      },
+      "future": {
+        "я": "буду улыбаться",
+        "ты": "будешь улыбаться",
+        "он": "будет улыбаться",
+        "она": "будет улыбаться",
+        "оно": "будет улыбаться",
+        "мы": "будем улыбаться",
+        "вы": "будете улыбаться",
+        "они": "будут улыбаться"
+      },
+      "past": {
+        "masculine": "улыбался",
+        "feminine": "улыбалась",
+        "neuter": "улыбалось",
+        "plural": "улыбались"
+      },
+      "imperative": {
+        "singular": "улыбайся",
+        "plural": "улыбайтесь"
       }
     }   
   }
