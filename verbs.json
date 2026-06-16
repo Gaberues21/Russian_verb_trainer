@@ -6292,5 +6292,49 @@
         "plural": "нравьтесь"
       }
     }   
+  },
+  {
+    "verb": "привести",
+    "id": "144",
+    "translation": "to bring, take someone somewhere, lead, guide, cause, result in, cite",
+    "type": "perfective",
+    "conjugation": "mixed", 
+    "stem_pattern": "irregular",
+    "imperative": "2nd_type", 
+    "class": "VII",
+    "stress": "b/b",
+    "category": ["top500","motion","all"],
+    "tenses": {
+      "present": {
+        "я": "",
+        "ты": "",
+        "он": "",
+        "она": "",
+        "оно": "",
+        "мы": "",
+        "вы": "",
+        "они": ""
+      },
+      "future": {
+        "я": "приведу",
+        "ты": "приведёшь",
+        "он": "приведёт",
+        "она": "приведёт",
+        "оно": "приведёт",
+        "мы": "приведём",
+        "вы": "приведёте",
+        "они": "приведут"
+      },
+      "past": {
+        "masculine": "привёл",
+        "feminine": "привела",
+        "neuter": "привело",
+        "plural": "привели"
+      },
+      "imperative": {
+        "singular": "приведи",
+        "plural": "приведите"
+      }
+    }   
   }
 ]
