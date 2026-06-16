@@ -6468,5 +6468,49 @@
         "plural": "хватайте"
       }
     }   
+  },
+  {
+    "verb": "принести",
+    "id": "148",
+    "translation": "to bring, fetch to someone or somewhere (on foot)",
+    "type": "perfective",
+    "conjugation": "mixed", 
+    "stem_pattern": "irregular",
+    "imperative": "2nd_type", 
+    "class": "VII",
+    "stress": "b/b",
+    "category": ["top500","motion","all"],
+    "tenses": {
+      "present": {
+        "я": "",
+        "ты": "",
+        "он": "",
+        "она": "",
+        "оно": "",
+        "мы": "",
+        "вы": "",
+        "они": ""
+      },
+      "future": {
+        "я": "принесу",
+        "ты": "принесёшь",
+        "он": "принесёт",
+        "она": "принесёт",
+        "оно": "принесёт",
+        "мы": "принесём",
+        "вы": "принесёте",
+        "они": "принесут"
+      },
+      "past": {
+        "masculine": "принёс",
+        "feminine": "принесла",
+        "neuter": "принесло",
+        "plural": "принесли"
+      },
+      "imperative": {
+        "singular": "принеси",
+        "plural": "принесите"
+      }
+    }   
   }
 ]
