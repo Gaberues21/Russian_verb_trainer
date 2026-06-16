@@ -6556,5 +6556,49 @@
         "plural": "принимайте"
       }
     }   
+  },
+  {
+    "verb": "провести",
+    "id": "150",
+    "translation": "to spend time, conduct, carry out, implement, lead, escort, show, hold, make, draw, run, lay",
+    "type": "perfective",
+    "conjugation": "mixed", 
+    "stem_pattern": "irregular",
+    "imperative": "2nd_type", 
+    "class": "VII",
+    "stress": "b/b",
+    "category": ["top500","all"],
+    "tenses": {
+      "present": {
+        "я": "",
+        "ты": "",
+        "он": "",
+        "она": "",
+        "оно": "",
+        "мы": "",
+        "вы": "",
+        "они": ""
+      },
+      "future": {
+        "я": "проведу",
+        "ты": "проведёшь",
+        "он": "проведёт",
+        "она": "проведёт",
+        "оно": "проведёт",
+        "мы": "проведём",
+        "вы": "проведёте",
+        "они": "проведут"
+      },
+      "past": {
+        "masculine": "провёл",
+        "feminine": "провела",
+        "neuter": "провело",
+        "plural": "провели"
+      },
+      "imperative": {
+        "singular": "проведи",
+        "plural": "проведите"
+      }
+    }   
   }
 ]
