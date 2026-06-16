@@ -6380,5 +6380,49 @@
         "plural": "предложите"
       }
     }   
+  },
+  {
+    "verb": "вызвать",
+    "id": "146",
+    "translation": "to summon, call, cause, provoke, trigger, challenge, call out",
+    "type": "perfective",
+    "conjugation": "mixed", 
+    "stem_pattern": "stem_change",
+    "imperative": "2nd_type",
+    "class": "VI",
+    "stress": "°b",   
+    "category": ["top500","all"],
+    "tenses": {
+      "present": {
+        "я": "",
+        "ты": "",
+        "он": "",
+        "она": "",
+        "оно": "",
+        "мы": "",
+        "вы": "",
+        "они": ""
+      },
+      "future": {
+        "я": "вызову",
+        "ты": "вызовешь",
+        "он": "вызовет",
+        "она": "вызовет",
+        "оно": "вызовет",
+        "мы": "вызовем",
+        "вы": "вызовете",
+        "они": "вызовут"
+      },
+      "past": {
+        "masculine": "вызвал",
+        "feminine": "вызвала",
+        "neuter": "вызвало",
+        "plural": "вызвали"
+      },
+      "imperative": {
+        "singular": "вызови",
+        "plural": "вызовите"
+      }
+    }   
   }
 ]
